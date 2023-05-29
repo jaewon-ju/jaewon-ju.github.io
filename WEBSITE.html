@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="WEBSITE.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo"><a href="WEBSITE.html"><h3>주재원의 웹사이트</h3></a></div>
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="#">스터디 노트</a>
+                        <ul>
+                            <li>WEB</li>
+                            <li>Git</li>
+                            <li>Network</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">영어 학원</a>
+                        <ul>
+                            <li>학원용 프로그램</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">백업</a>
+                        <ul>
+                            <li>사진 백업</li>
+                            <li>동영상 백업</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slideShow">
+            <div id="slides">
+                <img src="1.jpg" alt="">
+                <img src="2.jpg" alt="">
+                <img src="3.jpg" alt="">
+                <button id="prev">&lang;</button>
+                <button id="next">&rang;</button>
+            </div>
+        </div>
+        <div id="tapMenu">
+            <div id="taps">
+                <input type="radio" id="tapMenu1" name="tapRadio" checked>
+                <label for="tapMenu1">메뉴1</label>
+                <input type="radio" id="tapMenu2" name="tapRadio">
+                <label for="tapMenu2">메뉴2</label>
+                
+                <ul id="notifyTap">
+                    <li>공지사항</li>
+                    <li>버전 정보</li>
+                </ul>
+                <ul id="imgTap">
+                    <img src="1.jpg" alt="이미지1">
+                    <img src="2.jpg" alt="이미지2">
+                    <img src="3.jpg" alt="이미지3">
+                </ul>
+            </div>
+        </div>
+        <div id="quickLink">
+            <ul>
+                <li><a href="#"><span id="quickLinkImg1"></span><p>첫번째 이미지</p></a></li>
+                <li><a href="#"><span id="quickLinkImg2"></span><p>두번째 이미지</p></a></li>
+                <li><a href="#"><span id="quickLinkImg3"></span><p>세번째 이미지</p></a></li>
+            </ul>
+        </div>
+        <footer>
+            <ul>
+                <li>정보</li>
+                <li>개인정보처리방침</li>
+                <li>SNS 계정</li>
+                <li>전화번호: ###-####-####</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="WEBSITE.js"></script>
+</body>
+</html>
