@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/categories/</loc>
-<lastmod>2025-08-09T07:28:37+08:00</lastmod>
+<loc>https://jaewon-ju.github.io/categories/</loc>
+<lastmod>2025-08-09T07:44:40+08:00</lastmod>
 </url>
 <url>
-<loc>/tags/</loc>
-<lastmod>2025-08-09T07:28:37+08:00</lastmod>
+<loc>https://jaewon-ju.github.io/tags/</loc>
+<lastmod>2025-08-09T07:44:40+08:00</lastmod>
 </url>
 <url>
-<loc>/archives/</loc>
-<lastmod>2025-08-09T07:28:37+08:00</lastmod>
+<loc>https://jaewon-ju.github.io/archives/</loc>
+<lastmod>2025-08-09T07:44:40+08:00</lastmod>
 </url>
 <url>
-<loc>/about/</loc>
-<lastmod>2025-08-09T07:28:37+08:00</lastmod>
+<loc>https://jaewon-ju.github.io/about/</loc>
+<lastmod>2025-08-09T07:44:40+08:00</lastmod>
 </url>
 <url>
-<loc>/</loc>
+<loc>https://jaewon-ju.github.io/</loc>
 </url>
 </urlset>
