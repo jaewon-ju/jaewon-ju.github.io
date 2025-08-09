@@ -34,7 +34,10 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           success=0
-          for i in 1 2 3 4 5; do
+          quarantined=0
+          max_attempts=10   # 필요시 6~10으로 여유
+
+          for i in $(seq 1 $max_attempts); do
             echo "==> Jekyll build attempt #$i"
             if bundle exec jekyll build --trace 2>build.err; then
               success=1
@@ -48,12 +51,26 @@ jobs:
               exit 1
             fi
 
+            reason=$(grep -m1 "Error" build.err || true)
+            echo "Error reason: $reason" # 에러 원인 출력
+            
             base=$(basename "$offender")
             echo "⚠️  Quarantining failing post: $base"
             git mv "$offender" "_quarantine/$base" || mv "$offender" "_quarantine/$base"
             git commit -m "ci: quarantine failing post $base" || true
             git push origin HEAD:main || true
+
+            quarantined=1
+            # 바로 다음 루프로 넘어가 재빌드
           done
+
+          # 루프가 끝났는데 마지막이 격리로 종료되었을 수 있으니 한 번 더 시도
+          if [ $success -ne 1 ] && [ $quarantined -eq 1 ]; then
+            echo "==> Final build after last quarantine"
+            if bundle exec jekyll build --trace 2>build.err; then
+              success=1
+            fi
+          fi
 
           if [ $success -ne 1 ]; then
             echo "Build failed after quarantine attempts."
