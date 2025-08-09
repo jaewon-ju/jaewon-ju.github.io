@@ -1,0 +1,79 @@
+---
+title: "[JAVA] 자료형"
+description: "자료형과 형 변환에 관한 스터디 메모"
+date: 2024-01-09T14:23:57.017Z
+tags: ["Java"]
+slug: "JAVA-자료형"
+velogSync:
+  lastSyncedAt: 2025-08-09T00:32:35.957Z
+  hash: "c61f6e51063758c49c0f2da48a7a662fbbd17c05c97456825f8ff5b7ef4d835e"
+---
+
+자바에는 기본형(primitive type)과 참조형(ReferenceType)이 존재한다.
+
+## 기본형
+> 기본형은 <span style = "background-color: #00660E">값</span>을 저장하는 자료형이다. 
+기본형은 null 값을 가질 수 없다.
+
+
+<table>
+  <tr><th>Type</th><th>Bits</th></tr>
+  <tr><td>boolean</td><td>1</td></tr>
+  <tr><td>byte</td><td>8 (1 Byte)</td></tr>
+  <tr><td>char</td><td>16 (2 Bytes)</td></tr>
+  <tr><td>short</td><td>16 (2 Bytes)</td></tr>
+  <tr><td>int</td><td>32 (4 Bytes)</td></tr>
+  <tr><td>long</td><td>64 (8 Bytes)</td></tr>
+  <tr><td>float</td><td>32 (4 Bytes)</td></tr>
+  <tr><td>double</td><td>64 (8 Bytes)</td></tr>
+</table>
+
+※ boolean은 true, false만 존재한다.
+※ char는 음수 값을 가질 수 없다.
+
+### 기본형의 형 변환
+1. 자동 형 변환
+자동 형 변환의 조건: _표현범위가 좁은 자료형 -> 표현범위가 큰 자료형_ 만 가능하다.
+ex) byte는 short가 될 수 있지만, int는 short로 자동 형 변환이 불가능하다.
+```java
+float f = 100.0; //ERROR!!!! 실수 상수는 기본적으로 double이다.
+```
+```java
+//연산은 피연산자의 타입이 같아야만 수행된다. --> 자동 형 변환
+short s = 10;
+int i = 20;
+
+//short sum = s + i; ERROR!!!
+int sum = s + i; //정수 연산일 경우 int 타입으로 자동 형 변환된다.
+
+
+int num1 = 10;
+double num2 = 11.52;
+double result = num1 + num2; // num1이 double형으로 자동 형 변환되어 계산된다.
+```
+
+2. 명시적 형 변환
+자동 형 변환이 적용되지 않는 경우에는 수동으로 형 변환을 한다.
+```java
+float a = (float)100.0;
+int num = (int)100.1234; // 100만 저장됨
+```
+
+※ 명시적 형 변환은 데이터의 손실이 발생할 수 있다.
+## 참조형
+> 참조형은 <span style = "background-color: #00660E">주소</span>를 저장하는 자료형이다.
+실제 값은 힙(heap)영역에 저장되고, 그 데이터의 주소가 스택(stack) 영역에 존재하는 참조형 변수에 저장된다.
+※ <span style = "color: red">실제 메모리 주소는 아님에 주의하자</span>. Java에서 참조 변수는 객체의 실제 메모리 주소를 직접적으로 저장하지 않는다. 대신, 참조 변수는 객체가 힙 메모리에 할당된 위치를 가리키는 값(참조)를 가지고 있다.
+
+<table>
+  <tr><th>Type</th><th>Bits</th></tr>
+  <tr><td>배열 (array)</td><td>32 (4 Byte)</td></tr>
+  <tr><td>열거 (enumeration)</td><td>32 (4 Byte)</td></tr>
+  <tr><td>클래스 (class)</td><td>32 (4 Bytes)</td></tr>
+  <tr><td>인터페이스 (interface)</td><td>32 (4 Bytes)</td></tr>
+</table>
+
+※ 할당되는 메모리 크기는 4 Byte로 동일하다.
+_why?_ 객체의 주소값을 저장하기 때문이다. 
+
+참조형 각각의 자세한 설명은 이후에 포스팅 할 예정이다.

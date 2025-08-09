@@ -1,0 +1,186 @@
+---
+title: "[JPA] 값 타입"
+description: "값 타입이란 무엇인가"
+date: 2024-07-03T11:00:56.019Z
+tags: ["JPA"]
+slug: "JPA-값-타입"
+series:
+  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
+  name: "Spring Boot"
+velogSync:
+  lastSyncedAt: 2025-08-09T00:32:33.347Z
+  hash: "3b1d73595d71e69399a92bc3715a79bb6bf2d8be09759b78e0b31df21be821d2"
+---
+
+<center>본 포스트는 김영한 개발자님의 <a href = "https://www.inflearn.com/course/ORM-JPA-Basic">JPA 프로그래밍</a> 강의를 듣고 정리한 것입니다.<br> ※ 코드는 강의에서 사용된 것과 다릅니다.<br> <a href = https://github.com/jaewon-ju/Learning_Spring>jaewon-ju Github Address</a></center>
+
+
+---
+
+
+## ✏️ 데이터 타입
+JPA에는 2가지 데이터 타입이 존재한다.
+
+<br>
+
+### 1. 엔티티 타입
+엔티티 타입은 ```@Entity``` 로 정의하는 객체이다.
+
+- PK로 관리하기 때문에, 데이터가 변해도 지속적인 추적이 가능하다.
+ex) Menu의 Title이 바뀌어도 PK를 통해 인식 가능하다.
+
+<br>
+
+### 2. 값 타입
+값 타입은 자바 기본 타입이나 객체이다.
+ex) int, Integer, String
+
+- 식별자가 없고 값만 존재한다.
+- 변경 시 추적이 불가능하다.
+
+<span style = "color:red">⚠️</span> 값 타입은 공유하면 안된다!!!
+
+<br>
+
+>값 타입은 다시 3가지 유형으로 분류할 수 있다.
+
+1. 기본값 타입
+2. 임베디드 타입
+3. 컬렉션 값 타입
+
+값 타입들은 <span style = "color:red">생명주기를 엔티티에 의존</span>한다.
+
+3가지 값 타입에 대해서 알아보자.
+
+<br>
+
+---
+
+<br>
+
+## ✏️ 값 타입
+### 1. 기본값 타입
+
+- 자바 기본 타입 (int, double)
+- 래퍼 클래스 (Integer, Long)
+- String
+
+<br>
+
+### 2. 임베디드 타입
+>#### 임베디드 타입
+: 기본값 타입을 모아서 정의한 새로운 타입
+
+예를 들어, ```EducationContent``` 엔티티에 존재하는 ```createTime``` 과 ```updateTime``` 필드를 하나로 묶어서 ```TimeInfo``` 라는 새로운 임베디드 타입으로 정의할 수 있다.
+
+<span style = "color:red">⚠️</span> 새로운 엔티티를 만드는게 아니다!
+
+<br>
+
+- 임베디드 타입을 정의하는 곳에 ```@Embeddable``` 어노테이션을 붙인다.
+- 임베디드 타입을 사용하는 곳에 ```@Embedded``` 어노테이션을 붙인다.
+- 임베디드 타입은 기본생성자가 필수적으로 존재해야 한다!
+
+<br>
+
+```java
+@Embeddable
+public class TimeInfo {
+	private LocalDateTime createTime;
+	private LocalDateTime updateTime;
+    
+    public TimeInfo() {}
+}
+```
+```java
+@Entity
+public class EducationContent {
+	@Id @GeneratedValue
+    private Long id;
+    
+    @Embedded
+    private TimeInfo timeInfo;
+}
+```
+
+<br>
+
+<span style = "color:red">⚠️</span> 임베디드 타입으로 컬럼들을 묶는다 해도, 실제 DB의 테이블에 변화는 없다!
+즉, education_content 테이블에는 여전히 createTime, updateTime 컬럼이 존재한다.
+
+<br>
+
+### 3. 컬렉션 값 타임
+> 엔티티가 아닌 값들의 그룹을 저장하는 타입
+
+```EdcuationContent``` 마다 여러개의 댓글(```Comment```)을 가진다면, 다음과 같이 만들어 줄 수 있다.
+
+```java
+@ElementCollection
+@CollectionTable(name = "comment",
+				 joinColumns = @JoinColumn(name = "education_content_id"))
+private Set<String> comments = new HashSet<>();
+```
+
+- ```@ElementCollection```, ```@CollectionTable``` 어노테이션을 사용한다.
+- 실무에서는 컬렉션 값 타입 대신에, 1:N 관계를 사용하는 것이 좋다.
+- 예를 들어, 하나의 ```EducationContent```에 다수의 ```Comment``` 가 존재한다면 ```Comment```를 하나의 엔티티로 만드는 것이 좋다.
+
+<br>
+
+---
+
+<br>
+
+## ✏️ 불변 객체
+값 타입들은 서로 공유하면 안된다!!
+
+컨텐츠 A의 업데이트 시간이 변경되었다고 해서 컨텐츠 B까지 변경하면 안된다.
+다음의 코드는 임베디드 값 타입을 공유한 예시이다.
+
+```java
+TimeInfo timeInfo = new TimeInfo("2024-07-01T15:36:11","2024-07-01T15:36:11")
+
+EducationContent content1 = new EducationContent();
+content1.setTitle("A");
+content1.setTimeInfo(timeInfo);
+
+EducationContent content2 = new EducationContent();
+content2.setTitle("B");
+content2.setTimeInfo(content1.getTimeInfo()); // content1의 값을 공유
+```
+
+<br>
+
+위와 같은 코드를 사용하면, content1이 TimeInfo 를 변경하면 content2에도 영향을 준다.
+따라서, 다음과 같이 값을 복사해서 사용해야 한다.
+
+<br>
+
+```java
+TimeInfo copyTime = content1.getTimeInfo();
+content2.setTimeInfo(new TimeInfo(copyTime.getCreateTime(), copyTime.getUpdateTime())); // 값을 복사해서 사용
+```
+
+<br>
+
+또 다른 방법으로, 불변 객체를 사용하면 객체의 공유를 막을 수 있다.
+
+<br>
+
+### ■ 불변 객체
+> #### 불변 객체
+: 생성 시점 이후 절대 값을 변경할 수 없는 객체
+
+
+setter를 정의하지 않거나, private로 정의하면 불변객체를 만들 수 있다.
+
+
+<br>
+
+---
+
+<br>
+
+## REFERENCE
+<a href = "https://www.inflearn.com/course/ORM-JPA-Basic">자바 ORM 표준 JPA 프로그래밍 - 김영한 개발자님</a>

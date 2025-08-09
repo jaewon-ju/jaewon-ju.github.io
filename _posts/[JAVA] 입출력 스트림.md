@@ -1,0 +1,343 @@
+---
+title: "[JAVA] 입출력 스트림"
+description: "자바의 입출력 스트림에 관한 스터디 메모"
+date: 2024-02-01T13:36:48.047Z
+tags: ["Java"]
+slug: "JAVA-입출력-스트림"
+velogSync:
+  lastSyncedAt: 2025-08-09T00:32:35.644Z
+  hash: "f95ba18af2762be860069cb634b1cc97ebf0e32b76a023c55af84ac28daa2fa3"
+---
+
+자바에서 파일이나 콘솔의 입출력이 발생하면 스트림을 통해 처리된다.
+(JAVA SE 8 버전부터 추가된 Stream API와는 다른 개념)
+>스트림이란 데이터의 <span style = "color:red">단일 방향</span> 흐름이다.
+
+<br>
+
+## ✏️ 입출력 스트림의 종류
+java.io 패키지는 여러 종류의 스트림 클래스를 제공한다.
+
+**스트림 클래스는 2가지 종류로 구분된다.**
+
+1. 바이트 기반 스트림 - 바이너리 데이터 처리
+2. 문자 기반 스트림 - 문자 데이터 처리
+
+<br>
+
+---
+<br>
+
+## ✏️ 바이트 기반 스트림
+바이트 기반 스트림의 최상위 클래스는 다음과 같다.
+입력: InputStream
+출력: OutputStream
+
+>모든 바이트 입력 스트림은 InputStream을 상속한다.
+모든 바이트 출력 스트림은 OutputStream을 상속한다.
+
+<br>
+
+### ■ <span id = "InputStream">바이트 입력 스트림 - InputStream</span>
+>InputStream은 바이트 입력 스트림의 최상위 클래스로, <span style = "background-color: lightgreen; color:black">추상클래스</span>이다.
+
+InputStream을 상속하는 클래스는, 
+- FileInputStream
+- BufferedInputStream
+- DataInputStream 
+
+등이 있다.
+
+<br>
+
+
+InputStream 클래스에는 바이트 입력 스트림이 가져야 할 메소드가 정의되어 있다.
+
+### 1. read()
+>기본형: int read()
+기능: 1byte를 읽고 읽은 바이트를 int형으로 리턴한다.
+
+- ⚠️ 1byte를 읽고 4byte 형식인 int형으로 리턴하기 때문에 4byte 중 끝 1byte에만 데이터가 들어있다.
+- 더이상 읽을 데이터가 없다면 -1을 리턴한다.
+```java
+InputStream is = new FileInputStream("C:/Temp/Test.db"); // 자동 형 변환
+
+while(true){
+	int data = is.read(); // read() 호출. 파일에서 1byte 읽어옴
+    if(data == -1) break;
+    System.out.println(data);
+}
+
+is.close();
+```
+<br>
+
+
+
+### 2. read(byte[] b)
+
+>기본형: int read(byte[] b)
+기능: 매개변수로 주어진 <span style = "background-color: lightgreen; color:black">배열의 길이</span>만큼 바이트를 읽고 해당 배열에 저장. 읽은 바이트수를 리턴.
+
+- ⚠️ 실제로 읽은 바이트 수가 배열의 길이보다 적은 경우, 읽은 바이트만큼만 리턴한다.
+ex) 5byte 데이터를 byte[3] 배열로 읽어옴
+➜3byte 읽어와서 저장, 3리턴
+➜2byte 읽어와서 저장, 2리턴
+
+- 더이상 읽을 데이터가 없다면 -1을 리턴한다.
+```java
+InputStream is = new FileInputStream("C:/Temp/Test.db"); // 자동 형 변환
+
+byte[] buffer = new byte[100]; // 배열의 크기는 100
+
+while(true){
+	int readByte = is.read(buffer);
+    if(readByte == -1)	 break;
+    
+    for(int i=0;i<readByte;i++)
+    	System.out.println(buffer[i]);
+}
+
+is.close();
+```
+
+<br>
+
+### 3. read(byte[] b, int off, int len)
+
+>기본형: int read(byte[] b, int off, int len)
+기능: 매개변수로 주어진 <span style = "background-color: lightgreen; color:black">len</span>만큼 바이트를 읽고 b[off]부터 저장. 읽은 바이트수를 리턴.
+
+- ⚠️ 실제로 읽은 바이트 수가 len보다 적은 경우, 읽은 바이트만큼만 리턴한다.
+- 더이상 읽을 데이터가 없다면 -1을 리턴한다.
+```java
+InputStream is = new FileInputStream("C:/Temp/Test.db"); // 자동 형 변환
+
+byte[] buffer = new byte[5]; // 배열의 크기는 5
+
+int readByte = is.read(buffer,2,3); //index 2,3,4로 읽어옴
+is.close();
+```
+
+<br>
+
+### 4. close()
+
+>기본형: void close()
+기능: 입력 스트림을 닫는다.
+
+<br>
+
+---
+
+### ■ <span id = "OutputStream">바이트 출력 스트림 - OutputStream</span>
+>OutputStream은 바이트 출력 스트림의 최상위 클래스로, <span style = "background-color: lightgreen; color:black">추상클래스</span>이다.
+
+OutputStream을 상속하는 클래스는, 
+- FileOutputStream
+- BufferedOutputStream
+- DataOutputStream 
+
+등이 있다.
+
+<br>
+
+
+OutputStream 클래스에는 바이트 출력 스트림이 가져야 할 메소드가 정의되어 있다.
+
+### 1. write(int b)
+>기본형: void write(int b)
+기능: 1byte를 출력한다.
+
+- ⚠️ 4byte를 매개변수로 받고 1byte만 출력하기 때문에, 4byte 중 끝 1byte만 출력된다.
+```java
+OutputStream os = new FileOutputStream("C:/Temp/Test.db"); // 자동 형 변환
+
+byte a = 10;
+byte b = 20;
+byte c = 30;
+
+os.write(a);
+os.write(b);
+os.write(c);
+
+os.flush();
+os.close();
+```
+<br>
+
+
+
+### 2. write(byte[] b)
+>기본형: void write(byte[] b)
+기능: 매개변수 byte 배열의 모든 바이트를 출력한다.
+
+### 3. write(byte[] b, int off, int len)
+>기본형: void write(byte[] b, int off, int len)
+기능: 매개변수 byte 배열의 _b[off]_부터 _b[off+len-1]_까지 모든 바이트를 출력한다.
+
+### 4. flush()
+>기본형: void flush()
+기능: 출력 버퍼에 존재하는 모든 바이트를 출력한다.
+
+<br>
+
+---
+
+<br>
+
+## ✏️ 문자 기반 스트림
+문자 기반 스트림의 최상위 클래스는 다음과 같다.
+입력: Reader
+출력: Writer
+
+>모든 문자 입력 스트림은 Reader를 상속한다.
+모든 문자 출력 스트림은 Writer 상속한다.
+
+### ■ 문자 입력 스트림 - Reader
+>Reader는 문자 출력 스트림의 최상위 클래스로, <span style = "background-color: lightgreen; color:black">추상클래스</span>이다.
+
+Reader를 상속하는 클래스는,
+
+- FileReader
+- BufferedReader
+- PrintReader
+- OutputStreamReader
+
+등이 있다.
+
+앞서 설명한 바이트 입력 스트림과 메소드가 크게 다르지 않다.
+차이점은, byte형이 아닌 char형 매개변수를 사용한다는 것이다.
+<u><a href="#InputStream">바이트 입력 스트림</a></u>에서 사용법을 설명했으니, 문자 입력 스트림의 메소드는 간단하게 표로 나타냈다.
+
+| 리턴 타입 | 메소드 | 기능 |
+| - | - | - |
+| int | read() | 1개의 문자를 읽고 int형으로 리턴함.<br>⚠️ 문자(2byte)를 읽고 int(4byte)로 리턴하므로, 4byte 중 끝 2byte에만 데이터가 들어간다.|
+| int | read(char[] c) | char형 배열의 크기만큼 문자를 읽어오고 해당 배열에 저장함.<br>읽은 문자 수를 리턴, 읽을 문자가 없으면 -1을 리턴함|
+| int | read(char[] c, int off, int len) | len만큼 문자를 읽어오고 c[off]부터 c[off+len-1]에 저장함.<br>읽은 문자 수를 리턴, 읽을 문자가 없으면 -1을 리턴함|
+| void | close() | 스트림을 닫음 |
+
+<br>
+
+### ■ 문자 출력 스트림 - Writer
+>Writer는 문자 출력 스트림의 최상위 클래스로, <span style = "background-color: lightgreen; color:black">추상클래스</span>이다.
+
+Writer를 상속하는 클래스는,
+
+- FileWriter
+- BufferedWriter
+- PrintWriter
+- OutputStreamWriter
+
+등이 있다.
+
+앞서 설명한 바이트 출력 스트림과 메소드가 크게 다르지 않다.
+차이점은, byte형이 아닌 char형 매개변수를 사용한다는 것이다.
+<u><a href="#OutputStream">바이트 출력 스트림</a></u>에서 사용법을 설명했으니, 문자 출력 스트림의 메소드는 간단하게 표로 나타냈다.
+
+| 리턴 타입 | 메소드 | 기능 |
+| - | - | - |
+| void | <big>write(int c)</big> | 매개변수로 주어진 int형 변수 중 끝 2byte만 출력|
+| void | <big>write(char[] c)</big> | char 배열 매개변수의 모든 문자 출력 |
+| void | <big>write(char[] c, int off, int len)</big> | c[off]부터 c[off+len-1]까지 모든 문자 출력|
+| void | <big>write(String str)</big> | 문자열 출력 |
+| void | <big>flush()</big> | 버퍼에 남아있는 모든 문자 출력 |
+
+<br>
+
+---
+
+<br>
+
+
+## ✏️ 보조 스트림
+> 보조 스트림이란, 다른 스트림과 연결되어 편리한 기능을 제공해주는 스트림을 말한다.
+
+- <span style = "color:red">보조 스트림은 자체적으로 입출력이 불가능하다.</span>
+- 보조 스트림은 문자 변환, 버퍼, 기본형 입출력 등의 기능을 제공한다.
+
+<br>
+
+### ■ 보조 스트림 연결
+보조 스트림이 연결될 스트림을, 보조 스트림의 생성자 인수로 주면 된다.
+
+```java
+보조스트림 변수 = new 보조스트림(연결될스트림)
+
+InputStream is = new FileInputStream();
+InputStreamReader reader = new InputStreamReader(is);
+```
+![](https://velog.velcdn.com/images/jaewon-ju/post/63a5b009-b999-4f36-97aa-99713b0ac0b3/image.png)
+
+
+보조 스트림을 연속적으로 연결할 수도 있다.
+<br>
+
+### ■ 문자 변환 보조 스트림
+기존 스트림이 바이트 기반 스트림이면서 입출력 데이터가 문자라면, Reader/Writer 등의 문자 기반 스트림으로 변환해서 사용하는 것이 편하다.
+
+>문자 변환 보조 스트림 - OutputStreamWriter, InputStreamReader
+바이트 기반 스트림에 연결되어, 기존 스트림을 문자 기반 스트림으로 변환하는 보조스트림이다.
+
+```java
+FileOutputStream fos = new FileOutputStream("C:/temp/test.txt");
+Writer writer = new OutputStreamWriter(fos);
+```
+
+```java
+FileInputStream Ios = new FileInputStream("C:/temp/test.txt");
+Reader reader = new InputStreamWriter(Ios);
+```
+
+<br>
+
+### ■ 버퍼 보조 스트림
+> 버퍼 입력 보조 스트림 - BufferedInputStream, BufferedReader
+버퍼 출력 보조 스트림 - BufferedOutputStream, BufferedWriter
+연결된 스트림에 버퍼 기능을 제공한다.
+
+- 기본적으로 출력 스트림은 버퍼를 가지고 있지만, 버퍼 보조 스트림은 메모리 버퍼를 추가로 제공한다.
+
+<br>
+
+### ■ 프린터 보조 스트림
+> 프린터 보조 스트림 - PrintStream, PrintWriter
+print(), println() 메소드를 가지고 있는 보조 스트림
+
+- System.out이 PrintStream 타입이기 때문에 System.out.println()을 사용할 수 있었다.
+- print()는 개행문자를 추가하지 않고, println()은 개행문자를 추가해서 출력한다.
+
+```java
+FileOutputStream fos = new FileOutputStream("C:/temp/test");
+PrintStream ps = new PrintStream(fos);
+
+ps.println("hello");
+```
+
+<br>
+
+### ■ 객체 입출력 보조 스트림
+> 객체 입출력 보조 스트림 - ObjectOutputStream, ObjectInputStream
+객체를 입출력 할 수 있도록 직렬화/역직렬화 기능을 제공하는 보조 스트림
+
+_직렬화_ : 객체를 바이트 배열로 만듦
+_역직렬화_ : 바이트 배열을 객체로 복원함
+
+<span style = "background-color: lightgreen; color:black">Serializable 인터페이스</span>를 구현한 구현 객체만 직렬화 할 수 있다.
+➜ Serializable 인터페이스는 메소드 선언이 없는 인터페이스로, 객체를 직렬화하려면 반드시 <br>implements Serializable 키워드를 작성해야 한다.
+
+```java
+FileOutputStream fos = new FileOutputStream("C:/temp/test");
+ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+oos.writeObject(object);
+```
+
+<br>
+
+---
+
+<br>
+
+## REFERENCE
+혼자 공부하는 자바

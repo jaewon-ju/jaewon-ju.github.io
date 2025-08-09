@@ -1,0 +1,230 @@
+---
+title: "[MAFM] Embedding & Vector DB"
+description: "Multi Agent File Management의 구현 과정"
+date: 2024-09-22T13:20:05.764Z
+tags: ["프로젝트"]
+slug: "MAFM-구현"
+series:
+  id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
+  name: "프로젝트"
+velogSync:
+  lastSyncedAt: 2025-08-09T00:32:32.729Z
+  hash: "56118fb8f753ca1c4814c3d3aa8a3a0dfc81fff414f328f741eee3272c74adfa"
+---
+
+## ✏️ 구현 과정
+1. 임의의 자연어를 Embedding해서 Vector DB에 저장하는 플로우 구현
+2. Multi Agent를 도입해서 Agent -> Embedding -> Vector DB 까지의 플로우 테스트
+3. C를 활용해서 File Read, Soft Link 생성, 디렉토리 생성 연동
+
+
+<br>
+
+시작하기 전에, 구현에 필요한 주요 개념들은 무엇이 있는지 알아보자.
+
+<br>
+
+---
+
+<br>
+
+## ✏️ 주요 개념
+
+### ■ Embedding
+>#### Embedding
+: 텍스트, 이미지, 음성 등의 데이터를 고차원 공간에서 저차원 공간으로 변환하여 <span style = "color:red">벡터 형태</span>로 표현하는 기법
+
+<br>
+
+Embedding의 특징은 다음과 같다.
+
+1. 의미 기반 표현
+: 단어나 문장이 벡터로 변환되면, 유사한 의미를 가진 단어나 문장은 가까운 위치에 배치된다.
+
+2. 차원 축소
+: 원래 데이터의 복잡성을 줄이면서도 중요한 정보를 유지한다. 예를 들어, 수천 개의 단어를 300차원 벡터로 표현할 수 있다.
+
+3. 계산 효율성
+: 벡터 형태로 변환된 데이터를 사용하면, 기계 학습 알고리즘이 더 빠르고 효율적으로 처리할 수 있다.
+
+
+<br>
+
+### ■ Transformer
+>#### Transformer
+: 자연어 처리(NLP)와 같은 다양한 분야에서 사용되는 <span style = "color:red">딥러닝 모델 구조</span>
+
+- 단어, 문장과 같은 입력 데이터에서 정보를 추출하고 출력 데이터를 생성한다.
+- Self-Attention 메커니즘을 사용하여, 입력 데이터의 모든 요소를 __동시에__ 고려하면서 각 요소 간의 관계를 파악한다.
+
+<br>
+
+Transformer의 특징은 다음과 같다.
+
+1. Self-Attention
+: 문장 내 단어들 간의 상관관계를 동적으로 학습하여, 각 단어가 문장 내 다른 단어와 어떻게 관련되어 있는지 파악
+
+2. Encoder-Decoder 구조
+   - Encoder: 입력 문장을 벡터로 변환하는 역할을 하며, 문장 내 단어들 간의 관계 파악
+   - Decoder: 인코더에서 나온 벡터를 기반으로 원하는 결과를 생성
+   
+
+<br>
+
+>#### Embedding & Transformer 
+그렇다면 Embedding과 Transformer은 어떤 연관성이 있는것일까?<br>
+Embedding은 텍스트 데이터를 고차원 벡터로 변환하는 작업을 의미하며, Transformer는 이러한 Embedding을 사용해 입력 데이터를 처리한다.
+즉, <span style = "background-color: lightgreen; color:black">Transformer의 학습 과정은 임베딩에서 시작된다.</span>
+
+<br>
+
+### ■ Vector DB
+>#### Vector DB
+: 고차원 벡터 데이터를 효율적으로 저장하고, 빠르게 검색할 수 있는 데이터베이스.
+RDB와는 달리, 벡터 검색에 최적화되어 있다.
+
+
+- **Nearest Neighbor Search**를 통해 주어진 쿼리 벡터와 가장 유사한 벡터들을 찾아준다. 
+- Embedding으로 변환된 벡터는 벡터 DB에 저장된다.
+
+
+
+<br>
+
+---
+
+<br>
+
+## ✏️ 1번 과정
+임의의 자연어를 Embedding해서 Vector DB에 저장하는 플로우를 구현해보자.
+
+- Embedding 
+-```stella_en_400M_v5``` 을 사용
+https://huggingface.co/dunzhang/stella_en_400M_v5
+
+- Vector DB 
+-Milvus를 사용
+
+<br>
+
+### 1. Word To Vector
+Vector DB에 데이터를 저장하기 위해서는 해당 데이터를 Embedding하여 벡터로 변환하여야 한다.
+
+Hugging face의 ```stella_en_400M_v5``` 언어모델은 자연어를 벡터로 변환하는 AI이다.
+Hugging face의 라이브러리를 통해 쉽게 다운로드할 수 있다.
+
+>#### s2p와 s2s
+s2p와 s2s는 모델의 작업 유형이다.
+- __s2p(Sequence to Property)__
+: 입력 시퀀스에서 특정 속성, 값을 예측하는 작업
+ex) 텍스트를 입력받아 텍스트의 감정을 '긍정' 또는 '부정'으로 분류
+<br>
+- __s2s(Sequence to Sequence)__
+: 입력 시퀀스를 받아서 다른 시퀀스를 생성하는 작업
+ex) 영어 문장을 프랑스어로 변형
+
+
+이제, 파이썬과 Hugging face Library를 사용해서 플로우를 구현해보자.
+
+<br>
+
+```python
+def embedding(queries):
+	# embedding 모델 정의
+    model = SentenceTransformer(
+        "dunzhang/stella_en_400M_v5",
+        trust_remote_code=True,
+        device="cpu",
+        config_kwargs={"use_memory_efficient_attention": False, "unpad_inputs": False}
+    )
+	
+    # 모델을 사용하여 쿼리를 벡터로 변환
+    query_embeddings = model.encode(queries, prompt_name="s2p_query")
+    print(query_embeddings.shape)
+	
+    # 변환된 벡터는 Numpy 배열 형태이므로 list 형태로 바꿔서 리턴
+    return query_embeddings.tolist()
+
+``` 
+
+- stella 모델의 경우, 기본 1024 차원을 지원한다.
+- 실험 결과가 만족스럽지 않다면 모델을 clone 한 후 8000 차원 이상으로 늘릴 예정
+- 모델은 기본적으로 CPU를 사용한다. GPU로 실행시키고 싶다면 SentenceTransformer() 메소드 뒤에 ```.cuda()``` 메소드를 붙여주면 된다.
+
+<br>
+
+Word To Vector를 구현했다.
+이제 Vector 값을 DB에 저장하는 플로우를 구현해보자.
+
+<br>
+
+### 2. Save To DB
+Vector DB를 사용하기 위해서는 우선 DB와 연결 설정을 해야한다.
+<span style = "color:red">⚠️</span> docker로 milvus 이미지를 실행시킨 뒤에 python 코드를 실행시켜야 한다!
+
+```python
+# DB 연결 설정 코드
+collection = None
+client = None
+
+def connect_to_db():
+    global client
+
+    # Milvus에 연결
+    client = MilvusClient("milvus_demo.db")
+
+    # 컬렉션 스키마 정의 => RDB의 테이블과 비슷한 개념
+    if client.has_collection(collection_name="demo_collection"):
+        client.drop_collection(collection_name="demo_collection")
+
+    client.create_collection(
+        collection_name="demo_collection",
+        dimension=1024,
+    )
+
+```
+
+<br>
+
+DB 연결 설정을 끝낸 뒤에는 데이터(벡터) 저장 로직을 구현한다.
+
+```python
+# 벡터 저장 로직
+def save(queries):
+    # queries는 리스트 형태이다.
+    
+    # Milvus client 객체를 사용
+	global client 
+	
+    # queries를 모두 벡터화
+    query_embeddings = embedding(queries)
+
+    # 벡터화된 데이터를 저장
+    data = [
+        {"id": i, "vector": query_embeddings[i], "word": queries[i]}
+        for i in range(len(query_embeddings))
+    ]
+
+    # 데이터 삽입
+    res = client.insert(collection_name="demo_collection", data=data)
+
+    print(res)
+```
+
+- Vector DB에 데이터를 저장할 때, RDB의 컬럼처럼 메타데이터를 함께 저장할 수 있다.
+   - Milvus에서는 이를 스칼라 필드라고 한다.
+   - 스칼라 필드는 벡터가 아닌 데이터를 의미한다.
+   - 스칼라 필드를 사용한 필터도 가능하다!
+   
+
+<br>
+
+임의의 자연어를 Embedding해서 Vector DB에 저장하는 플로우를 구현했다!
+
+
+
+
+
+
+
+

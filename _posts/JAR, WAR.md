@@ -1,0 +1,31 @@
+---
+title: "JAR, WAR"
+description: "JAR VS WAR"
+date: 2024-04-01T07:19:48.458Z
+tags: ["CS지식"]
+slug: "JAR-WAR"
+velogSync:
+  lastSyncedAt: 2025-08-09T00:32:34.665Z
+  hash: "5036bc8f491d14b49c912a677b4b8e091ce436148345d098dc7cadc9821da569"
+---
+
+스프링 부트를 공부하다가, JAR와 WAR라는 단어가 나왔다.
+JAR와 WAR는 무엇인가?
+<br>
+
+## ✏️ JAR
+>JAR는 Java Archieve의 약자로, 자바의 여러 클래스와 리소스를 묶어놓은 압축 파일이다.
+
+- 이 파일은 JVM 위에서 직접 실행되거나, 파일 자체가 라이브러리로 제공될 수 있다.
+- JAR 압축 파일은 JAR 파일을 포함할 수 없다!
+
+<br>
+
+## ✏️ WAR
+>WAR는 Web Application Archieve의 약자로, WAS에 배포할 때 사용하는 파일이다.
+
+- JAR가 JVM 위에서 실행된다면, WAR는 WAS 위에서 실행된다.
+- HTML과 같은 정적 리소스와 자바 클래스 파일을 모두 포함하고 있기 때문에 JAR에 비교해서 구조가 더 복잡하다.
+
+Spring Boot 이전에 자바로 웹 애플리케이션을 개발할 때는 WAR를 사용했다.
+하지만, Spring Boot가 톰캣을 내장하고 있으므로, 이제는 JAR를 사용한다.

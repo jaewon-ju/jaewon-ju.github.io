@@ -1,0 +1,172 @@
+---
+title: "[Nodejs] 배경 지식 "
+description: "무작정 개발 시작"
+date: 2024-07-30T14:53:16.260Z
+tags: ["nodejs"]
+slug: "Nodejs-배경-지식"
+series:
+  id: fa4e953d-7f0e-45be-85cb-09bb3f09c5b5
+  name: "Nodejs"
+velogSync:
+  lastSyncedAt: 2025-08-09T00:32:33.084Z
+  hash: "4d9e7014a0972dfabff1b6347fc13f25d3d43a09a6774d148a74f88d1f4adfc1"
+---
+
+Java Spring 으로만 개발하다가 Nodejs로 처음 개발을 하게 되었다.
+근데 강의를 들으며 공부할 만한 여유는 없어서, 일단 오픈 소스 코드들을 참고해보면서 무작정 개발을 시작하려 한다.
+
+그 과정에서 배운 지식들을 작성해보려 한다.
+
+<br>
+
+---
+
+<br>
+
+## ✏️ 프로젝트 구조
+>src
+├── config/
+├── controllers/
+├── middlewares/
+├── models/
+├── routes/
+├── services/
+└── app.js
+
+- config: 애플리케이션의 설정 파일을 포함
+- controller: 요청을 처리하고 응답을 반환하는 함수 포함
+- middlewares: 요청과 응답 사이에서 동작하는 미들웨어 함수들을 포함
+- models: 데이터베이스 스키마를 정의하고, 데이터베이스와 상호작용하는 로직을 포함
+- routes: 각 URL 경로와 해당 경로에서 실행할 컨트롤러를 연결
+- Services: 비즈니스 로직을 포함하는 서비스 레이어
+
+개발 순서: Model → Service → Controller → Route
+
+예시로 info_board 라는 테이블을 생성하고 관련된 기능을 추가하는 방법을 살펴보자.
+<br>
+
+### 1. Model 생성
+```javascript
+const { DataTypes } = require("sequelize");
+const Sequelize = require('sequelize');
+
+class Info_board extends Sequelize.Model {
+    static initiate(sequelize) {
+        Info_board.init(
+            {
+                post_id: {
+                    type: DataTypes.INTEGER,
+                    primaryKey: true,
+                    autoIncrement: true,
+                    allowNull: false,
+                },
+                user_id: {  // user_id 필드를 추가
+                    type: DataTypes.INTEGER,
+                    allowNull: false,
+                },
+                user_name: {
+                    type: DataTypes.STRING,
+                    allowNull: false,
+                },
+                title: {
+                    type: DataTypes.STRING,
+                    allowNull: false,
+                },
+                content: {
+                    type: DataTypes.JSON,
+                    allowNull: false,
+                },
+            },
+            {
+                sequelize,
+                modelName: "Info_board",
+                tableName: "info_boards",
+                underscored: true,
+                timestamps: true,
+                paranoid: true,
+                charset: "utf8mb4",
+                collate: "utf8mb4_general_ci",
+            }
+        );
+    }
+
+    static associate(db) {
+        db.Info_board.belongsTo(db.User, { foreignKey: 'user_id' });
+        db.Info_board.hasMany(db.Info_board_comment, { foreignKey: 'post_id' });
+    }
+}
+
+module.exports = Info_board;
+
+```
+JavaScript ORM인 Sequelize를 사용하여 Info_board 모델을 생성했다.
+
+Info_board는 여러개의 Info_board_comment를 가질 수 있고, 하나의 User 에 속한다.
+즉, 게시글은 여러개의 댓글을 가질 수 있고 한명의 유저가 여러개의 게시글을 작성할 수 있다.
+➜ [게시글 : 댓글] = [1 : N], [게시글 : 유저] = [N : 1]
+
+<br>
+
+### 2. Service 구현
+ 비즈니스 로직을 작성
+```javascript
+const { Post } = require('../models');
+
+const createPost = async (postData) => {
+    try {
+        const post = await Post.create(postData);
+        return post;
+    } catch (error) {
+        throw new Error(error);
+    }
+};
+```
+Sequelize ORM을 사용하면 기본으로 ```create```, ```findByPk``` 등을 제공한다.
+
+
+<br>
+
+### 3. Controller 구현
+요청을 처리하고 응답을 반환하는 함수를 작성
+```javascript
+const createPost = async (req, res) => {
+    try {
+        const post = await postService.createPost(req.body);
+        res.status(201).json(post);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+};
+```
+
+<br>
+
+### 4. Route 구현
+>Router, 라우터란?
+: 클라이언트의 요청 경로를 보고 이 요청을 처리할 수 있는 곳으로 기능을 전달해주는 역할
+
+사실 ```app.js``` 에서 아래와 같은 방식으로 간단히 처리할 수 있다.
+```javascript
+app.get('/board', (req, res) => {
+  res.send({ success: true })
+})
+```
+
+<br>
+
+하지만, 코드를 기능별로 분류하는 것이 좋기도 하고, ```app.js``` 파일의 크기도 줄이는 것이 좋다.
+따라서, Java Spring 환경에서 개발할 때 Controller 클래스를 여러개 만드는 것 처럼, NodeJs에서는 router를 사용한다.
+
+<br>
+
+아래의 코드는 ```/info/posts```로 post 요청이 오면 ```boardController.createPost```에 해당 요청을 전달한다.
+```javascript
+router.post('/info/posts', boardController.createPost);
+```
+
+<br>
+
+---
+
+기본적인 프로젝트 구조를 알아보았다.
+다음 포스팅에서는 JS 진영의 ORM인 Sequelize의 사용방법에 대해서 알아보자.

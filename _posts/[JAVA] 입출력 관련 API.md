@@ -1,0 +1,115 @@
+---
+title: "[JAVA] 입출력 관련 API"
+description: "자바의 입출력 API에 관한 스터디 노트"
+date: 2024-02-02T15:14:24.756Z
+tags: ["Java"]
+slug: "JAVA-입출력-관련-API"
+velogSync:
+  lastSyncedAt: 2025-08-09T00:32:35.621Z
+  hash: "b7c50798033574397ff80538c184cbe4d458d0c71620245c88311a0f1e38e979"
+---
+
+## ✏️ System.in 필드
+>System 클래스의 in 정적 필드를 사용하여 콘솔에서 키보드의 데이터를 입력받을 수 있다.
+
+
+in 정적 필드는 InputStream 타입이다. 
+따라서, 다음과 같이 참조할 수 있다.
+```java
+InputStream is = System.in;
+```
+<br>
+
+이제, read() 메소드를 사용하면 콘솔로부터 데이터를 읽어올 수 있다.
+InputStream 타입이기 때문에 현재는 바이트 단위로 읽어온다.
+
+<span style = "color:red">라인 단위</span>로 <span style = "color:red">문자열</span>을 읽고 싶다면, 
+
+1. 문자 입력 보조 스트림 InputStreamReader 연결
+2. 버퍼 입력 보조 스트림 BufferedReader 연결
+
+위의 과정을 통해 라인 단위로 문자열을 읽어올 수 있다.
+```java
+InputStream is = System.in;
+Reader reader = new InputStreamReader(is);
+BufferedReader br = new BufferedReader(reader);
+
+br.readLine();
+```
+
+<br>
+
+### ■ Scanner 클래스
+
+Scanner 클래스를 사용하면 보조 스트림을 연결하지 않고도 문자열을 라인 단위로 입출력 할 수 있다.
+```java
+Scanner scanner = new Scanner(System.in);\
+scanner.nextLine();
+```
+<br>
+
+---
+
+<br>
+
+## ✏️ System.out 필드
+>System 클래스의 out 정적 필드를 사용하여 콘솔에서 모니터로 데이터를 출력할 수 있다.
+
+- print()
+- println()
+- printf()
+
+등의 메소드를 제공한다.
+
+<br>
+
+---
+
+<br>
+
+## ✏️ File 클래스
+> File 클래스는 파일 및 폴더의 <span style = "background-color: lightgreen; color:black">정보</span>를 제공한다.
+
+```java
+File file = new File("C:/temp/test.txt");
+```
+- File 객체를 생성했다고 해서 파일이나 폴더가 생성되는 것은 아니다.
+- 해당 경로에 파일이 없더라도 오류가 발생하지 않는다.
+- isExist() 메소드를 사용하여 해당 파일이 존재하는지 확인할 수 있다.
+
+```java
+// 파일이 존재하지 않는 경우
+file.createNewFile(); // 새로운 파일 생성
+file.mkdir(); // 새로운 폴더 생성
+file.mkdirs(); // 경로상에 없는 모든 폴더 생성
+
+```
+
+```java
+// 파일이 존재하는 경우
+file.delete();
+
+file.canRead(); // read 가능한지 여부 확인
+file.canWrite(); // Write 가능한지 여부 확인
+file.canExecute(); // Execute 가능한지 여부 확인
+
+file.getPath();
+file.getName();
+.
+.
+.
+```
+
+<br>
+
+File 객체를 스트림 생성자의 인수로 줘서, 파일에 출력 또는 파일로부터 입력을 받을 수 있다.
+
+```java
+File file = new File("C:/temp/test.txt");
+
+InputStream is = new FileInputStream(file);
+OutputStream os = new FileOutputStream(file);
+```
+
+## REFERENCE
+혼자 공부하는 자바
