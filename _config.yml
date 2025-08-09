@@ -175,6 +175,7 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+      render_with_liquid: false
 
 sass:
   style: compressed

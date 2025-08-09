@@ -2,11 +2,13 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # 또는 master 브랜치라면 master로 변경
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # ← 격리 커밋 푸시를 위해 필요 (추가)
 
     steps:
       - name: Checkout Repository
@@ -15,15 +17,49 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3" # 사용하는 jekyll 호환 버전
+          ruby-version: "3.3"
 
       - name: Install Dependencies
         run: |
           gem install bundler
           bundle install
 
-      - name: Build Jekyll Site
-        run: bundle exec jekyll build
+      # 🔁 빌드 실패 시 문제 파일(_posts/*.md)만 _quarantine/로 이동 후 재시도
+      - name: Build Jekyll Site (auto-quarantine)
+        run: |
+          set -eo pipefail
+          mkdir -p _quarantine
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          success=0
+          for i in 1 2 3 4 5; do
+            echo "==> Jekyll build attempt #$i"
+            if bundle exec jekyll build --trace 2>build.err; then
+              success=1
+              break
+            fi
+
+            offender=$(grep -oE "$GITHUB_WORKSPACE/_posts/[^:]+\.md" build.err | head -n1 || true)
+            if [ -z "$offender" ]; then
+              echo "No offending post detected. Full error follows:"
+              cat build.err
+              exit 1
+            fi
+
+            base=$(basename "$offender")
+            echo "⚠️  Quarantining failing post: $base"
+            git mv "$offender" "_quarantine/$base" || mv "$offender" "_quarantine/$base"
+            git commit -m "ci: quarantine failing post $base" || true
+            git push origin HEAD:main || true
+          done
+
+          if [ $success -ne 1 ]; then
+            echo "Build failed after quarantine attempts."
+            cat build.err
+            exit 1
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
