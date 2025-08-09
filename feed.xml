@@ -4,7 +4,7 @@
   <id>https://jaewon-ju.github.io/</id>
   <title>JUJU</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-09T12:02:36+09:00</updated>
+  <updated>2025-08-09T12:12:40+09:00</updated>
   <author>
     <name>Jaewon Ju</name>
     <uri>https://jaewon-ju.github.io/</uri>
@@ -17,6 +17,116 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[코딩테스트] BFS, DFS</title>
+    <link href="https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/" rel="alternate" type="text/html" title="[코딩테스트] BFS, DFS" />
+    <published>2025-08-06T11:08:11+09:00</published>
+  
+    <updated>2025-08-06T11:08:11+09:00</updated>
+  
+    <id>https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</id>
+    <content type="text/html" src="https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/" />
+    <author>
+      <name>Jaewon Ju</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Python으로 BFS, DFS를 구현하는 방법</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>[CS 지식] Binary Data 총정리</title>
+    <link href="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="[CS 지식] Binary Data 총정리" />
+    <published>2025-07-14T17:56:15+09:00</published>
+  
+    <updated>2025-07-14T17:56:15+09:00</updated>
+  
+    <id>https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</id>
+    <content type="text/html" src="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/" />
+    <author>
+      <name>Jaewon Ju</name>
+    </author>
+
+  
+    
+  
+
+  <summary>ArrayBuffer, Buffer, Uint8Array 등 Binary Data에 대한 정리본</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>[TroubleShooting] Authentik API 403 Forbidden</title>
+    <link href="https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/" rel="alternate" type="text/html" title="[TroubleShooting] Authentik API 403 Forbidden" />
+    <published>2025-07-07T15:36:08+09:00</published>
+  
+    <updated>2025-07-07T15:36:08+09:00</updated>
+  
+    <id>https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/</id>
+    <content type="text/html" src="https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/" />
+    <author>
+      <name>Jaewon Ju</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Authentik API 403 Forbidden Error</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>[CS 지식] HyperDrvie</title>
+    <link href="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/" rel="alternate" type="text/html" title="[CS 지식] HyperDrvie" />
+    <published>2025-06-23T17:12:42+09:00</published>
+  
+    <updated>2025-06-23T17:12:42+09:00</updated>
+  
+    <id>https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</id>
+    <content type="text/html" src="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/" />
+    <author>
+      <name>Jaewon Ju</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Cloudflare의 기능중 하나인 HyperDrive에 대해서</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>[TroubleShooting] NextAuth - Authentik Docker Issue (2)</title>
+    <link href="https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/" rel="alternate" type="text/html" title="[TroubleShooting] NextAuth - Authentik Docker Issue (2)" />
+    <published>2025-06-16T16:23:38+09:00</published>
+  
+    <updated>2025-06-16T16:23:38+09:00</updated>
+  
+    <id>https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/</id>
+    <content type="text/html" src="https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/" />
+    <author>
+      <name>Jaewon Ju</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Authentik을 docker container로 돌렸을 때 발생하는 오류</summary>
+
+  </entry>
 
 </feed>
 

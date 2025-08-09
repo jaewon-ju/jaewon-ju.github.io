@@ -1,4 +1,1498 @@
 [
   
+  {
+    "title": "[코딩테스트] BFS, DFS",
+    "url": "/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/",
+    "categories": "",
+    "tags": "코딩테스트",
+    "date": "2025-08-06 11:08:11 +0900",
+    "content": "Python으로 BFS, DFS를 구현하는 방법"
+  },
+  
+  {
+    "title": "[CS 지식] Binary Data 총정리",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
+    "categories": "",
+    "tags": "CS 지식",
+    "date": "2025-07-14 17:56:15 +0900",
+    "content": "ArrayBuffer, Buffer, Uint8Array 등 Binary Data에 대한 정리본"
+  },
+  
+  {
+    "title": "[TroubleShooting] Authentik API 403 Forbidden",
+    "url": "/posts/TroubleShooting-Authentik-API-403-Forbidden/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-07-07 15:36:08 +0900",
+    "content": "Authentik API 403 Forbidden Error"
+  },
+  
+  {
+    "title": "[CS 지식] HyperDrvie",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/",
+    "categories": "",
+    "tags": "CS 지식",
+    "date": "2025-06-23 17:12:42 +0900",
+    "content": "Cloudflare의 기능중 하나인 HyperDrive에 대해서"
+  },
+  
+  {
+    "title": "[TroubleShooting] NextAuth - Authentik Docker Issue (2)",
+    "url": "/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-06-16 16:23:38 +0900",
+    "content": "Authentik을 docker container로 돌렸을 때 발생하는 오류"
+  },
+  
+  {
+    "title": "[TroubleShooting] NextAuth - Authentik Docker Issue (1)",
+    "url": "/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/",
+    "categories": "",
+    "tags": "",
+    "date": "2025-06-16 16:12:24 +0900",
+    "content": "Authentik을 docker container로 돌렸을 때 발생하는 오류"
+  },
+  
+  {
+    "title": "[TroubleShooting] Canvas Docker install 오류",
+    "url": "/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-06-09 14:38:40 +0900",
+    "content": "Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm ci 명령어 실행 시 canvas 모듈의 네이티브 바이너리 설치 실패로 인해 빌드가 중단되는 오류"
+  },
+  
+  {
+    "title": "[TroubleShooting] Cloudflare Workers-JOSEError",
+    "url": "/posts/TroubleShooting-Cloudflare-Workers-JOSEError/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-05-19 15:38:31 +0900",
+    "content": "jOSEError - Expected 200 OK from the JSON Web Key Set HTTP response"
+  },
+  
+  {
+    "title": "[TroubleShooting] next-auth getSession null error",
+    "url": "/posts/TroubleShooting-next-auth-getSession-null-error/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-04-28 14:04:25 +0900",
+    "content": "next-auth getSession cookie issue #NextAuthError #SessionNullError #GetSessionProblem #ServerSessionIssue"
+  },
+  
+  {
+    "title": "[React] 원 페이지 스크롤 구현",
+    "url": "/posts/React-%EC%9B%90-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EA%B5%AC%ED%98%84/",
+    "categories": "",
+    "tags": "React",
+    "date": "2025-04-23 17:01:27 +0900",
+    "content": "원 페이지 스크롤을 구현하는 방법"
+  },
+  
+  {
+    "title": "[React] Redux",
+    "url": "/posts/React-Redux/",
+    "categories": "",
+    "tags": "React",
+    "date": "2025-04-16 11:09:48 +0900",
+    "content": "Redux: 상태 관리 라이브러리 #Redux #createAsyncThunk #createSlice #ReduxToolKit"
+  },
+  
+  {
+    "title": "[Auth] Authentik 비밀번호 복구 기능, email 환경 설정",
+    "url": "/posts/Auth-Authentik-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EB%B3%B5%EA%B5%AC-%EA%B8%B0%EB%8A%A5-email-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/",
+    "categories": "",
+    "tags": "Auth, Authentik",
+    "date": "2025-04-15 14:48:19 +0900",
+    "content": "Authentik에서 비밀번호 복구 기능을 추가하는 방법에 대해서 알아보자"
+  },
+  
+  {
+    "title": "[Auth] Authentik에 회원가입, Passkey 붙이기",
+    "url": "/posts/Auth-Authentik%EC%97%90-Passkey-%EB%B6%99%EC%9D%B4%EA%B8%B0/",
+    "categories": "",
+    "tags": "Auth, Authentik",
+    "date": "2025-04-14 14:07:39 +0900",
+    "content": "Authentik에 Passkey를 붙이는 방법 #Authentik #Passkey"
+  },
+  
+  {
+    "title": "[CS 지식] Inngest",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-Inngest/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2025-04-02 16:39:45 +0900",
+    "content": "Inngest란? #Inngest #Inngest_nextjs #Inngest_cloudflare_workers"
+  },
+  
+  {
+    "title": "[CS 지식] Redis",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-Redis/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2025-04-01 15:01:00 +0900",
+    "content": "Redis란 무엇인가? Redis Queue를 javascript로 구현하기"
+  },
+  
+  {
+    "title": "[TroubleShooting] syntax error at or near $1",
+    "url": "/posts/TroubleShooting-syntax-error-at-or-near-1/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-03-27 16:22:39 +0900",
+    "content": "TroubleShooting - syntax error at or near $1"
+  },
+  
+  {
+    "title": "[Auth] JWKS",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-JWKS/",
+    "categories": "",
+    "tags": "Auth, CS지식",
+    "date": "2025-03-19 14:17:52 +0900",
+    "content": "JWKS란?"
+  },
+  
+  {
+    "title": "[React] 백엔드 개발자를 위한 React 간단 정리",
+    "url": "/posts/React-%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-React-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC/",
+    "categories": "",
+    "tags": "React",
+    "date": "2025-03-18 16:43:49 +0900",
+    "content": "맨날 까먹는 React 개념"
+  },
+  
+  {
+    "title": "[Hono] Hono W/Swagger",
+    "url": "/posts/Hono-Hono-WSwagger/",
+    "categories": "",
+    "tags": "Hono, Swagger",
+    "date": "2025-03-17 15:20:22 +0900",
+    "content": "Hono와 Swagger를 통합하는 방법. #Hono_Framework #Hono_with_swagger #Hono_OpenAPI"
+  },
+  
+  {
+    "title": "[Nodejs] Prisma",
+    "url": "/posts/Nodejs-Prisma/",
+    "categories": "",
+    "tags": "nodejs, prisma",
+    "date": "2025-03-13 10:08:55 +0900",
+    "content": "What is Prisma"
+  },
+  
+  {
+    "title": "[Hono] Hono Framework",
+    "url": "/posts/Hono-Hono-Framework/",
+    "categories": "",
+    "tags": "Hono",
+    "date": "2025-03-10 11:20:17 +0900",
+    "content": "웹 프레임워크인 Hono에 대한 소개. #Hono, #Hono_Framework, #Hono_Cloudflare_workers"
+  },
+  
+  {
+    "title": "[Auth] Authentik",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-Authentik/",
+    "categories": "",
+    "tags": "Auth, CS지식",
+    "date": "2025-03-06 16:40:02 +0900",
+    "content": "#Authentik #Authentik_not_found #Authentik_permission_denied # Authentik_Redirect_URI"
+  },
+  
+  {
+    "title": "[Auth] IDP(Identity Provider)",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-IDPIdentity-Provider/",
+    "categories": "",
+    "tags": "Auth, CS 지식",
+    "date": "2025-03-06 15:44:59 +0900",
+    "content": "What is IDP #Auth"
+  },
+  
+  {
+    "title": "[TroubleShooting] Firebase Storage 403 오류 - downloadUrl",
+    "url": "/posts/TroubleShooting-Firebase-Storage-403-%EC%98%A4%EB%A5%98-downloadUrl/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-02-20 09:59:42 +0900",
+    "content": "firebase storage admin sdk downloadURL 403 error. #adminsdk, #nodejs, #downloadURL, #storage 403, #download token"
+  },
+  
+  {
+    "title": "[CS 지식] Assistant API",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-Assistant-API/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2025-02-14 15:40:13 +0900",
+    "content": "OpenAi의 Assistant API에 대해서"
+  },
+  
+  {
+    "title": "[TroubleShooting] Assistant API Streaming 오류",
+    "url": "/posts/TroubleShooting-Assistant-API-Streaming-%EC%98%A4%EB%A5%98/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2025-02-12 17:18:36 +0900",
+    "content": "Error When Using Assistant API Streaming With Typescript"
+  },
+  
+  {
+    "title": "[Firebase] Firestore",
+    "url": "/posts/Firebase-Firestore/",
+    "categories": "",
+    "tags": "Firebase",
+    "date": "2025-02-11 10:17:13 +0900",
+    "content": "NoSQL 데이터베이스인 Firestore에 대해서"
+  },
+  
+  {
+    "title": "[Firebase] Firebase SDK",
+    "url": "/posts/Firebase-Firebase-SDK/",
+    "categories": "",
+    "tags": "",
+    "date": "2025-01-05 11:41:38 +0900",
+    "content": "Firebase Software Development Kit의 종류와 특징"
+  },
+  
+  {
+    "title": "[CS 지식] Spring HTTP 응답 직렬화",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-Spring-HTTP-%EC%9D%91%EB%8B%B5-%EC%A7%81%EB%A0%AC%ED%99%94/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-12-11 23:44:12 +0900",
+    "content": "HTTP Response에 객체를 넣었을 때 JSON으로 직렬화 하는 방법"
+  },
+  
+  {
+    "title": "[React] 무작정 시작",
+    "url": "/posts/React-%EB%AC%B4%EC%9E%91%EC%A0%95-%EC%8B%9C%EC%9E%91/",
+    "categories": "",
+    "tags": "React",
+    "date": "2024-11-28 23:54:03 +0900",
+    "content": "React를 무작정 시작해보자"
+  },
+  
+  {
+    "title": "[TroubleShooting] Github Action - Permission denied",
+    "url": "/posts/TroubleShooting-Github-Action-Permission-denied/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2024-11-28 15:32:00 +0900",
+    "content": "ubuntu를 ec2-user로 변경"
+  },
+  
+  {
+    "title": "[TroubleShooting] EC2가 터지는 오류, Github Secret 오류",
+    "url": "/posts/TroubleShooting-EC2%EA%B0%80-%ED%84%B0%EC%A7%80%EB%8A%94-%EC%98%A4%EB%A5%98-Github-Secret-%EC%98%A4%EB%A5%98/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2024-11-26 23:09:34 +0900",
+    "content": "EC2 인스턴스가 멈취버리는 오류와 Github Secrets 인식 오류"
+  },
+  
+  {
+    "title": "첫 기술 면접 후기",
+    "url": "/posts/%EC%B2%AB-%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-%ED%9B%84%EA%B8%B0/",
+    "categories": "",
+    "tags": "진로",
+    "date": "2024-11-18 15:51:06 +0900",
+    "content": "첫 면접 후기"
+  },
+  
+  {
+    "title": "[MAFM] Watchdog 적용, 최종 결과물",
+    "url": "/posts/MAFM-watchdog/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-11-14 01:18:20 +0900",
+    "content": "셈틀제 최종 결과물"
+  },
+  
+  {
+    "title": "[프로젝트] 프랑크톤 해커톤 후기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%94%84%EB%9E%91%ED%81%AC%ED%86%A4-%ED%95%B4%EC%BB%A4%ED%86%A4-%ED%9B%84%EA%B8%B0/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-11-12 10:19:24 +0900",
+    "content": "축제 관리 어플리케이션 개발 - 장려상 수상"
+  },
+  
+  {
+    "title": "[TroubleShooting] C언어 SIGSEGV",
+    "url": "/posts/TroubleShooting-C%EC%96%B8%EC%96%B4-SIGSEGV/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2024-11-01 16:46:39 +0900",
+    "content": "C언어에서 발생한 Segmentation Fault"
+  },
+  
+  {
+    "title": "[네트워크 보안] Access Control 및 클라우드 보안",
+    "url": "/posts/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88-Access-Control-%EB%B0%8F-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EB%B3%B4%EC%95%88/",
+    "categories": "",
+    "tags": "네트워크 보안",
+    "date": "2024-10-24 10:13:45 +0900",
+    "content": "Access Control와 클라우드 보안에 관하여"
+  },
+  
+  {
+    "title": "[Spring Security] JWT (3)",
+    "url": "/posts/Spring-Security-JWT-3/",
+    "categories": "",
+    "tags": "Spring, spring security",
+    "date": "2024-10-13 23:19:48 +0900",
+    "content": "Refresh 토큰 발급을 통한 보안 강화"
+  },
+  
+  {
+    "title": "[Software Engineering] 설계",
+    "url": "/posts/Software-Engineering-%EC%84%A4%EA%B3%84/",
+    "categories": "",
+    "tags": "Software Engineering",
+    "date": "2024-10-08 10:50:43 +0900",
+    "content": "소프트웨어 설계 과정에 대해서"
+  },
+  
+  {
+    "title": "[네트워크 보안] 키 분배와 사용자 인증",
+    "url": "/posts/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88-%ED%82%A4-%EB%B6%84%EB%B0%B0%EC%99%80-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%9D%B8%EC%A6%9D/",
+    "categories": "",
+    "tags": "네트워크 보안",
+    "date": "2024-10-07 17:09:17 +0900",
+    "content": "키 분배와 사용자 인증 방법"
+  },
+  
+  {
+    "title": "[TroubleShooting] authenticationManager",
+    "url": "/posts/TroubleShooting-authenticationManager/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2024-10-04 23:21:44 +0900",
+    "content": "JWT 구현중 발생한 오류"
+  },
+  
+  {
+    "title": "[TroubleShooting] IllegalStateException, HttpMediaTypeNotSupportedException",
+    "url": "/posts/TroubleShooting-IllegalStateException-HttpMediaTypeNotSupportedException/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2024-10-03 21:56:03 +0900",
+    "content": "IllegalStateException과 HttpMediaTypeNotSupportedException"
+  },
+  
+  {
+    "title": "[UniCircle] 백엔드 개발 기초",
+    "url": "/posts/UniCircle-%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-10-03 20:50:04 +0900",
+    "content": "백엔드 개발의 기초 정리"
+  },
+  
+  {
+    "title": "[UniCircle] DB 구성",
+    "url": "/posts/UniCircle-DB-%EA%B5%AC%EC%84%B1/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-10-03 17:23:35 +0900",
+    "content": "DB 구성"
+  },
+  
+  {
+    "title": "[외주] firebase 채팅 기능",
+    "url": "/posts/%EC%99%B8%EC%A3%BC-firebase-%EC%B1%84%ED%8C%85-%EA%B8%B0%EB%8A%A5/",
+    "categories": "",
+    "tags": "Firebase, 외주",
+    "date": "2024-09-29 11:23:41 +0900",
+    "content": "firebase를 사용해서 채팅 기능을 구현하는 의뢰"
+  },
+  
+  {
+    "title": "[MAFM] 구현",
+    "url": "/posts/MAFM-%EB%94%94%EB%A0%89%ED%86%A0%EB%A6%AC-%EA%B5%AC%EC%A1%B0-DB/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-09-26 09:54:36 +0900",
+    "content": "Multi-Agent File Management의 구현 과정"
+  },
+  
+  {
+    "title": "[프로그래밍언어론] Logic Programming",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4%EB%A1%A0-Logic-Programming/",
+    "categories": "",
+    "tags": "프로그래밍언어론",
+    "date": "2024-09-25 12:27:09 +0900",
+    "content": "논리 프로그래밍에 대해서"
+  },
+  
+  {
+    "title": "[CS 지식] 파이썬 가상환경 & Poetry",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD-Poetry/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-09-23 20:32:35 +0900",
+    "content": "파이썬의 가상환경에 대해서"
+  },
+  
+  {
+    "title": "[네트워크 보안] 공개키 암호화",
+    "url": "/posts/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88-%EA%B3%B5%EA%B0%9C%ED%82%A4-%EC%95%94%ED%98%B8%ED%99%94/",
+    "categories": "",
+    "tags": "네트워크 보안",
+    "date": "2024-09-23 17:47:38 +0900",
+    "content": "공개키 암호화 방식과 메시지 인증에 대해서"
+  },
+  
+  {
+    "title": "[MAFM] Embedding & Vector DB",
+    "url": "/posts/MAFM-%EA%B5%AC%ED%98%84/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-09-22 22:20:05 +0900",
+    "content": "Multi Agent File Management의 구현 과정"
+  },
+  
+  {
+    "title": "[프로그래밍언어론] Functional Programming",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4%EB%A1%A0-Functional-Programming/",
+    "categories": "",
+    "tags": "프로그래밍언어론",
+    "date": "2024-09-11 11:41:11 +0900",
+    "content": "함수형 프로그래밍에 대해서"
+  },
+  
+  {
+    "title": "[네트워크 보안] 대칭 암호화",
+    "url": "/posts/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88-%EB%8C%80%EC%B9%AD-%EC%95%94%ED%98%B8%ED%99%94/",
+    "categories": "",
+    "tags": "네트워크 보안",
+    "date": "2024-09-09 17:49:00 +0900",
+    "content": "대칭 암호화 방식에 대해서"
+  },
+  
+  {
+    "title": "[Embedded] 개요",
+    "url": "/posts/Embedded-%EC%86%8C%EA%B0%9C/",
+    "categories": "",
+    "tags": "Embedded",
+    "date": "2024-09-05 15:49:33 +0900",
+    "content": "개요"
+  },
+  
+  {
+    "title": "[프로그래밍언어론] 개요",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4%EB%A1%A0-%EA%B0%9C%EC%9A%94/",
+    "categories": "",
+    "tags": "프로그래밍언어론",
+    "date": "2024-09-04 13:31:29 +0900",
+    "content": "Programming language에 대해서"
+  },
+  
+  {
+    "title": "[네트워크 보안] 개요",
+    "url": "/posts/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EB%B3%B4%EC%95%88-%EA%B0%9C%EC%9A%94/",
+    "categories": "",
+    "tags": "네트워크 보안",
+    "date": "2024-09-02 16:59:24 +0900",
+    "content": "개요"
+  },
+  
+  {
+    "title": "[코딩테스트] 기본 함수",
+    "url": "/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%EA%B8%B0%EB%B3%B8-%ED%95%A8%EC%88%98/",
+    "categories": "",
+    "tags": "코딩테스트",
+    "date": "2024-08-27 21:30:33 +0900",
+    "content": "코테 준비를 위해 파이썬의 내장 함수들을 알아보자."
+  },
+  
+  {
+    "title": "[TroubleShooting] Sequelize 상속 오류",
+    "url": "/posts/TroubleShooting-Sequelize-%EC%83%81%EC%86%8D-%EC%98%A4%EB%A5%98/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2024-08-17 23:04:15 +0900",
+    "content": "sequelize에서 상속을 사용할 때 발생하는 오류"
+  },
+  
+  {
+    "title": "[QuantHelper] 구현",
+    "url": "/posts/quantHelper-%EA%B5%AC%ED%98%84/",
+    "categories": "",
+    "tags": "Multi-Agent, 프로젝트",
+    "date": "2024-08-14 23:53:31 +0900",
+    "content": "멀티 에이전트를 사용해서 주식 어플리케이션을 구현해보자"
+  },
+  
+  {
+    "title": "[QuantHelper] 개요",
+    "url": "/posts/QuantHelper-%EA%B0%9C%EC%9A%94/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-08-13 23:23:05 +0900",
+    "content": "Multi Agent를 활용한 주식 어플리케이션"
+  },
+  
+  {
+    "title": "[Nodejs] Sequelize",
+    "url": "/posts/Nodejs-Sequelize/",
+    "categories": "",
+    "tags": "nodejs",
+    "date": "2024-08-11 12:37:42 +0900",
+    "content": "Sequelize 연결 방법 및  사용 방법"
+  },
+  
+  {
+    "title": "[LingoConnect] 새싹 해커톤 후기",
+    "url": "/posts/LingoConnect-%EC%83%88%EC%8B%B9-%ED%95%B4%EC%BB%A4%ED%86%A4-%ED%9B%84%EA%B8%B0/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-08-05 16:30:27 +0900",
+    "content": "첫 해커톤 후기"
+  },
+  
+  {
+    "title": "[Nodejs] Swagger 연결",
+    "url": "/posts/Nodejs-Swagger-%EC%97%B0%EA%B2%B0/",
+    "categories": "",
+    "tags": "nodejs",
+    "date": "2024-08-04 22:54:34 +0900",
+    "content": "Swagger 연결 방법"
+  },
+  
+  {
+    "title": "[Nodejs] 배경 지식 ",
+    "url": "/posts/Nodejs-%EB%B0%B0%EA%B2%BD-%EC%A7%80%EC%8B%9D/",
+    "categories": "",
+    "tags": "nodejs",
+    "date": "2024-07-30 23:53:16 +0900",
+    "content": "무작정 개발 시작"
+  },
+  
+  {
+    "title": "[TroubleShooting] contextLoads() FAILED ",
+    "url": "/posts/TroubleShooting-contextLoads-FAILED/",
+    "categories": "",
+    "tags": "TROUBLESHOOTING",
+    "date": "2024-07-29 17:23:05 +0900",
+    "content": "test 오류"
+  },
+  
+  {
+    "title": "[LingoConnect] 개발2",
+    "url": "/posts/LingoConnect-%EA%B0%9C%EB%B0%9C2-fmxlhcfs/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-07-18 18:45:26 +0900",
+    "content": "이번 프로젝트의 핵심은 생성형 AI와 Audio file이다."
+  },
+  
+  {
+    "title": "[LingoConnect] 개발",
+    "url": "/posts/LingoConnect-%EA%B0%9C%EB%B0%9C/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-07-16 23:18:45 +0900",
+    "content": "새싹 해커톤 개발 내용"
+  },
+  
+  {
+    "title": "[Nodejs] 비동기 처리, Promise",
+    "url": "/posts/Nodejs-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC/",
+    "categories": "",
+    "tags": "nodejs",
+    "date": "2024-07-15 15:01:56 +0900",
+    "content": "JavaScript의 비동기 처리에 대해서"
+  },
+  
+  {
+    "title": "[CS 지식] 동기/비동기, 블로킹/논블로킹",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-%EB%8F%99%EA%B8%B0%EB%B9%84%EB%8F%99%EA%B8%B0-%EB%B8%94%EB%A1%9C%ED%82%B9%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-07-08 15:32:33 +0900",
+    "content": "Sync/Async, Blocking/Non-blocking"
+  },
+  
+  {
+    "title": "[Spring Security] JWT (2)",
+    "url": "/posts/Spring-Security-JWT-2/",
+    "categories": "",
+    "tags": "Spring, spring security",
+    "date": "2024-07-04 21:37:18 +0900",
+    "content": "Spring Security에서 JWT를 구현하는 방법"
+  },
+  
+  {
+    "title": "[Spring Security] JWT (1)",
+    "url": "/posts/Spring-Security-JWT/",
+    "categories": "",
+    "tags": "Spring, spring security",
+    "date": "2024-07-04 15:56:09 +0900",
+    "content": "JWT란 무엇인가"
+  },
+  
+  {
+    "title": "[Spring Security] OAuth2",
+    "url": "/posts/Spring-Security-OAuth2/",
+    "categories": "",
+    "tags": "Spring, spring security",
+    "date": "2024-07-03 22:53:01 +0900",
+    "content": "Spring Security를 통해 OAuth2 기능을 사용하는 방법"
+  },
+  
+  {
+    "title": "[JPA] 값 타입",
+    "url": "/posts/JPA-%EA%B0%92-%ED%83%80%EC%9E%85/",
+    "categories": "",
+    "tags": "JPA",
+    "date": "2024-07-03 20:00:56 +0900",
+    "content": "값 타입이란 무엇인가"
+  },
+  
+  {
+    "title": "[Spring Security] 기본",
+    "url": "/posts/Spring-Security-%EA%B8%B0%EB%B3%B8/",
+    "categories": "",
+    "tags": "Spring, spring security",
+    "date": "2024-07-02 22:27:33 +0900",
+    "content": "Spring Security 의 동작원리와 간단한 구현"
+  },
+  
+  {
+    "title": "[JPA] 프록시",
+    "url": "/posts/JPA-%ED%94%84%EB%A1%9D%EC%8B%9C/",
+    "categories": "",
+    "tags": "JPA",
+    "date": "2024-07-01 14:43:26 +0900",
+    "content": "지연 로딩을 사용하기 위한 프록시 객체는 무엇인가?"
+  },
+  
+  {
+    "title": "[JPA] 영속성 컨텍스트",
+    "url": "/posts/JPA-%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8/",
+    "categories": "",
+    "tags": "JPA",
+    "date": "2024-06-30 15:49:11 +0900",
+    "content": "JPA의 핵심 개념인 영속성 컨텍스트에 대해서 알아보자"
+  },
+  
+  {
+    "title": "[JPA] JPA 소개",
+    "url": "/posts/Spring-JPA-JPA-%EC%86%8C%EA%B0%9C/",
+    "categories": "",
+    "tags": "JPA",
+    "date": "2024-06-29 16:31:34 +0900",
+    "content": "JPA란 무엇인가?"
+  },
+  
+  {
+    "title": "[하나디지털파워온] 개발",
+    "url": "/posts/%ED%95%98%EB%82%98%EB%94%94%EC%A7%80%ED%84%B8%ED%8C%8C%EC%9B%8C%EC%98%A8-%EA%B0%9C%EB%B0%9C/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-06-15 21:23:08 +0900",
+    "content": "개발 과정"
+  },
+  
+  {
+    "title": "[Network] Wireless & Mobile Network",
+    "url": "/posts/Network-Wireless-Mobile-Network/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-06-14 11:50:58 +0900",
+    "content": "무선 네트워크와 모바일 네트워크에 대해서"
+  },
+  
+  {
+    "title": "[Link Layer] MPLS, DCN",
+    "url": "/posts/Link-Layer-MPLS-DCN/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-06-11 14:07:36 +0900",
+    "content": "MPLS, DSN"
+  },
+  
+  {
+    "title": "[OS] Multi-Processor System",
+    "url": "/posts/OS-Multi-Processor-System/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-06-05 15:44:17 +0900",
+    "content": "multi-processor System에 대해서"
+  },
+  
+  {
+    "title": "[OS] Multimedia OS",
+    "url": "/posts/OS-Multimedia-OS/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-06-05 13:51:11 +0900",
+    "content": "Multimedia에 대해서"
+  },
+  
+  {
+    "title": "[OS] Deadlocks",
+    "url": "/posts/OS-Deadlocks/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-05-30 21:39:38 +0900",
+    "content": "Deadlock의 발생 조건과 방지법에 대해서"
+  },
+  
+  {
+    "title": "[JAVA] 함수형 프로그래밍",
+    "url": "/posts/JAVA-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-05-27 22:23:24 +0900",
+    "content": "람다식과 스트림에 대해서"
+  },
+  
+  {
+    "title": "[프롬프트 엔지니어링] 개발2",
+    "url": "/posts/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EA%B0%9C%EB%B0%9C2/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-05-26 23:35:31 +0900",
+    "content": "개발"
+  },
+  
+  {
+    "title": "[OS] Input & Output",
+    "url": "/posts/OS-Input-Output/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-05-22 14:49:30 +0900",
+    "content": "운영체제의 입출력 기능에 관하여"
+  },
+  
+  {
+    "title": "[Spring Boot] Monitoring",
+    "url": "/posts/Spring-Boot-Monitoring/",
+    "categories": "",
+    "tags": "Spring, Springboot",
+    "date": "2024-05-21 15:04:38 +0900",
+    "content": "서비스 모니터링을 위해 필요한 요소들"
+  },
+  
+  {
+    "title": "[Network Layer] Control Plane",
+    "url": "/posts/Network-Layer-Control-Plane/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-05-21 12:48:53 +0900",
+    "content": "Network Layer의 Control Plane에 대해서"
+  },
+  
+  {
+    "title": "[프롬프트 엔지니어링] 개발",
+    "url": "/posts/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EA%B0%9C%EB%B0%9C/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-05-18 21:09:05 +0900",
+    "content": "개발 진행"
+  },
+  
+  {
+    "title": "[프롬프트 엔지니어링] 초기 설정",
+    "url": "/posts/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-05-15 00:23:08 +0900",
+    "content": "liquibase, docker 설정"
+  },
+  
+  {
+    "title": "[Spring Boot] Actuator",
+    "url": "/posts/Spring-Boot-Actuator/",
+    "categories": "",
+    "tags": "Spring, Springboot",
+    "date": "2024-05-13 21:43:23 +0900",
+    "content": "애플리케이션 관리를 위한 Actuator에 대해서"
+  },
+  
+  {
+    "title": "[quantHelper] 서버 배포2",
+    "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC2/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-05-12 16:59:55 +0900",
+    "content": "ELB 연결, Https 설정"
+  },
+  
+  {
+    "title": "[프롬프트 엔지니어링] 필요 기능",
+    "url": "/posts/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%ED%95%84%EC%9A%94-%EA%B8%B0%EB%8A%A5/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-05-12 14:41:34 +0900",
+    "content": "새로운 프로젝트 시작"
+  },
+  
+  {
+    "title": "[CS 지식] Docker",
+    "url": "/posts/Docker/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-05-10 15:46:21 +0900",
+    "content": "Docker란 무엇인가"
+  },
+  
+  {
+    "title": "[Spring Boot] 외부 설정과 프로필 2",
+    "url": "/posts/Spring-Boot-%EC%99%B8%EB%B6%80-%EC%84%A4%EC%A0%95%EA%B3%BC-%ED%94%84%EB%A1%9C%ED%95%84-2/",
+    "categories": "",
+    "tags": "Spring, Springboot",
+    "date": "2024-05-10 14:33:26 +0900",
+    "content": "@Value, @ConfigurationProperties 등 외부 설정을 객체에 주입하는 방법을 알아보자."
+  },
+  
+  {
+    "title": "[OS] File System",
+    "url": "/posts/OS-File-System/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-05-08 15:50:03 +0900",
+    "content": "File System에 대해서"
+  },
+  
+  {
+    "title": "[quantHelper] 서버 배포",
+    "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-11%EC%9D%BC%EC%B0%A8/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-05-07 21:26:55 +0900",
+    "content": "11일차"
+  },
+  
+  {
+    "title": "[Network Layer] Data Plane",
+    "url": "/posts/Network-Layer-Data-Plane/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-05-07 12:47:18 +0900",
+    "content": "Network 계층의 Data plane 영역에 대해서"
+  },
+  
+  {
+    "title": "[OS] Virtual Memory System",
+    "url": "/posts/OS-Virtual-Memory-System/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-05-07 10:47:33 +0900",
+    "content": "운영체제의 Virtual Memory System에 대해서"
+  },
+  
+  {
+    "title": "[quantHelper] 개발 - API4",
+    "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-10%EC%9D%BC%EC%B0%A8/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-05-03 22:51:35 +0900",
+    "content": "10일차"
+  },
+  
+  {
+    "title": "[Spring Boot] 외부 설정과 프로필",
+    "url": "/posts/Spring-Boot-%EC%99%B8%EB%B6%80-%EC%84%A4%EC%A0%95%EA%B3%BC-%ED%94%84%EB%A1%9C%ED%95%84/",
+    "categories": "",
+    "tags": "Spring, Springboot",
+    "date": "2024-05-03 15:37:49 +0900",
+    "content": "스프링 부트의 외부 설정에 대해서"
+  },
+  
+  {
+    "title": "[CS 지식] System Call & Interrupt",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-System-Call-Interrupt/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-04-18 22:56:44 +0900",
+    "content": "운영체제를 공부하던 중, System Call과 Interrupt의 차이가 정확히 뭔지 모르겠어서 한번 찾아보았다."
+  },
+  
+  {
+    "title": "[OS] Real Memory System",
+    "url": "/posts/OS-Memory-Management/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-04-17 15:51:20 +0900",
+    "content": "운영체제의 메모리 관리 시스템에 대하여"
+  },
+  
+  {
+    "title": "[quantHelper] 개발 - API3",
+    "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-9%EC%9D%BC%EC%B0%A8/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-04-14 17:20:40 +0900",
+    "content": "9일차"
+  },
+  
+  {
+    "title": "[quantHelper] 개발 - API2",
+    "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-7%EC%9D%BC%EC%B0%A8/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-04-12 00:48:54 +0900",
+    "content": "7일차"
+  },
+  
+  {
+    "title": "[quantHelper] 개발 - API",
+    "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-5%EC%9D%BC%EC%B0%A8/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-04-10 12:38:06 +0900",
+    "content": "5일차"
+  },
+  
+  {
+    "title": "[Transport Layer] TCP",
+    "url": "/posts/Transport-Layer-TCP/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-04-09 13:47:27 +0900",
+    "content": "TCP의 기능과 특징에 대해서 알아보자."
+  },
+  
+  {
+    "title": "[quantHelper] 개발 - 재무제표 클래스",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-4%EC%9D%BC%EC%B0%A8/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-04-09 00:28:50 +0900",
+    "content": "4일차"
+  },
+  
+  {
+    "title": "[quantHelper] 개발 - Repository",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-3%EC%9D%BC%EC%B0%A8/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-04-07 23:46:06 +0900",
+    "content": "3일차"
+  },
+  
+  {
+    "title": "[quantHelper] 개발 - Domain",
+    "url": "/posts/quantHelper-%EA%B0%9C%EB%B0%9C-Domain/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-04-06 23:56:08 +0900",
+    "content": "domain을 개발했다."
+  },
+  
+  {
+    "title": "[Spring Boot] 자동구성",
+    "url": "/posts/Spring-Boot-%EC%9E%90%EB%8F%99%EA%B5%AC%EC%84%B1/",
+    "categories": "",
+    "tags": "Spring, Springboot",
+    "date": "2024-04-05 10:34:40 +0900",
+    "content": "스프링 부트의 핵심 기능중 하나인 자동 구성에 대해서 알아보자."
+  },
+  
+  {
+    "title": "[quantHelper] 주제 선정, DB 구성 ",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/",
+    "categories": "",
+    "tags": "프로젝트",
+    "date": "2024-04-04 22:53:03 +0900",
+    "content": "사이드 프로젝트 시작"
+  },
+  
+  {
+    "title": "[OS] Scheduling",
+    "url": "/posts/OS-Scheduling/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-04-03 15:48:08 +0900",
+    "content": "운영체제의 스케줄링에 대해서 알아보자."
+  },
+  
+  {
+    "title": "[Spring Boot] Before Spring Boot",
+    "url": "/posts/Spring-Boot-Before-Spring-Boot/",
+    "categories": "",
+    "tags": "Spring, Springboot",
+    "date": "2024-04-01 20:43:40 +0900",
+    "content": "Spring Boot가 없던 시절, 웹 애플리케이션을 어떻게 만들었을까?"
+  },
+  
+  {
+    "title": "JAR, WAR",
+    "url": "/posts/JAR-WAR/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-04-01 16:19:48 +0900",
+    "content": "JAR VS WAR"
+  },
+  
+  {
+    "title": "[Spring Boot] Introduction",
+    "url": "/posts/Spring-Boot-Introduction/",
+    "categories": "",
+    "tags": "Spring, Springboot",
+    "date": "2024-04-01 15:58:05 +0900",
+    "content": "Spring Boot 시작!"
+  },
+  
+  {
+    "title": "[Spring MVC] 응답 관련 기본 기능",
+    "url": "/posts/Spring-MVC-%EC%9D%91%EB%8B%B5-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EB%B3%B8-%EA%B8%B0%EB%8A%A5/",
+    "categories": "",
+    "tags": "MVC, Spring",
+    "date": "2024-03-30 16:58:58 +0900",
+    "content": "Spring MVC의 응답 관련 기본 기능에 대해서 알아보자"
+  },
+  
+  {
+    "title": "[오류 해결] Spring Annotaion",
+    "url": "/posts/%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0-Spring-Annotaion/",
+    "categories": "",
+    "tags": "오류",
+    "date": "2024-03-29 16:32:17 +0900",
+    "content": "Annotaion 기술을 포함한 WAS 서버가 안돌아갈 때"
+  },
+  
+  {
+    "title": "우선 순위 역전",
+    "url": "/posts/%EC%9A%B0%EC%84%A0-%EC%88%9C%EC%9C%84-%EC%97%AD%EC%A0%84/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-03-28 17:22:25 +0900",
+    "content": "Busy Waiting의 단점인 우선 순위 역전 문제란 무엇일까"
+  },
+  
+  {
+    "title": "[OS] IPC",
+    "url": "/posts/OS-IPC/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-03-27 20:22:26 +0900",
+    "content": "IPC에서 발생하는 문제점들과 해결방안을 알아보자."
+  },
+  
+  {
+    "title": "[Spring MVC] 요청 관련 기본기능",
+    "url": "/posts/Spring-MVC-%EA%B8%B0%EB%B3%B8-%EA%B8%B0%EB%8A%A5/",
+    "categories": "",
+    "tags": "MVC, Spring",
+    "date": "2024-03-27 08:56:20 +0900",
+    "content": "Spring MVC의 기본 기능 중, 요청에 관련된 기능들에 대해서 알아보자."
+  },
+  
+  {
+    "title": "[Spring MVC] Spring MVC의 이해",
+    "url": "/posts/Spring-MVC-Spring-MVC%EC%9D%98-%EC%9D%B4%ED%95%B4/",
+    "categories": "",
+    "tags": "MVC, Spring",
+    "date": "2024-03-25 17:27:25 +0900",
+    "content": "Spring MVC의 구조와 동작원리를 파악해보자."
+  },
+  
+  {
+    "title": "[Spring MVC] MVC 프레임워크 만들기",
+    "url": "/posts/Spring-MVC-MVC-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0/",
+    "categories": "",
+    "tags": "MVC, Spring",
+    "date": "2024-03-22 14:59:11 +0900",
+    "content": "MVC 패턴의 단점을 하나씩 고쳐나가면서 Spring MVC 프레임워크를 이해해보자."
+  },
+  
+  {
+    "title": "[Transport Layer] Transport Layer Services",
+    "url": "/posts/Transport-Layer-Transport-Layer-Services/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-19 14:00:33 +0900",
+    "content": "Transport Layer의 기능을 알아보자."
+  },
+  
+  {
+    "title": "[Spring MVC] Servlet, JSP, MVC 패턴",
+    "url": "/posts/Spring-MVC-Servlet-JSP-MVC-%ED%8C%A8%ED%84%B4/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-03-18 22:59:20 +0900",
+    "content": "Servlet, JSP의 단점과 MVC 패턴을 사용하게 된 배경"
+  },
+  
+  {
+    "title": "[Spring MVC] Servlet",
+    "url": "/posts/Spring-MVC-Servlet/",
+    "categories": "",
+    "tags": "MVC, Spring",
+    "date": "2024-03-16 17:18:29 +0900",
+    "content": "Servlet에 대해 자세히 알아보자."
+  },
+  
+  {
+    "title": "[Spring MVC] Introduction",
+    "url": "/posts/Spring-MVC-Web-Application-Server/",
+    "categories": "",
+    "tags": "MVC, Spring",
+    "date": "2024-03-15 11:00:56 +0900",
+    "content": "WAS, Servlet이란 무엇인가?"
+  },
+  
+  {
+    "title": "[OS] OS와 Dual Mode",
+    "url": "/posts/OS-OS%EC%99%80-Dual-Mode/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-03-14 22:48:26 +0900",
+    "content": "운영체제를 자세히 이해하기 위한 사전 지식과 Dual Mode에 관해서"
+  },
+  
+  {
+    "title": "[Application Layer] HTTP - header2",
+    "url": "/posts/Application-Layer-HTTP-header2/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-13 18:58:36 +0900",
+    "content": "Cache header와 Conditional Get"
+  },
+  
+  {
+    "title": "[OS] Processes and Threads",
+    "url": "/posts/OS-Processes-and-Threads/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-03-13 18:55:21 +0900",
+    "content": "프로세스와 스레드에 대해서"
+  },
+  
+  {
+    "title": "[Application Layer] HTTP - Header",
+    "url": "/posts/Application-Layer-HTTP-Header/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-12 16:24:46 +0900",
+    "content": "HTTP 메시지 Header의 종류와 역할"
+  },
+  
+  {
+    "title": "[Application Layer] HTTP - Status Code",
+    "url": "/posts/Application-Layer-HTTP-Status-Code/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-12 14:31:11 +0900",
+    "content": "HTTP Status Code의 종류와 특징"
+  },
+  
+  {
+    "title": "[Application Layer] HTTP - Method",
+    "url": "/posts/Application-Layer-HTTP-Method/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-09 22:13:53 +0900",
+    "content": "HTTP Method에 대해 알아보자."
+  },
+  
+  {
+    "title": "[Application Layer] HTTP - Intro",
+    "url": "/posts/Application-Layer-HTTP-Intro/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-08 10:54:45 +0900",
+    "content": "HTTP - Introduction"
+  },
+  
+  {
+    "title": "[OS] Introduction",
+    "url": "/posts/OS-Introduction/",
+    "categories": "",
+    "tags": "OS",
+    "date": "2024-03-06 15:41:10 +0900",
+    "content": "운영체제 Introduction"
+  },
+  
+  {
+    "title": "[Application Layer] URI",
+    "url": "/posts/Application-Layer-URI/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-05 18:56:16 +0900",
+    "content": "URI의 정의와 URL 문법"
+  },
+  
+  {
+    "title": "[Application Layer] DNS",
+    "url": "/posts/Application-Layer-DNS%EC%99%80-URI/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-05 18:53:39 +0900",
+    "content": "DNS란 무엇인가?"
+  },
+  
+  {
+    "title": "[Application Layer] Email",
+    "url": "/posts/Application-Layer-Email/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-05 17:37:30 +0900",
+    "content": "Email에 대한 간단한 요약"
+  },
+  
+  {
+    "title": "[Network] Introduction",
+    "url": "/posts/Network-Introduction/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-05 13:42:21 +0900",
+    "content": "네트워크 입문"
+  },
+  
+  {
+    "title": "[Application Layer] Introduction",
+    "url": "/posts/Application-Layer/",
+    "categories": "",
+    "tags": "network",
+    "date": "2024-03-05 10:49:27 +0900",
+    "content": "Application Layer 소개"
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 빈 스코프",
+    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EB%B9%88-%EC%8A%A4%EC%BD%94%ED%94%84/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-03-04 20:30:06 +0900",
+    "content": "싱글톤, 프로토타입, request 스코프에 관하여"
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 빈 생명주기 콜백",
+    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EB%B9%88-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0-%EC%BD%9C%EB%B0%B1/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-26 23:47:44 +0900",
+    "content": "빈의 초기화와 종료는 어떻게 할 수 있을까"
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 의존관계 자동 주입",
+    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84-%EC%9E%90%EB%8F%99-%EC%A3%BC%EC%9E%85/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-19 21:26:35 +0900",
+    "content": "의존관계 자동 주입에 대해 더 자세히 알아보자."
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 컴포넌트 스캔",
+    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-19 16:17:43 +0900",
+    "content": "자동으로 빈을 등록하는 컴포넌트 스캔 기능"
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 싱글톤 컨테이너",
+    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EC%8B%B1%EA%B8%80%ED%86%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-18 00:16:44 +0900",
+    "content": "스프링 컨테이너는 싱글톤 컨테이너 역할도 한다."
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 스프링 컨테이너와 빈",
+    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EC%99%80-%EB%B9%88/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-15 16:52:05 +0900",
+    "content": "스프링 컨테이너와 빈은 무엇인가"
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 스프링의 핵심 원리",
+    "url": "/posts/Spring-%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%98-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-11 15:25:14 +0900",
+    "content": "예제를 통한 스프링 핵심 원리(DI)의 이해"
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] 객체 지향 설계와 스프링",
+    "url": "/posts/Spring-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%EC%84%A4%EA%B3%84%EC%99%80-%EC%8A%A4%ED%94%84%EB%A7%81/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-11 10:58:50 +0900",
+    "content": "객체 지향 설계와 스프링은 어떤 관계가 있는가"
+  },
+  
+  {
+    "title": "[스프링 핵심 원리] What is Spring",
+    "url": "/posts/Spring-What-is-Spring/",
+    "categories": "",
+    "tags": "Spring",
+    "date": "2024-02-08 17:23:10 +0900",
+    "content": "스프링이란 무엇인가"
+  },
+  
+  {
+    "title": "3-1 계획",
+    "url": "/posts/3-1-%EA%B3%84%ED%9A%8D/",
+    "categories": "",
+    "tags": "진로",
+    "date": "2024-02-06 22:10:22 +0900",
+    "content": "2024년이 시작된지 한달. 1월에는 자바를 복습했다. 사실 군대가기 전에 배웠지만..(2021년 초) 군대 갔다오니 머리가 리셋되어 버려서 다시 공부했다. 확실히 C, 자료구조, 유닉스 등을 배우고 난 뒤에 자바를 배우니 더 쉬웠다. 정확히 말해서 쉬웠다기 보다는, "
+  },
+  
+  {
+    "title": "[JAVA] 입출력 관련 API",
+    "url": "/posts/JAVA-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EA%B4%80%EB%A0%A8-API/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-02-03 00:14:24 +0900",
+    "content": "자바의 입출력 API에 관한 스터디 노트"
+  },
+  
+  {
+    "title": "[JAVA] 입출력 스트림",
+    "url": "/posts/JAVA-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%8A%A4%ED%8A%B8%EB%A6%BC/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-02-01 22:36:48 +0900",
+    "content": "자바의 입출력 스트림에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 컬렉션 프레임워크",
+    "url": "/posts/JAVA-%EC%BB%AC%EB%A0%89%EC%85%98-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-30 21:40:48 +0900",
+    "content": "자바의 컬렉션 프레임워크에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 스레드",
+    "url": "/posts/JAVA-%EC%8A%A4%EB%A0%88%EB%93%9C/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-25 23:05:22 +0900",
+    "content": "JAVA의 스레드에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] String 클래스",
+    "url": "/posts/JAVA-String-%ED%81%B4%EB%9E%98%EC%8A%A4/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-23 15:39:00 +0900",
+    "content": "자바의 String 클래스에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] java.lang 패키지",
+    "url": "/posts/JAVA-java.lang-%ED%8C%A8%ED%82%A4%EC%A7%80/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-22 23:48:44 +0900",
+    "content": "자바의 lang 패키지에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 예외",
+    "url": "/posts/JAVA-%EC%98%88%EC%99%B8/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-22 00:34:07 +0900",
+    "content": "자바의 예외에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 익명 객체",
+    "url": "/posts/JAVA-%EC%9D%B5%EB%AA%85-%EA%B0%9D%EC%B2%B4/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-21 22:12:08 +0900",
+    "content": "자바의 익명 객체에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 중첩 클래스와 중첩 인터페이스",
+    "url": "/posts/JAVA-%EC%A4%91%EC%B2%A9-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EC%A4%91%EC%B2%A9-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-21 21:07:41 +0900",
+    "content": "자바의 중첩 클래스와 인터페이스에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 상속",
+    "url": "/posts/JAVA-%EC%83%81%EC%86%8D/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-18 13:31:29 +0900",
+    "content": "자바의 상속에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 클래스",
+    "url": "/posts/JAVA-%ED%81%B4%EB%9E%98%EC%8A%A4/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-16 00:23:46 +0900",
+    "content": "자바의 클래스에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[CS 지식] 주소 연산",
+    "url": "/posts/CS-%EC%A7%80%EC%8B%9D-%EC%A3%BC%EC%86%8C-%EC%97%B0%EC%82%B0/",
+    "categories": "",
+    "tags": "CS지식",
+    "date": "2024-01-14 23:06:09 +0900",
+    "content": "0x00과 0x01 간의 차이는 왜 1 byte인가?"
+  },
+  
+  {
+    "title": "[JAVA]  메모리 사용 영역",
+    "url": "/posts/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-%EC%98%81%EC%97%AD/",
+    "categories": "",
+    "tags": "C, Java",
+    "date": "2024-01-14 00:45:34 +0900",
+    "content": "JAVA의 메모리 사용 영역에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "[JAVA] 자료형",
+    "url": "/posts/JAVA-%EC%9E%90%EB%A3%8C%ED%98%95/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-09 23:23:57 +0900",
+    "content": "자료형과 형 변환에 관한 스터디 메모"
+  },
+  
+  {
+    "title": "객체 지향 프로그래밍 VS 절차 지향 프로그래밍",
+    "url": "/posts/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-VS-%EC%A0%88%EC%B0%A8-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/",
+    "categories": "",
+    "tags": "Java",
+    "date": "2024-01-06 23:25:52 +0900",
+    "content": "객체 지향 프로그래밍과 절차 지향 프로그래밍의 차이점, 각각의 특징을 서술하였다."
+  },
+  
+  {
+    "title": "스터디노트",
+    "url": "/posts/%EC%8A%A4%ED%84%B0%EB%94%94%EB%85%B8%ED%8A%B8/",
+    "categories": "",
+    "tags": "C, git, network, python, 자료구조",
+    "date": "2024-01-04 23:29:19 +0900",
+    "content": "스터디 노트 파일들이 업로드된 깃헙 주소"
+  },
+  
+  {
+    "title": "벨로그를 시작하며",
+    "url": "/posts/%EB%B2%A8%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/",
+    "categories": "",
+    "tags": "진로",
+    "date": "2024-01-04 23:22:47 +0900",
+    "content": "군대를 가기 전까지는 공부한 내용을 따로 정리해놓지 않았다. "
+  }
+  
 ]
 
