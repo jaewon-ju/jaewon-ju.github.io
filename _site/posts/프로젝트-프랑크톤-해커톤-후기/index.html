@@ -857,8 +857,15 @@
 
 
 <article class="px-1" data-toc="true">
-  <header>
-    <h1 data-toc-skip>[프로젝트] 프랑크톤 해커톤 후기</h1>
+  <header
+    style="
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    "
+  >
+    <h1 data-toc-skip style="margin-top: 0">[프로젝트] 프랑크톤 해커톤 후기</h1>
     
     <p class="post-desc fw-light mb-4">축제 관리 어플리케이션 개발 - 장려상 수상</p>
     
@@ -916,7 +923,6 @@
         <!-- author(s) -->
         <span>
            By
-
           <em>
             
             <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
@@ -949,7 +955,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2553 words"
+  title="2565 words"
 >
   <em>14 min</em> read</span>
 
@@ -996,13 +1002,6 @@
     <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
   </dialog>
   
-
-  <hr
-    class="post-divider"
-    style="border: none; border-top: 1px solid white; margin: 2rem 0"
-  />
-
-  <br />
 
   <div class="content"><hr />
 
@@ -1170,25 +1169,25 @@
 
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Set up SSH Key</span>
         <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-          <span class="s">echo "$" &gt; key.pem</span>
+          <span class="s">echo "${{ secrets.SSH_KEY }}" &gt; key.pem</span>
           <span class="s">chmod 600 key.pem</span>
 
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Create required directories on EC2</span>
         <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-          <span class="s">ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@$ "mkdir -p /home/ubuntu/app/backend/src/main/resources"</span>
+          <span class="s">ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${{ secrets.EC2_IP }} "mkdir -p /home/ubuntu/app/backend/src/main/resources"</span>
 
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Copy application-prod.yml to EC2</span>
         <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-          <span class="s">echo "$" &gt; application-prod.yml</span>
-          <span class="s">scp -o StrictHostKeyChecking=no -i key.pem application-prod.yml ubuntu@$:/home/ubuntu/app/backend/src/main/resources/application-prod.yml</span>
+          <span class="s">echo "${{ secrets.YML_PROD }}" &gt; application-prod.yml</span>
+          <span class="s">scp -o StrictHostKeyChecking=no -i key.pem application-prod.yml ubuntu@${{ secrets.EC2_IP }}:/home/ubuntu/app/backend/src/main/resources/application-prod.yml</span>
 
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Copy docker-compose.yml and project files to EC2</span>
         <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-          <span class="s">scp -o StrictHostKeyChecking=no -i key.pem -r backend frontend README.md ubuntu@$:/home/ubuntu/app</span>
+          <span class="s">scp -o StrictHostKeyChecking=no -i key.pem -r backend frontend README.md ubuntu@${{ secrets.EC2_IP }}:/home/ubuntu/app</span>
 
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy using Docker Compose</span>
         <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-          <span class="s">ssh -o ServerAliveInterval=60 -o StrictHostKeyChecking=no -i key.pem ubuntu@$ "cd /home/ubuntu/app/backend &amp;&amp; sudo docker-compose down &amp;&amp; sudo docker-compose up -d"</span>
+          <span class="s">ssh -o ServerAliveInterval=60 -o StrictHostKeyChecking=no -i key.pem ubuntu@${{ secrets.EC2_IP }} "cd /home/ubuntu/app/backend &amp;&amp; sudo docker-compose down &amp;&amp; sudo docker-compose up -d"</span>
 
       <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Clean up SSH Key</span>
         <span class="na">run</span><span class="pi">:</span> <span class="s">rm -f key.pem</span>
@@ -1430,35 +1429,35 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Spring-Boot-%EC%99%B8%EB%B6%80-%EC%84%A4%EC%A0%95%EA%B3%BC-%ED%94%84%EB%A1%9C%ED%95%84/">[Spring Boot] 외부 설정과 프로필</a>
+          <a href="/posts/JPA-%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8/">[JPA] 영속성 컨텍스트</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-10%EC%9D%BC%EC%B0%A8/">[quantHelper] 개발 - API4</a>
+          <a href="/posts/JAVA-%ED%81%B4%EB%9E%98%EC%8A%A4/">[JAVA] 클래스</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/OS-Virtual-Memory-System/">[OS] Virtual Memory System</a>
+          <a href="/posts/JAVA-%EC%83%81%EC%86%8D/">[JAVA] 상속</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Network-Layer-Data-Plane/">[Network Layer] Data Plane</a>
+          <a href="/posts/Stripe-Stripe%EB%A1%9C-%EC%B9%B4%EB%93%9C-%EC%A0%95%EB%B3%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-WO-checkout-Session/">[Stripe] Stripe로 카드 정보 저장하기 W/O checkout Session </a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-11%EC%9D%BC%EC%B0%A8/">[quantHelper] 서버 배포</a>
+          <a href="/posts/git-Actions/">[git] Actions </a>
         </li>
       
     </ul>
@@ -1706,74 +1705,7 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -1893,176 +1825,6 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2252,6 +2014,21 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2270,6 +2047,240 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -2347,10 +2358,10 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
         <a class="post-tag btn btn-outline-primary" href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/">프로젝트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/troubleshooting/">TROUBLESHOOTING</a>
@@ -2362,10 +2373,10 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
         <a class="post-tag btn btn-outline-primary" href="/tags/os/">OS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/auth/">Auth</a>
@@ -2716,7 +2727,55 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2744,62 +2803,6 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%ED%95%84%EC%9A%94-%EA%B8%B0%EB%8A%A5/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1715492494"
-  data-df="ll"
-  
->
-  May 12, 2024
-</time>
-
-              <h4 class="pt-0 my-2">[프롬프트 엔지니어링] 필요 기능</h4>
-              <div class="text-muted">
-                <p>새로운 프로젝트 시작</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-11%EC%9D%BC%EC%B0%A8/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1715084815"
-  data-df="ll"
-  
->
-  May  7, 2024
-</time>
-
-              <h4 class="pt-0 my-2">[quantHelper] 서버 배포</h4>
-              <div class="text-muted">
-                <p>11일차</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
           <a href="/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-10%EC%9D%BC%EC%B0%A8/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -2822,6 +2825,62 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
               <h4 class="pt-0 my-2">[quantHelper] 개발 - API4</h4>
               <div class="text-muted">
                 <p>10일차</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-9%EC%9D%BC%EC%B0%A8/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1713082840"
+  data-df="ll"
+  
+>
+  Apr 14, 2024
+</time>
+
+              <h4 class="pt-0 my-2">[quantHelper] 개발 - API3</h4>
+              <div class="text-muted">
+                <p>9일차</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-7%EC%9D%BC%EC%B0%A8/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1712850534"
+  data-df="ll"
+  
+>
+  Apr 12, 2024
+</time>
+
+              <h4 class="pt-0 my-2">[quantHelper] 개발 - API2</h4>
+              <div class="text-muted">
+                <p>7일차</p>
               </div>
             </div>
           </a>
@@ -3147,74 +3206,7 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -3334,176 +3326,6 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3693,6 +3515,21 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -3711,6 +3548,240 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -3788,10 +3859,10 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
         <a class="post-tag btn btn-outline-primary" href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/">프로젝트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/troubleshooting/">TROUBLESHOOTING</a>
@@ -3803,10 +3874,10 @@ Spring Boot 애플리케이션이 릴리스 환경에서 실행되면, 애플리
         <a class="post-tag btn btn-outline-primary" href="/tags/os/">OS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/auth/">Auth</a>
