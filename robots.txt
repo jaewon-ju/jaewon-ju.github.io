@@ -1,5 +1,3 @@
 User-agent: *
-
-Disallow: /norobots/
-
+Allow: /
 Sitemap: https://jaewon-ju.github.io/sitemap.xml
