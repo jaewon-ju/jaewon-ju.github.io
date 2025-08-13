@@ -125,16 +125,17 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, do
       </item>
     
 	<item>
-		<title>[TroubleShooting] next-auth getSession null error</title>
+		<title>[Stripe] Stripe로 카드 정보 저장하기 W/O checkout Session </title>
         
         
-            <description>&lt;h2 id=&quot;오류-상황&quot;&gt;오류 상황&lt;/h2&gt;
-&lt;p&gt;Next.js 13 App Router 환경&lt;/p&gt;
+            <description>&lt;h2 id=&quot;목표&quot;&gt;목표&lt;/h2&gt;
+&lt;p&gt;Stripe의 &lt;span style=&quot;color:red&quot;&gt;Checkout Session을 사용하지 않고&lt;/span&gt;, 사용자의 카드 정보를 웹사이트 내에서 직접 수집하고 저장하는 방법을 설명한다.
+여기서 핵심은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;결제는 하지 않고 카드 정보만 미리 받아두는 것&quot;&lt;/code&gt; 이다. 결제는 이후 필요할 때 따로 진행한다.&lt;/p&gt;
 </description>
         
-        <pubDate>Mon, 28 Apr 2025 14:04:25 +0900</pubDate>
-        <link>https://jaewon-ju.github.io/posts/TroubleShooting-next-auth-getSession-null-error/</link>
-        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-next-auth-getSession-null-error/</guid>
+        <pubDate>Fri, 09 May 2025 17:53:51 +0900</pubDate>
+        <link>https://jaewon-ju.github.io/posts/Stripe-Stripe%EB%A1%9C-%EC%B9%B4%EB%93%9C-%EC%A0%95%EB%B3%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-WO-checkout-Session/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/Stripe-Stripe%EB%A1%9C-%EC%B9%B4%EB%93%9C-%EC%A0%95%EB%B3%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-WO-checkout-Session/</guid>
       </item>
     
   </channel>
