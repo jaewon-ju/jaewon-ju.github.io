@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -612,9 +612,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -624,14 +622,13 @@
   <header>
     <h1 data-toc-skip>[TroubleShooting] NextAuth - Authentik Docker Issue (1)</h1>
     
-      <p class="post-desc fw-light mb-4">Authentik을 docker container로 돌렸을 때 발생하는 오류</p>
+    <p class="post-desc fw-light mb-4">Authentik을 docker container로 돌렸을 때 발생하는 오류</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -653,20 +650,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -706,31 +699,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[TroubleShooting] NextAuth - Authentik Docker Issue (1)</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[TroubleShooting] NextAuth - Authentik Docker Issue (1)</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[TroubleShooting] NextAuth - Authentik Docker Issue (1)</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[TroubleShooting] NextAuth - Authentik Docker Issue (1)</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <p><a href="#English">English Version</a>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><p><a href="#English">English Version</a>
 Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, docker-compose 환경에서 Nginx를 통해 리버스 프록시를 구성하였다.
 이 과정에서 /authentik/와 같은 서브패스 방식으로 Authentik을 배포하려 했으나, 정적 파일 로드 실패로 인해 인증 화면 자체가 정상 렌더링되지 않았다.</p>
 
@@ -954,8 +968,7 @@ server <span class="o">{</span>
 
 <p>This resolves the absolute path issue entirely, allowing the authentication UI, static files, and all OIDC endpoints to work correctly.</p>
 
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -965,21 +978,14 @@ server <span class="o">{</span>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

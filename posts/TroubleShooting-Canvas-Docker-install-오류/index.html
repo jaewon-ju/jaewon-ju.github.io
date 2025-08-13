@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -579,9 +579,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -591,14 +589,13 @@
   <header>
     <h1 data-toc-skip>[TroubleShooting] Canvas Docker install 오류</h1>
     
-      <p class="post-desc fw-light mb-4">Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm ci 명령어 실행 시 canvas 모듈의 네이티브 바이너리 설치 실패로 인해 빌드가 중단되는 오류</p>
+    <p class="post-desc fw-light mb-4">Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm ci 명령어 실행 시 canvas 모듈의 네이티브 바이너리 설치 실패로 인해 빌드가 중단되는 오류</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -620,20 +617,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -673,31 +666,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[TroubleShooting] Canvas Docker install 오류</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[TroubleShooting] Canvas Docker install 오류</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[TroubleShooting] Canvas Docker install 오류</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[TroubleShooting] Canvas Docker install 오류</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <p>Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm ci 명령어 실행 시 canvas 모듈의 네이티브 바이너리 설치 실패로 인해 빌드가 중단되었다.</p>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><p>Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm ci 명령어 실행 시 canvas 모듈의 네이티브 바이너리 설치 실패로 인해 빌드가 중단되었다.</p>
 
 <p>에러 메시지는 다음과 같다:</p>
 
@@ -771,8 +785,7 @@ RUN apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">in
 
 <p>위 패키지를 설치한 후 다시 npm ci를 실행하면 canvas 모듈도 문제없이 설치된다.
 이제 docker-compose up –build 명령으로도 빌드가 정상 완료되며, Next.js 앱이 정상적으로 구동된다.</p>
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -780,33 +793,26 @@ RUN apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">in
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/troubleshooting/"
-            class="post-tag no-text-decoration"
-          >TROUBLESHOOTING</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/troubleshooting/"
+        class="post-tag no-text-decoration"
+      >TROUBLESHOOTING</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

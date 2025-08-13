@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -655,9 +655,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -667,14 +665,13 @@
   <header>
     <h1 data-toc-skip>[Auth] Authentik 비밀번호 복구 기능, email 환경 설정</h1>
     
-      <p class="post-desc fw-light mb-4">Authentik에서 비밀번호 복구 기능을 추가하는 방법에 대해서 알아보자</p>
+    <p class="post-desc fw-light mb-4">Authentik에서 비밀번호 복구 기능을 추가하는 방법에 대해서 알아보자</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -696,20 +693,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -749,31 +742,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[Auth] Authentik 비밀번호 복구 기능, email 환경 설정</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[Auth] Authentik 비밀번호 복구 기능, email 환경 설정</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[Auth] Authentik 비밀번호 복구 기능, email 환경 설정</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[Auth] Authentik 비밀번호 복구 기능, email 환경 설정</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <h2 id="️-authentik-password-recovery-설정-가이드"><span class="me-2">✏️ Authentik Password Recovery 설정 가이드</span><a href="#️-authentik-password-recovery-설정-가이드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><h2 id="️-authentik-password-recovery-설정-가이드"><span class="me-2">✏️ Authentik Password Recovery 설정 가이드</span><a href="#️-authentik-password-recovery-설정-가이드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>이 문서는 <strong>Authentik에서 비밀번호 재설정</strong> 기능을 구성하는 과정을 설명한다. 
 비밀번호 재설정을 구현하기 위해 필요한 요소는 다음과 같다:</p>
 
@@ -910,8 +924,7 @@ AUTHENTIK_EMAIL__FROM=이메일주소
 <hr />
 
 <p>이로써 사용자는 이메일을 통해 비밀번호 재설정 링크를 받고, 정책에 맞춘 새 비밀번호로 변경할 수 있게 된다.</p>
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -919,38 +932,31 @@ AUTHENTIK_EMAIL__FROM=이메일주소
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/auth/"
-            class="post-tag no-text-decoration"
-          >Auth</a>
-        
-          <a
-            href="/tags/authentik/"
-            class="post-tag no-text-decoration"
-          >Authentik</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/auth/"
+        class="post-tag no-text-decoration"
+      >Auth</a>
+      
+      <a
+        href="/tags/authentik/"
+        class="post-tag no-text-decoration"
+      >Authentik</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

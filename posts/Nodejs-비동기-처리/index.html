@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -795,9 +795,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -807,14 +805,13 @@
   <header>
     <h1 data-toc-skip>[Nodejs] 비동기 처리, Promise</h1>
     
-      <p class="post-desc fw-light mb-4">JavaScript의 비동기 처리에 대해서</p>
+    <p class="post-desc fw-light mb-4">JavaScript의 비동기 처리에 대해서</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -836,20 +833,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -889,31 +882,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[Nodejs] 비동기 처리, Promise</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[Nodejs] 비동기 처리, Promise</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[Nodejs] 비동기 처리, Promise</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[Nodejs] 비동기 처리, Promise</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <h2 id="️-javascript의-특징"><span class="me-2">✏️ JavaScript의 특징</span><a href="#️-javascript의-특징" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><h2 id="️-javascript의-특징"><span class="me-2">✏️ JavaScript의 특징</span><a href="#️-javascript의-특징" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <ul>
   <li>JavaScript는 <span style="color:red">싱글 스레드</span> 언어이다.
     <ul>
@@ -1192,8 +1206,7 @@ Promise를 기반으로 한다.</p>
 <h2 id="reference"><span class="me-2">REFERENCE</span><a href="#reference" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>https://inpa.tistory.com/entry/JS-📚-비동기처리-Promise [Inpa Dev 👨‍💻:티스토리]</p>
 
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -1201,33 +1214,26 @@ Promise를 기반으로 한다.</p>
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/nodejs/"
-            class="post-tag no-text-decoration"
-          >nodejs</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/nodejs/"
+        class="post-tag no-text-decoration"
+      >nodejs</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

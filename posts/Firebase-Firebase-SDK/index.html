@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -665,9 +665,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -677,14 +675,13 @@
   <header>
     <h1 data-toc-skip>[Firebase] Firebase SDK</h1>
     
-      <p class="post-desc fw-light mb-4">Firebase Software Development Kit의 종류와 특징</p>
+    <p class="post-desc fw-light mb-4">Firebase Software Development Kit의 종류와 특징</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -706,20 +703,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -759,31 +752,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[Firebase] Firebase SDK</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[Firebase] Firebase SDK</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[Firebase] Firebase SDK</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[Firebase] Firebase SDK</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <h4 id="firebase란"><span class="me-2">Firebase란</span><a href="#firebase란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><h4 id="firebase란"><span class="me-2">Firebase란</span><a href="#firebase란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <p>Google에서 제공하는 백엔드 서비스 플랫폼이다.
 Firebase를 사용하면 개발자는 <span style="color:red">서버를 직접 구축하지 않아도</span>, 앱의 핵심 기능을 빠르게 개발하고 배포할 수 있다.</p>
 
@@ -1013,8 +1027,7 @@ Firebase를 사용하면 개발자는 <span style="color:red">서버를 직접 �
     </tr>
   </tbody>
 </table></div>
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -1024,21 +1037,14 @@ Firebase를 사용하면 개발자는 <span style="color:red">서버를 직접 �
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

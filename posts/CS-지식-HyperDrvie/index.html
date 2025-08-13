@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -698,9 +698,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -710,14 +708,13 @@
   <header>
     <h1 data-toc-skip>[CS 지식] HyperDrvie</h1>
     
-      <p class="post-desc fw-light mb-4">Cloudflare의 기능중 하나인 HyperDrive에 대해서</p>
+    <p class="post-desc fw-light mb-4">Cloudflare의 기능중 하나인 HyperDrive에 대해서</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -739,20 +736,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -792,31 +785,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[CS 지식] HyperDrvie</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[CS 지식] HyperDrvie</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[CS 지식] HyperDrvie</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[CS 지식] HyperDrvie</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <h3 id="cloudflare-workers"><span class="me-2">Cloudflare Workers</span><a href="#cloudflare-workers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><h3 id="cloudflare-workers"><span class="me-2">Cloudflare Workers</span><a href="#cloudflare-workers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p>환경에서 PostgreSQL 데이터베이스에 접근할 때 가장 큰 병목 중 하나는 TCP 연결 시간이다. Workers는 요청마다 콜드스타트를 동반하며, 매번 TCP 핸드셰이크를 수행해야 한다. 이로 인해 단순 SELECT 쿼리조차 평균 500ms 이상의 지연이 발생하는 경우가 많다.</p>
 
 <p>이를 해결하기 위해 Cloudflare Hyperdrive를 적용했고, 그 결과 단순 조회는 평균 10ms 내외, INSERT는 약 200ms 수준까지 응답 속도를 줄이는 데 성공했다. 이 글은 Hyperdrive의 개념부터 적용 방법, 그리고 성능 개선 결과까지 정리한 실전 도입 사례다.</p>
@@ -946,8 +960,7 @@
 
 <p><br /></p>
 
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -955,33 +968,26 @@
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/cs-%EC%A7%80%EC%8B%9D/"
-            class="post-tag no-text-decoration"
-          >CS 지식</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/cs-%EC%A7%80%EC%8B%9D/"
+        class="post-tag no-text-decoration"
+      >CS 지식</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

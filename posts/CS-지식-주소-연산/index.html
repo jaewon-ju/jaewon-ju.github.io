@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -600,9 +600,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -612,14 +610,13 @@
   <header>
     <h1 data-toc-skip>[CS 지식] 주소 연산</h1>
     
-      <p class="post-desc fw-light mb-4">0x00과 0x01 간의 차이는 왜 1 byte인가?</p>
+    <p class="post-desc fw-light mb-4">0x00과 0x01 간의 차이는 왜 1 byte인가?</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -641,20 +638,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -694,31 +687,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[CS 지식] 주소 연산</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[CS 지식] 주소 연산</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[CS 지식] 주소 연산</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[CS 지식] 주소 연산</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <p>Java를 공부하다가, 메모리와 관련된 부분이 나왔다. Java의 메모리 구조에 대해서 공부하는김에 C 언어 메모리 구조도 한번 복습해야겠다~~ 해서 쭉 정리를 해봤다.</p>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><p>Java를 공부하다가, 메모리와 관련된 부분이 나왔다. Java의 메모리 구조에 대해서 공부하는김에 C 언어 메모리 구조도 한번 복습해야겠다~~ 해서 쭉 정리를 해봤다.</p>
 
 <p>근데 정말 뜬금없이 이해 안되는 부분이 생겼다. 머릿속으로 정리를 다 끝낸 지금 다시 생각해보면, 이게 왜 헷갈렸지…? 싶을 정도의 의문점이긴 한데,, 나중에 또 갑자기 이런일이 생길 수도 있으니까 정리해두려 한다.</p>
 
@@ -760,8 +774,7 @@ scores[1]의 주소는 0x00000000에서 int 형 변수의 크기인 4 bytes 만�
 <h2 id="reference"><span class="me-2">REFERENCE</span><a href="#reference" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>나랑 비슷한 의문점이 생긴 사람이 있었나보다…
 https://stackoverflow.com/questions/75122597/understanding-hexadecimal-and-memory-addresses</p>
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -769,33 +782,26 @@ https://stackoverflow.com/questions/75122597/understanding-hexadecimal-and-memor
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/cs%EC%A7%80%EC%8B%9D/"
-            class="post-tag no-text-decoration"
-          >CS지식</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/cs%EC%A7%80%EC%8B%9D/"
+        class="post-tag no-text-decoration"
+      >CS지식</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

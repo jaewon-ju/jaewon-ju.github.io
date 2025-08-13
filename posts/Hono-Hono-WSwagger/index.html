@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -665,9 +665,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -677,14 +675,13 @@
   <header>
     <h1 data-toc-skip>[Hono] Hono W/Swagger</h1>
     
-      <p class="post-desc fw-light mb-4">Hono와 Swagger를 통합하는 방법. #Hono_Framework #Hono_with_swagger #Hono_OpenAPI</p>
+    <p class="post-desc fw-light mb-4">Hono와 Swagger를 통합하는 방법. #Hono_Framework #Hono_with_swagger #Hono_OpenAPI</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -706,20 +703,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -759,31 +752,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[Hono] Hono W/Swagger</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[Hono] Hono W/Swagger</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[Hono] Hono W/Swagger</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[Hono] Hono W/Swagger</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <h2 id="️-hono에-swagger-통합하기"><span class="me-2">✏️ Hono에 Swagger 통합하기</span><a href="#️-hono에-swagger-통합하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><h2 id="️-hono에-swagger-통합하기"><span class="me-2">✏️ Hono에 Swagger 통합하기</span><a href="#️-hono에-swagger-통합하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p><code class="language-plaintext highlighter-rouge">@hono/zod-openapi</code>를 사용하면 <code class="language-plaintext highlighter-rouge">zod</code> 스키마를 활용하여 쉽게 API 문서를 작성할 수 있다.</p>
 
 <blockquote>
@@ -1149,8 +1163,7 @@ Swagger UI를 통해 확인/테스트를 하고 싶다면 다음과 같이 Swagg
 </pre></td></tr></tbody></table></code></div>  </div>
 </blockquote>
 
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -1158,38 +1171,31 @@ Swagger UI를 통해 확인/테스트를 하고 싶다면 다음과 같이 Swagg
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/hono/"
-            class="post-tag no-text-decoration"
-          >Hono</a>
-        
-          <a
-            href="/tags/swagger/"
-            class="post-tag no-text-decoration"
-          >Swagger</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/hono/"
+        class="post-tag no-text-decoration"
+      >Hono</a>
+      
+      <a
+        href="/tags/swagger/"
+        class="post-tag no-text-decoration"
+      >Swagger</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->

@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -816,9 +816,7 @@
 <!-- return -->
 
 
-
-
-
+ 
 
 
 
@@ -828,14 +826,13 @@
   <header>
     <h1 data-toc-skip>[외주] firebase 채팅 기능</h1>
     
-      <p class="post-desc fw-light mb-4">firebase를 사용해서 채팅 기능을 구현하는 의뢰</p>
+    <p class="post-desc fw-light mb-4">firebase를 사용해서 채팅 기능을 구현하는 의뢰</p>
     
 
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
-        Posted
-        <!--
+        Posted <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -857,20 +854,16 @@
       </span>
 
       <!-- lastmod date -->
-      
-
-      
+       
 
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          
-
-          By
+           By
 
           <em>
             
-              <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
+            <a href="https://github.com/jaewon-ju">Jaewon Ju</a>
             
           </em>
         </span>
@@ -910,31 +903,52 @@
   </header>
 
   
-    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">[외주] firebase 채팅 기능</span>
-      <button type="button" class="toc-trigger btn me-1">
-        <i class="fa-solid fa-list-ul fa-fw"></i>
+  <div
+    id="toc-bar"
+    class="d-flex align-items-center justify-content-between invisible"
+  >
+    <span class="label text-truncate">[외주] firebase 채팅 기능</span>
+    <button type="button" class="toc-trigger btn me-1">
+      <i class="fa-solid fa-list-ul fa-fw"></i>
+    </button>
+  </div>
+
+  <button
+    id="toc-solo-trigger"
+    type="button"
+    class="toc-trigger btn btn-outline-secondary btn-sm"
+  >
+    <span class="label ps-2 pe-1"
+      >Contents</span
+    >
+    <i class="fa-solid fa-angle-right fa-fw"></i>
+  </button>
+
+  <dialog id="toc-popup" class="p-0">
+    <div
+      class="header d-flex flex-row align-items-center justify-content-between"
+    >
+      <div class="label text-truncate py-2 ms-4">[외주] firebase 채팅 기능</div>
+      <button
+        id="toc-popup-close"
+        type="button"
+        class="btn mx-1 my-1 opacity-75"
+      >
+        <i class="fas fa-close"></i>
       </button>
     </div>
-
-    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
-      <span class="label ps-2 pe-1">Contents</span>
-      <i class="fa-solid fa-angle-right fa-fw"></i>
-    </button>
-
-    <dialog id="toc-popup" class="p-0">
-      <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">[외주] firebase 채팅 기능</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
-      </div>
-      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
-    </dialog>
+    <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+  </dialog>
   
 
-  <div class="content">
-    <h3 id="첫-외주"><span class="me-2">첫 외주</span><a href="#첫-외주" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+  <hr
+    class="post-divider"
+    style="border: none; border-top: 1px solid white; margin: 2rem 0"
+  />
+
+  <br />
+
+  <div class="content"><h3 id="첫-외주"><span class="me-2">첫 외주</span><a href="#첫-외주" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p>처음으로 외주를 받게 되었다.
 게시판 형태의 웹페이지에 기능을 추가하는 의뢰가 들어왔다.
 나는 그 중에서 실시간 채팅 기능을 구현하기로 했다.</p>
@@ -1182,8 +1196,7 @@ B 사용자가 A 사용자에게 메시지를 보내면 A 사용자에게 <code 
 
 <p><a href="https://velog.velcdn.com/images/jaewon-ju/post/cbab0c59-ba11-46bd-b311-98d82259efa8/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/cbab0c59-ba11-46bd-b311-98d82259efa8/image.png" alt="" loading="lazy"></a></p>
 
-
-  </div>
+</div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
@@ -1191,38 +1204,31 @@ B 사용자가 A 사용자에게 메시지를 보내면 A 사용자에게 <code 
 
     <!-- tags -->
     
-      <div class="post-tags">
-        <i class="fa fa-tags fa-fw me-1"></i>
-        
-          <a
-            href="/tags/firebase/"
-            class="post-tag no-text-decoration"
-          >Firebase</a>
-        
-          <a
-            href="/tags/%EC%99%B8%EC%A3%BC/"
-            class="post-tag no-text-decoration"
-          >외주</a>
-        
-      </div>
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a
+        href="/tags/firebase/"
+        class="post-tag no-text-decoration"
+      >Firebase</a>
+      
+      <a
+        href="/tags/%EC%99%B8%EC%A3%BC/"
+        class="post-tag no-text-decoration"
+      >외주</a>
+      
+    </div>
     
 
     <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
     >
       <div class="license-wrapper">
-        
-          
-
           This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
-         by the author.
-        
+         by the author. 
       </div>
 
       <!-- Post sharing snippet -->
