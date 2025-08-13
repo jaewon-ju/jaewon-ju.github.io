@@ -1,5 +1,11 @@
 [33m          Conflict: The following destination is shared by multiple files.[0m
 [33m                    The written file may end up with unexpected contents.[0m
+[33m                    [36m/home/runner/work/jaewon-ju.github.io/jaewon-ju.github.io/_site/feed.xml[0m[0m
+[33m                     - assets/feed.xml[0m
+[33m                     - feed.xml[0m
+[33m                    [0m
+[33m          Conflict: The following destination is shared by multiple files.[0m
+[33m                    The written file may end up with unexpected contents.[0m
 [33m                    [36m/home/runner/work/jaewon-ju.github.io/jaewon-ju.github.io/_site/posts/JAVA-메모리-사용-영역/index.html[0m[0m
 [33m                     - /home/runner/work/jaewon-ju.github.io/jaewon-ju.github.io/_posts/2024-01-13-java------.md[0m
 [33m                     - /home/runner/work/jaewon-ju.github.io/jaewon-ju.github.io/_posts/2024-01-14-java------.md[0m
