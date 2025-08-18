@@ -5,8 +5,20 @@
     <description>A minimal, responsive and feature-rich Jekyll theme for technical writing.</description>
     <link>https://jaewon-ju.github.io</link>
     <atom:link href="https://jaewon-ju.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Mon, 11 Aug 2025 14:23:43 +0900</lastBuildDate>
+	<lastBuildDate>Sun, 17 Aug 2025 22:42:44 +0900</lastBuildDate>
 	
+	<item>
+		<title>[코딩테스트] Backtracking</title>
+        
+        
+            <description>&lt;p&gt;이 시리즈의 목표는, 코딩테스트에서 자주 사용되는 핵심 문법들을 템플릿 형태로 정리하고, 이를 빠르게 외워서 실전 문제에 바로 적용할 수 있도록 만드는 것이다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sun, 17 Aug 2025 22:42:44 +0900</pubDate>
+        <link>https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</guid>
+      </item>
+    
 	<item>
 		<title>7개월간의 스타트업 인턴 회고</title>
         
@@ -122,20 +134,6 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, do
         <pubDate>Mon, 19 May 2025 15:38:31 +0900</pubDate>
         <link>https://jaewon-ju.github.io/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</link>
         <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</guid>
-      </item>
-    
-	<item>
-		<title>[Stripe] Stripe로 카드 정보 저장하기 W/O checkout Session </title>
-        
-        
-            <description>&lt;h2 id=&quot;목표&quot;&gt;목표&lt;/h2&gt;
-&lt;p&gt;Stripe의 &lt;span style=&quot;color:red&quot;&gt;Checkout Session을 사용하지 않고&lt;/span&gt;, 사용자의 카드 정보를 웹사이트 내에서 직접 수집하고 저장하는 방법을 설명한다.
-여기서 핵심은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;결제는 하지 않고 카드 정보만 미리 받아두는 것&quot;&lt;/code&gt; 이다. 결제는 이후 필요할 때 따로 진행한다.&lt;/p&gt;
-</description>
-        
-        <pubDate>Fri, 09 May 2025 17:53:51 +0900</pubDate>
-        <link>https://jaewon-ju.github.io/posts/Stripe-Stripe%EB%A1%9C-%EC%B9%B4%EB%93%9C-%EC%A0%95%EB%B3%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-WO-checkout-Session/</link>
-        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/Stripe-Stripe%EB%A1%9C-%EC%B9%B4%EB%93%9C-%EC%A0%95%EB%B3%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-WO-checkout-Session/</guid>
       </item>
     
   </channel>
