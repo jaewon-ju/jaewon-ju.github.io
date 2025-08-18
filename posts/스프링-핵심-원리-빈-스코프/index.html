@@ -253,7 +253,7 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
     <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
@@ -1551,6 +1551,15 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+      <a
+        href="/categories/spring/"
+        >Spring</a
+      >
+    </div>
+    
 
     <!-- tags -->
     
@@ -1934,7 +1943,79 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2124,80 +2205,6 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2440,25 +2447,6 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2510,6 +2498,23 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2587,10 +2592,10 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
         <a class="post-tag btn btn-outline-primary" href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/">프로젝트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/troubleshooting/">TROUBLESHOOTING</a>
@@ -2602,10 +2607,10 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
         <a class="post-tag btn btn-outline-primary" href="/tags/os/">OS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/auth/">Auth</a>
@@ -2764,19 +2769,43 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -3032,6 +3061,34 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
+          <a href="/posts/Spring-MVC-Web-Application-Server/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710468056"
+  data-df="ll"
+  
+>
+  Mar 15, 2024
+</time>
+
+              <h4 class="pt-0 my-2">[Spring MVC] Introduction</h4>
+              <div class="text-muted">
+                <p>WAS, Servlet이란 무엇인가?</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EB%B9%88-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0-%EC%BD%9C%EB%B0%B1/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -3082,34 +3139,6 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
               <h4 class="pt-0 my-2">[스프링 핵심 원리] 의존관계 자동 주입</h4>
               <div class="text-muted">
                 <p>의존관계 자동 주입에 대해 더 자세히 알아보자.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1708327063"
-  data-df="ll"
-  
->
-  Feb 19, 2024
-</time>
-
-              <h4 class="pt-0 my-2">[스프링 핵심 원리] 컴포넌트 스캔</h4>
-              <div class="text-muted">
-                <p>자동으로 빈을 등록하는 컴포넌트 스캔 기능</p>
               </div>
             </div>
           </a>
@@ -3435,7 +3464,79 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3625,80 +3726,6 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3941,25 +3968,6 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -4011,6 +4019,23 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -4088,10 +4113,10 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
         <a class="post-tag btn btn-outline-primary" href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/">프로젝트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/troubleshooting/">TROUBLESHOOTING</a>
@@ -4103,10 +4128,10 @@ Request 스코프의 빈은 클라이언트의 요청이 발생할 때 생성된
         <a class="post-tag btn btn-outline-primary" href="/tags/os/">OS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/auth/">Auth</a>
