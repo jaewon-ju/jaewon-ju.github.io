@@ -8,7 +8,7 @@ series:
   id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
   name: "TroubleShooting"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:02.589Z
+  lastSyncedAt: 2025-08-18T06:08:49.587Z
   hash: "f3a0093b19c36bc3eeb566b6491687200d8124d892a6e6973dcef3f8f2bbaa26"
 ---
 

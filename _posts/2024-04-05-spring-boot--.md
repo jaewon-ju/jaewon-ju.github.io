@@ -8,7 +8,7 @@ series:
   id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
   name: "Spring Boot"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:05.044Z
+  lastSyncedAt: 2025-08-18T06:08:51.616Z
   hash: "222225757f260d12c51452a8de53db85cc57381631997933f61884c90d640ba4"
 ---
 

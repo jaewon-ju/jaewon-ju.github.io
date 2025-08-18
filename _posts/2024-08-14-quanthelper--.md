@@ -8,7 +8,7 @@ series:
   id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
   name: "프로젝트"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:03.368Z
+  lastSyncedAt: 2025-08-18T06:08:50.255Z
   hash: "47c9f079a217624a012dbe78c161fba4a1ec4b0e9d45f8dcf2bef05c40b7a518"
 ---
 

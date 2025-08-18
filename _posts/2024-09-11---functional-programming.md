@@ -5,7 +5,7 @@ date: 2024-09-11T02:41:11.654Z
 tags: ["프로그래밍언어론"]
 slug: "프로그래밍언어론-Functional-Programming"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:03.190Z
+  lastSyncedAt: 2025-08-18T06:08:50.077Z
   hash: "afd9e47f59f7a64bf499948d78f96e8f2159e698714041ad55b2292fb04cec94"
 ---
 

@@ -8,7 +8,7 @@ series:
   id: fa4e953d-7f0e-45be-85cb-09bb3f09c5b5
   name: "Nodejs"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:03.446Z
+  lastSyncedAt: 2025-08-18T06:08:50.303Z
   hash: "bd5509d89499bba6445ffc55611c8401e59e6467a408f5fbb0c5cfce92eb32ce"
 ---
 

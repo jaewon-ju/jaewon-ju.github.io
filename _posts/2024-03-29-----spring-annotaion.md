@@ -5,7 +5,7 @@ date: 2024-03-29T07:32:17.297Z
 tags: ["오류"]
 slug: "오류-해결-Spring-Annotaion"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:05.212Z
+  lastSyncedAt: 2025-08-18T06:08:51.790Z
   hash: "453569c10038fd672da17a44db60a5db2748f54f7929dfb92bae32484214e643"
 ---
 

@@ -9,7 +9,7 @@ series:
   id: 6499233e-ce0d-46f5-97c0-3565082c0f25
   name: "Auth"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:02.334Z
+  lastSyncedAt: 2025-08-18T06:08:49.364Z
   hash: "bfe09000f07a9b2bdcbf135c177808737c57242050aa562a74828d6ba284a258"
 ---
 

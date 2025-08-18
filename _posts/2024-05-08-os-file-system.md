@@ -8,7 +8,7 @@ series:
   id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
   name: "OS"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:04.660Z
+  lastSyncedAt: 2025-08-18T06:08:51.235Z
   hash: "67dbe7a2dcdb83ab9f722c7ec49a2347879ec75128bfba048051bde40ee94e12"
 ---
 

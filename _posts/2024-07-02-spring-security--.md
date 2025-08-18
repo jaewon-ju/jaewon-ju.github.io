@@ -8,7 +8,7 @@ series:
   id: 866f07ed-1183-4166-8319-98e0b8faa1a1
   name: "Spring"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:03.959Z
+  lastSyncedAt: 2025-08-18T06:08:50.638Z
   hash: "8f7d0dd4850318a1ad7cd3094882f168dc8e34d1a8c6216315144d24143b3eca"
 ---
 

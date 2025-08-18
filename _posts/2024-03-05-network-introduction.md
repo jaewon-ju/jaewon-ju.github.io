@@ -8,7 +8,7 @@ series:
   id: 286776ce-3b67-40a8-b62e-6932373b0109
   name: "Network"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:05.760Z
+  lastSyncedAt: 2025-08-18T06:08:52.306Z
   hash: "9acf6d952c63ea309602e9f33a9eda6abbfcf24a1f4156eac55b475c505ca1fa"
 ---
 

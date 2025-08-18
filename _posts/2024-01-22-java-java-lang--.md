@@ -5,7 +5,7 @@ date: 2024-01-22T14:48:44.316Z
 tags: ["Java"]
 slug: "JAVA-java.lang-패키지"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:06.202Z
+  lastSyncedAt: 2025-08-18T06:08:52.776Z
   hash: "f6546fb64a9565bee6bf22e181ceadc6854bc609d5b9404eca2151b8b09aaa0a"
 ---
 

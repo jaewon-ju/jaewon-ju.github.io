@@ -5,7 +5,7 @@ date: 2024-10-08T01:50:43.123Z
 tags: ["Software Engineering"]
 slug: "Software-Engineering-설계"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:02.820Z
+  lastSyncedAt: 2025-08-18T06:08:49.749Z
   hash: "4bc46a70c614e0fa5e08a2755b4e4bb99c785d5de6bfdacf67f850152b11b2e7"
 ---
 

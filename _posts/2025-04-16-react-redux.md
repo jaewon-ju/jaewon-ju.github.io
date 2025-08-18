@@ -8,7 +8,7 @@ series:
   id: cbbed83d-4e7c-46da-a2a5-e557556d12bb
   name: "프론트엔드"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:02.022Z
+  lastSyncedAt: 2025-08-18T06:08:49.076Z
   hash: "0d6015e7a5b6ef68910713612e072a8cb8d7d61161d593e9867112a030ff9589"
 ---
 

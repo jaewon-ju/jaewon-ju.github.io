@@ -8,7 +8,7 @@ series:
   id: 865cd188-a04a-42fd-a30d-e7606b6f29f2
   name: "Firebase"
 velogSync:
-  lastSyncedAt: 2025-08-09T03:04:02.450Z
+  lastSyncedAt: 2025-08-18T06:08:49.471Z
   hash: "8dc3dfd5405dba17b8b50d34fd4fcd40feafc1efcf0a5c10f5dd7a73d201a45d"
 ---
 
