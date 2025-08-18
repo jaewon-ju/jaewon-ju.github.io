@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: JUJU # the main title
 
-tagline: Develop Blog # it will display as the subtitle
+tagline: Development Blog # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -87,7 +87,7 @@ theme_mode: dark
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "assets/img/avatar.png"
