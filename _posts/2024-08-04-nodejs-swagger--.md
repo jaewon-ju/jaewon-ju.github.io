@@ -4,11 +4,9 @@ description: "Swagger 연결 방법"
 date: 2024-08-04T13:54:34.142Z
 tags: ["nodejs"]
 slug: "Nodejs-Swagger-연결"
-series:
-  id: fa4e953d-7f0e-45be-85cb-09bb3f09c5b5
-  name: "Nodejs"
+categories: Nodejs
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.347Z
+  lastSyncedAt: 2025-08-18T06:18:45.883Z
   hash: "6784cbb17ad8b5c7f1d1af22746794471002e0eb23f3af3332d4ba4339997257"
 ---
 

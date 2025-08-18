@@ -4,11 +4,9 @@ description: "C언어에서 발생한 Segmentation Fault"
 date: 2024-11-01T07:46:39.133Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-C언어-SIGSEGV"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.674Z
+  lastSyncedAt: 2025-08-18T06:18:45.065Z
   hash: "5ac6fd7d3b2a368c7d2db44fb158b485dd1295474f226b98f83a46fda04fe99a"
 ---
 

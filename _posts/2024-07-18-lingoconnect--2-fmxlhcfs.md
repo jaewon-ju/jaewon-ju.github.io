@@ -4,11 +4,9 @@ description: "이번 프로젝트의 핵심은 생성형 AI와 Audio file이다.
 date: 2024-07-18T09:45:26.745Z
 tags: ["프로젝트"]
 slug: "LingoConnect-개발2-fmxlhcfs"
-series:
-  id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
-  name: "프로젝트"
+categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.436Z
+  lastSyncedAt: 2025-08-18T06:18:45.981Z
   hash: "2491780ee0dd70127be2debb11ab40d4d940ebcf0689d9f13c6df8b17cd4a78e"
 ---
 

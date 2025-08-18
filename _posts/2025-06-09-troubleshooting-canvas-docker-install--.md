@@ -4,11 +4,9 @@ description: "Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm c
 date: 2025-06-09T05:38:40.594Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Canvas-Docker-install-오류"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:48.950Z
+  lastSyncedAt: 2025-08-18T06:18:44.284Z
   hash: "678abe3830683411e66f6f9f2e151af05792a5f26ad8c39cc414fbb74af30f09"
 ---
 

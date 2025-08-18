@@ -4,11 +4,9 @@ description: "Spring MVC의 기본 기능 중, 요청에 관련된 기능들에 
 date: 2024-03-26T23:56:20.306Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-기본-기능"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.863Z
+  lastSyncedAt: 2025-08-18T06:18:47.558Z
   hash: "b2ef720ef634a1ac7ffdf71c6f79386094da87b4834136bb87a6d37639fdc8b9"
 ---
 

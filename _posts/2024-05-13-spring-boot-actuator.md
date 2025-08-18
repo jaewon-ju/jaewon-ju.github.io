@@ -4,11 +4,9 @@ description: "애플리케이션 관리를 위한 Actuator에 대해서"
 date: 2024-05-13T12:43:23.636Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Actuator"
-series:
-  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
-  name: "Spring Boot"
+categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.110Z
+  lastSyncedAt: 2025-08-18T06:18:46.736Z
   hash: "92d54237c8ba6c9a497e0778f0eef699bf613840f8702ee6e2e696b7e0e43ea4"
 ---
 

@@ -5,11 +5,9 @@ date: 2024-02-08T08:23:10.936Z
 tags: ["Spring"]
 slug: "Spring-What-is-Spring"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/608e1c39-0880-41a3-b1ed-5dba5422e071/image.png"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.568Z
+  lastSyncedAt: 2025-08-18T06:18:48.405Z
   hash: "30cdeec333d942ece4451d90a43749b8b82c5c123342920bb43309f2946a4599"
 ---
 

@@ -4,11 +4,9 @@ description: "IllegalStateException과 HttpMediaTypeNotSupportedException"
 date: 2024-10-03T12:56:03.982Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-IllegalStateException-HttpMediaTypeNotSupportedException"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.824Z
+  lastSyncedAt: 2025-08-18T06:18:45.282Z
   hash: "e825716962bebaad053f04fbbbe997a43626c39a7a3b9e2267bf09325b40b702"
 ---
 

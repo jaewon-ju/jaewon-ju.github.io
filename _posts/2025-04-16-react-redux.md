@@ -4,11 +4,9 @@ description: "Redux: 상태 관리 라이브러리 #Redux #createAsyncThunk #cre
 date: 2025-04-16T02:09:48.928Z
 tags: ["React"]
 slug: "React-Redux"
-series:
-  id: cbbed83d-4e7c-46da-a2a5-e557556d12bb
-  name: "프론트엔드"
+categories: 프론트엔드
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.076Z
+  lastSyncedAt: 2025-08-18T06:18:44.437Z
   hash: "0d6015e7a5b6ef68910713612e072a8cb8d7d61161d593e9867112a030ff9589"
 ---
 

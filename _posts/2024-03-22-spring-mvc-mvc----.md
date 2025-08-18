@@ -4,11 +4,9 @@ description: "MVC 패턴의 단점을 하나씩 고쳐나가면서 Spring MVC �
 date: 2024-03-22T05:59:11.586Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-MVC-프레임워크-만들기"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.910Z
+  lastSyncedAt: 2025-08-18T06:18:47.631Z
   hash: "e7735959e4643a785cc27af2e2df06d26dcfe82cfbbcf943e5f712e5cc2085ca"
 ---
 

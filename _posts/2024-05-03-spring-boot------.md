@@ -4,11 +4,9 @@ description: "스프링 부트의 외부 설정에 대해서"
 date: 2024-05-03T06:37:49.124Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-외부-설정과-프로필"
-series:
-  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
-  name: "Spring Boot"
+categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.360Z
+  lastSyncedAt: 2025-08-18T06:18:47.019Z
   hash: "b72d4faeffeb2e6f7f6bd411ad9f831a1a7e134924ad8a770a53f071d5ab7462"
 ---
 

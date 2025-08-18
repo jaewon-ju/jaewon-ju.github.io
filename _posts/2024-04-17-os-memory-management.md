@@ -4,11 +4,9 @@ description: "운영체제의 메모리 관리 시스템에 대하여"
 date: 2024-04-17T06:51:20.550Z
 tags: ["OS"]
 slug: "OS-Memory-Management"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.411Z
+  lastSyncedAt: 2025-08-18T06:18:47.078Z
   hash: "57160c9ac9f01c3bdd6331c052780d31e68ebc814f6e7c77453263425294e566"
 ---
 

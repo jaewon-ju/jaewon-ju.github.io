@@ -4,11 +4,9 @@ description: "운영체제를 자세히 이해하기 위한 사전 지식과 Dua
 date: 2024-03-14T13:48:26.757Z
 tags: ["OS"]
 slug: "OS-OS와-Dual-Mode"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.048Z
+  lastSyncedAt: 2025-08-18T06:18:47.766Z
   hash: "30e06f8f5d8ec3a7f1398411eacf9d0b9d0b9c2fab8a93aeb1d74a6efb96475b"
 ---
 

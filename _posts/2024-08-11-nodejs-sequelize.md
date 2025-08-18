@@ -4,11 +4,9 @@ description: "Sequelize 연결 방법 및  사용 방법"
 date: 2024-08-11T03:37:42.664Z
 tags: ["nodejs"]
 slug: "Nodejs-Sequelize"
-series:
-  id: fa4e953d-7f0e-45be-85cb-09bb3f09c5b5
-  name: "Nodejs"
+categories: Nodejs
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.303Z
+  lastSyncedAt: 2025-08-18T06:18:45.831Z
   hash: "bd5509d89499bba6445ffc55611c8401e59e6467a408f5fbb0c5cfce92eb32ce"
 ---
 

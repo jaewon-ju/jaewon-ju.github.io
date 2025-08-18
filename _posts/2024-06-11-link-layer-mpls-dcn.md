@@ -4,11 +4,9 @@ description: "MPLS, DSN"
 date: 2024-06-11T05:07:36.177Z
 tags: ["network"]
 slug: "Link-Layer-MPLS-DCN"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.844Z
+  lastSyncedAt: 2025-08-18T06:18:46.396Z
   hash: "8e3665c5053f1477061fbd0189eaadeef6fdea637f2bb3fad122348e421a36ca"
 ---
 

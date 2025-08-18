@@ -4,11 +4,9 @@ description: "NoSQL 데이터베이스인 Firestore에 대해서"
 date: 2025-02-11T01:17:13.096Z
 tags: ["Firebase"]
 slug: "Firebase-Firestore"
-series:
-  id: 865cd188-a04a-42fd-a30d-e7606b6f29f2
-  name: "Firebase"
+categories: Firebase
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.471Z
+  lastSyncedAt: 2025-08-18T06:18:44.797Z
   hash: "8dc3dfd5405dba17b8b50d34fd4fcd40feafc1efcf0a5c10f5dd7a73d201a45d"
 ---
 

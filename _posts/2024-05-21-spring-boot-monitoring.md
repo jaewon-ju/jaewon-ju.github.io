@@ -4,11 +4,9 @@ description: "서비스 모니터링을 위해 필요한 요소들"
 date: 2024-05-21T06:04:38.239Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Monitoring"
-series:
-  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
-  name: "Spring Boot"
+categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.013Z
+  lastSyncedAt: 2025-08-18T06:18:46.636Z
   hash: "0fb4396acf782a71633e90ed7aa6298093166b9e9faa0e3c0b73b50e32641118"
 ---
 

@@ -4,11 +4,9 @@ description: "jOSEError - Expected 200 OK from the JSON Web Key Set HTTP respons
 date: 2025-05-19T06:38:31.555Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Cloudflare-Workers-JOSEError"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:48.971Z
+  lastSyncedAt: 2025-08-18T06:18:44.303Z
   hash: "d701881bed49f38dd6ec12fceb47362b6bc4421c03d4cf21790ee21e1397285b"
 ---
 

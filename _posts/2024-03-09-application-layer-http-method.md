@@ -4,11 +4,9 @@ description: "HTTP Method에 대해 알아보자."
 date: 2024-03-09T13:13:53.572Z
 tags: ["network"]
 slug: "Application-Layer-HTTP-Method"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.167Z
+  lastSyncedAt: 2025-08-18T06:18:47.890Z
   hash: "814a0f818994c058d2a2e756fb485337edba0eac0e8fccd672b25cdca268b342"
 ---
 

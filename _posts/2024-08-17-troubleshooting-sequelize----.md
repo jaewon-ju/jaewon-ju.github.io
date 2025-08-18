@@ -4,11 +4,9 @@ description: "sequelize에서 상속을 사용할 때 발생하는 오류"
 date: 2024-08-17T14:04:15.546Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Sequelize-상속-오류"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.228Z
+  lastSyncedAt: 2025-08-18T06:18:45.740Z
   hash: "fb31f363a93ab56967c977512f38cdd4796dec8822a683ecea9efe5886b6102d"
 ---
 

@@ -4,11 +4,9 @@ description: "JPA란 무엇인가?"
 date: 2024-06-29T07:31:34.375Z
 tags: ["JPA"]
 slug: "Spring-JPA-JPA-소개"
-series:
-  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
-  name: "Spring Boot"
+categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.765Z
+  lastSyncedAt: 2025-08-18T06:18:46.320Z
   hash: "b37ae88c4a1067919b525142062d2d12a4116f9e174770caa919fae0f0633c2b"
 ---
 

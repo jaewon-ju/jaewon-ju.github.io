@@ -4,11 +4,9 @@ description: "운영체제의 입출력 기능에 관하여"
 date: 2024-05-22T05:49:30.697Z
 tags: ["OS"]
 slug: "OS-Input-Output"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.992Z
+  lastSyncedAt: 2025-08-18T06:18:46.614Z
   hash: "277e114133d149f6caa7d1a03075689c26b6566e81549919fab1edb3bfd818c9"
 ---
 

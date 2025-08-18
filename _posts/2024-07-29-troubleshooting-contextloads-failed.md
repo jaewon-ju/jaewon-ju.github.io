@@ -5,11 +5,9 @@ description: "test 오류"
 date: 2024-07-29T08:23:05.982Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-contextLoads-FAILED"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.387Z
+  lastSyncedAt: 2025-08-18T06:18:45.931Z
   hash: "6ea19b2ee5d945963ab307a43fab3a52aca682946a10ffddf9e4f738ffabb116"
 ---
 

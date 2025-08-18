@@ -4,11 +4,9 @@ description: "Cache header와 Conditional Get"
 date: 2024-03-13T09:58:36.715Z
 tags: ["network"]
 slug: "Application-Layer-HTTP-header2"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.069Z
+  lastSyncedAt: 2025-08-18T06:18:47.791Z
   hash: "78204f71095bf0d9b1d451b26f41651d70e3d01ac709438bc1703f607fbc523c"
 ---
 

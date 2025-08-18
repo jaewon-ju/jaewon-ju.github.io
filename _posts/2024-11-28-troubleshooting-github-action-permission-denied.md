@@ -5,7 +5,7 @@ date: 2024-11-28T06:32:00.911Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Github-Action-Permission-denied"
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.565Z
+  lastSyncedAt: 2025-08-18T06:18:44.902Z
   hash: "4423278682a398e0c5e25aee4c0988e28c912243aaa68a97d8b3266ac18455fa"
 ---
 

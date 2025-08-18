@@ -4,11 +4,9 @@ description: "TCP의 기능과 특징에 대해서 알아보자."
 date: 2024-04-09T04:47:27.832Z
 tags: ["network"]
 slug: "Transport-Layer-TCP"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.509Z
+  lastSyncedAt: 2025-08-18T06:18:47.176Z
   hash: "1da3b1826a9005d483a98454444d03a0d6fa5a5271fdb0e0771f5a18ba69f954"
 ---
 

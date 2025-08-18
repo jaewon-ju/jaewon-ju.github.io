@@ -4,11 +4,9 @@ description: "Spring MVC의 구조와 동작원리를 파악해보자."
 date: 2024-03-25T08:27:25.290Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-Spring-MVC의-이해"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.885Z
+  lastSyncedAt: 2025-08-18T06:18:47.585Z
   hash: "5725d8900e2804e2ff741619e01293db91eb31ddc9b1c7717d8179d921c5967e"
 ---
 

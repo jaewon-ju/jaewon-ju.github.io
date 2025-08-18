@@ -4,11 +4,9 @@ description: "Multi Agent를 활용한 주식 어플리케이션"
 date: 2024-08-13T14:23:05.342Z
 tags: ["프로젝트"]
 slug: "QuantHelper-개요"
-series:
-  id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
-  name: "프로젝트"
+categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.281Z
+  lastSyncedAt: 2025-08-18T06:18:45.806Z
   hash: "ab760a73ad014249d592e1a7189155a6f9a7bb937ac5e3add5ac11e19b0490a3"
 ---
 

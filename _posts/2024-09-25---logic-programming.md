@@ -5,7 +5,7 @@ date: 2024-09-25T03:27:09.958Z
 tags: ["프로그래밍언어론"]
 slug: "프로그래밍언어론-Logic-Programming"
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.938Z
+  lastSyncedAt: 2025-08-18T06:18:45.437Z
   hash: "a8bb823a3d10a7e4f5b1bc5f29b65ed43202f357fb88927d29c0197bafdea87b"
 ---
 

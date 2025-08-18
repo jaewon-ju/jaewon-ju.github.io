@@ -4,11 +4,9 @@ description: "Access Control와 클라우드 보안에 관하여"
 date: 2024-10-24T01:13:45.327Z
 tags: ["네트워크 보안"]
 slug: "네트워크-보안-Access-Control-및-클라우드-보안"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.703Z
+  lastSyncedAt: 2025-08-18T06:18:45.094Z
   hash: "acb86dc83c682c4a6def6c675a40b60f6bb9c266ae09825fc36c875dcac4d01d"
 ---
 

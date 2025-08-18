@@ -4,11 +4,9 @@ description: "@Value, @ConfigurationProperties 등 외부 설정을 객체에 �
 date: 2024-05-10T05:33:26.084Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-외부-설정과-프로필-2"
-series:
-  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
-  name: "Spring Boot"
+categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.192Z
+  lastSyncedAt: 2025-08-18T06:18:46.841Z
   hash: "170ae6192f3ccc018cd056aa9f20a1087ccd835efd2a94f7788e1163833bb24c"
 ---
 

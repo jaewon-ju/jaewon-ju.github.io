@@ -4,11 +4,9 @@ description: "맨날 까먹는 React 개념"
 date: 2025-03-18T07:43:49.028Z
 tags: ["React"]
 slug: "React-백엔드-개발자를-위한-React-간단-정리"
-series:
-  id: cbbed83d-4e7c-46da-a2a5-e557556d12bb
-  name: "프론트엔드"
+categories: 프론트엔드
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.262Z
+  lastSyncedAt: 2025-08-18T06:18:44.599Z
   hash: "5b77b3a43ef6dbede7c11043d5e3aca604a714702916bdff6d8d6542684dbc04"
 ---
 

@@ -4,11 +4,9 @@ description: "Authentik에서 비밀번호 복구 기능을 추가하는 방법�
 date: 2025-04-15T05:48:19.148Z
 tags: ["Auth","Authentik"]
 slug: "Auth-Authentik-비밀번호-복구-기능-email-환경-설정"
-series:
-  id: 6499233e-ce0d-46f5-97c0-3565082c0f25
-  name: "Auth"
+categories: Auth
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.099Z
+  lastSyncedAt: 2025-08-18T06:18:44.456Z
   hash: "256dd9f9a6cd0b23d5ec131a770d8ed33b5e5fca50d188ac3ada76dccff815f8"
 ---
 

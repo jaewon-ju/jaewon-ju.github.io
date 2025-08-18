@@ -4,11 +4,9 @@ description: "Application Layer 소개"
 date: 2024-03-05T01:49:27.456Z
 tags: ["network"]
 slug: "Application-Layer"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.332Z
+  lastSyncedAt: 2025-08-18T06:18:48.176Z
   hash: "22d16eff16cea4b2e1d47d39602fd77539ee8dee08113bfd1933035bb3b32cf5"
 ---
 

@@ -4,11 +4,9 @@ description: "Firebase Software Development Kit의 종류와 특징"
 date: 2025-01-05T02:41:38.091Z
 tags: []
 slug: "Firebase-Firebase-SDK"
-series:
-  id: 865cd188-a04a-42fd-a30d-e7606b6f29f2
-  name: "Firebase"
+categories: Firebase
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.510Z
+  lastSyncedAt: 2025-08-18T06:18:44.839Z
   hash: "85d9454da0edc50942468fb0956c9c2ee1337cfc31b9706b2b003ff57392ea08"
 ---
 

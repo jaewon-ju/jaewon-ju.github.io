@@ -4,11 +4,9 @@ description: "Authentik에 Passkey를 붙이는 방법 #Authentik #Passkey"
 date: 2025-04-14T05:07:39.364Z
 tags: ["Auth","Authentik"]
 slug: "Auth-Authentik에-Passkey-붙이기"
-series:
-  id: 6499233e-ce0d-46f5-97c0-3565082c0f25
-  name: "Auth"
+categories: Auth
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.122Z
+  lastSyncedAt: 2025-08-18T06:18:44.475Z
   hash: "5b5b7cf5fdd9817bc46a478d00b7e4880f61cf96d1ea12e5d2c4c33f9160c07a"
 ---
 

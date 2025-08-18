@@ -4,11 +4,9 @@ description: "TroubleShooting - syntax error at or near $1"
 date: 2025-03-27T07:22:39.246Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-syntax-error-at-or-near-1"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.203Z
+  lastSyncedAt: 2025-08-18T06:18:44.553Z
   hash: "a2dd8f35c06c225f87bfd12254d516544a32a62342699a8f5e93cfd245a973bc"
 ---
 

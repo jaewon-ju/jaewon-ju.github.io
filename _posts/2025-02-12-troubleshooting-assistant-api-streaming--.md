@@ -4,11 +4,9 @@ description: "Error When Using Assistant API Streaming With Typescript"
 date: 2025-02-12T08:18:36.317Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Assistant-API-Streaming-오류"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.454Z
+  lastSyncedAt: 2025-08-18T06:18:44.778Z
   hash: "72cdf72701e4cac4a51dbcb0811354f6300760844fb34c768da5f99f64bbc43d"
 ---
 

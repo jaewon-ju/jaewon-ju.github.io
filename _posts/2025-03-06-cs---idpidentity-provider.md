@@ -4,11 +4,9 @@ description: "What is IDP #Auth"
 date: 2025-03-06T06:44:59.626Z
 tags: ["Auth","CS 지식"]
 slug: "CS-지식-IDPIdentity-Provider"
-series:
-  id: 6499233e-ce0d-46f5-97c0-3565082c0f25
-  name: "Auth"
+categories: Auth
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.382Z
+  lastSyncedAt: 2025-08-18T06:18:44.712Z
   hash: "557afd44372b88e1c2b9a4d8076f60e15a3e9fb2b0d825ff9ff3350cf98dc41d"
 ---
 

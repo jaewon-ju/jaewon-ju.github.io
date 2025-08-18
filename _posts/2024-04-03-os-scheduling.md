@@ -4,11 +4,9 @@ description: "운영체제의 스케줄링에 대해서 알아보자."
 date: 2024-04-03T06:48:08.329Z
 tags: ["OS"]
 slug: "OS-Scheduling"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.667Z
+  lastSyncedAt: 2025-08-18T06:18:47.322Z
   hash: "d1fa64a838b571de2f9694ad60e6bf799d3b8ea8dc8af88c0efed897926167d7"
 ---
 

@@ -4,11 +4,9 @@ description: "WAS, Servlet이란 무엇인가?"
 date: 2024-03-15T02:00:56.064Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-Web-Application-Server"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.016Z
+  lastSyncedAt: 2025-08-18T06:18:47.742Z
   hash: "077759332bc07b393331f38f11333a48a81769a999586eb4e267aacb7391d3b1"
 ---
 

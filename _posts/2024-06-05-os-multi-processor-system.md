@@ -4,11 +4,9 @@ description: "multi-processor System에 대해서"
 date: 2024-06-05T06:44:17.657Z
 tags: ["OS"]
 slug: "OS-Multi-Processor-System"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.864Z
+  lastSyncedAt: 2025-08-18T06:18:46.418Z
   hash: "7672269884e86ccd091a95daff88add52e98ec3c4e1f8d4147b286366b121df7"
 ---
 

@@ -4,11 +4,9 @@ description: "운영체제 Introduction"
 date: 2024-03-06T06:41:10.855Z
 tags: ["OS"]
 slug: "OS-Introduction"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.217Z
+  lastSyncedAt: 2025-08-18T06:18:47.943Z
   hash: "0a304549518279e901495a74d27f6b5a64ccec440e63d381c25df985c1e115d2"
 ---
 

@@ -4,11 +4,9 @@ description: "Deadlock의 발생 조건과 방지법에 대해서"
 date: 2024-05-30T12:39:38.268Z
 tags: ["OS"]
 slug: "OS-Deadlocks"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.914Z
+  lastSyncedAt: 2025-08-18T06:18:46.466Z
   hash: "3c9a75bf10cd3426a0ad1bddb63fb5c31ed3c2548bae02e506261c0e060545b1"
 ---
 

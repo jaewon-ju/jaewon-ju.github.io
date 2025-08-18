@@ -4,11 +4,9 @@ description: "Spring Security를 통해 OAuth2 기능을 사용하는 방법"
 date: 2024-07-03T13:53:01.924Z
 tags: ["Spring","spring security"]
 slug: "Spring-Security-OAuth2"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.590Z
+  lastSyncedAt: 2025-08-18T06:18:46.148Z
   hash: "26b789f7ebe6011cf46ddd1eeec8a146b837f5c5027f6c804f1716ddc2401109"
 ---
 

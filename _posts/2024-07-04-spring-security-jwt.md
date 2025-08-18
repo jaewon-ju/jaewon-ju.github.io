@@ -4,11 +4,9 @@ description: "JWT란 무엇인가"
 date: 2024-07-04T06:56:09.726Z
 tags: ["Spring","spring security"]
 slug: "Spring-Security-JWT"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.566Z
+  lastSyncedAt: 2025-08-18T06:18:46.121Z
   hash: "e39e3d488537f20e3474f95fc162a4c6b090ebce1ca69a733bc53bb4ad0578bb"
 ---
 

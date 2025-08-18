@@ -4,11 +4,9 @@ description: "domain을 개발했다."
 date: 2024-04-06T14:56:08.293Z
 tags: ["프로젝트"]
 slug: "quantHelper-개발-Domain"
-series:
-  id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
-  name: "프로젝트"
+categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.595Z
+  lastSyncedAt: 2025-08-18T06:18:47.253Z
   hash: "1b27d36fa4756b160b373f7127475446f3de957ed352cec30a9794844e8ca0a3"
 ---
 

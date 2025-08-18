@@ -4,11 +4,9 @@ description: "백엔드 개발의 기초 정리"
 date: 2024-10-03T11:50:04.098Z
 tags: ["프로젝트"]
 slug: "UniCircle-백엔드-개발-기초"
-series:
-  id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
-  name: "프로젝트"
+categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.851Z
+  lastSyncedAt: 2025-08-18T06:18:45.307Z
   hash: "26f942af5eeef4a3793d1ef22133104434dfb54d7feac22504f9d6b83deb17c5"
 ---
 

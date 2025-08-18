@@ -4,11 +4,9 @@ description: "Spring MVC의 응답 관련 기본 기능에 대해서 알아보�
 date: 2024-03-30T07:58:58.331Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-응답-관련-기본-기능"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.767Z
+  lastSyncedAt: 2025-08-18T06:18:47.448Z
   hash: "844d24bf7e22365f8b8bc99a8388a691dbfde7884df9475bf5c80903d268d7e4"
 ---
 

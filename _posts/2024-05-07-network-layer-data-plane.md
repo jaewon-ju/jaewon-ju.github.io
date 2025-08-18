@@ -4,11 +4,9 @@ description: "Network 계층의 Data plane 영역에 대해서"
 date: 2024-05-07T03:47:18.931Z
 tags: ["network"]
 slug: "Network-Layer-Data-Plane"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.283Z
+  lastSyncedAt: 2025-08-18T06:18:46.937Z
   hash: "b82b05a81bb2bc3fa23b7a1cc27648f55bf31d3224772c4de0d633bee0b1e8fa"
 ---
 

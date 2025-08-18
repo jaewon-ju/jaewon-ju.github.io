@@ -4,11 +4,9 @@ description: "HTTP - Introduction"
 date: 2024-03-08T01:54:45.068Z
 tags: ["network"]
 slug: "Application-Layer-HTTP-Intro"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.196Z
+  lastSyncedAt: 2025-08-18T06:18:47.917Z
   hash: "27d14c49bc556dd243eaba244880e44c6dac491520567ab804cd1c93e7202418"
 ---
 

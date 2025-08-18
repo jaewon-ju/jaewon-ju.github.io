@@ -4,11 +4,9 @@ description: "File System에 대해서"
 date: 2024-05-08T06:50:03.993Z
 tags: ["OS"]
 slug: "OS-File-System"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.235Z
+  lastSyncedAt: 2025-08-18T06:18:46.881Z
   hash: "67dbe7a2dcdb83ab9f722c7ec49a2347879ec75128bfba048051bde40ee94e12"
 ---
 

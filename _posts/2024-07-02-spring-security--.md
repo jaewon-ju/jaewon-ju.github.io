@@ -4,11 +4,9 @@ description: "Spring Security 의 동작원리와 간단한 구현"
 date: 2024-07-02T13:27:33.997Z
 tags: ["Spring","spring security"]
 slug: "Spring-Security-기본"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.638Z
+  lastSyncedAt: 2025-08-18T06:18:46.198Z
   hash: "8f7d0dd4850318a1ad7cd3094882f168dc8e34d1a8c6216315144d24143b3eca"
 ---
 

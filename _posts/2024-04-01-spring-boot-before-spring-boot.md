@@ -4,11 +4,9 @@ description: "Spring Boot가 없던 시절, 웹 애플리케이션을 어떻게 
 date: 2024-04-01T11:43:40.706Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Before-Spring-Boot"
-series:
-  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
-  name: "Spring Boot"
+categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.687Z
+  lastSyncedAt: 2025-08-18T06:18:47.347Z
   hash: "eed4782bfba589c2f347fa268ca6de45dd44448dadf3a8a38ece69957a034abc"
 ---
 

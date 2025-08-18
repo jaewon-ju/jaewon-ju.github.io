@@ -4,11 +4,9 @@ description: "네트워크 입문"
 date: 2024-03-05T04:42:21.084Z
 tags: ["network"]
 slug: "Network-Introduction"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.306Z
+  lastSyncedAt: 2025-08-18T06:18:48.151Z
   hash: "9acf6d952c63ea309602e9f33a9eda6abbfcf24a1f4156eac55b475c505ca1fa"
 ---
 

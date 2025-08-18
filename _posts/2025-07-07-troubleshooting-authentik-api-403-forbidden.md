@@ -4,11 +4,9 @@ description: "Authentik API 403 Forbidden Error"
 date: 2025-07-07T06:36:08.803Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Authentik-API-403-Forbidden"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:48.868Z
+  lastSyncedAt: 2025-08-18T06:18:44.189Z
   hash: "1aa9391d82ad3e0d1d78985dfe5cd96153b6c210a13d53ce06b4bfc230279ff4"
 ---
 

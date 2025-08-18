@@ -4,11 +4,9 @@ description: "Transport Layer의 기능을 알아보자."
 date: 2024-03-19T05:00:33.497Z
 tags: ["network"]
 slug: "Transport-Layer-Transport-Layer-Services"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.939Z
+  lastSyncedAt: 2025-08-18T06:18:47.659Z
   hash: "8c4ee5338ad104906038eab48c8d6b9aba35fe2445ea344546d38a4188e00eb1"
 ---
 

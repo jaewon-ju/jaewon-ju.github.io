@@ -4,11 +4,9 @@ description: "첫 해커톤 후기"
 date: 2024-08-05T07:30:27.843Z
 tags: ["프로젝트"]
 slug: "LingoConnect-새싹-해커톤-후기"
-series:
-  id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
-  name: "프로젝트"
+categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.330Z
+  lastSyncedAt: 2025-08-18T06:18:45.855Z
   hash: "5fd6e10918b72e06d258e88f295ce9087333c8302e6020fd1a3ceb692f7a8a9f"
 ---
 

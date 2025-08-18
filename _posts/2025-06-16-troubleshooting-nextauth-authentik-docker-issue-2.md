@@ -4,11 +4,9 @@ description: "Authentik을 docker container로 돌렸을 때 발생하는 오류
 date: 2025-06-16T07:23:38.830Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-NextAuth-Authentik-Docker-Issue-2"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:48.906Z
+  lastSyncedAt: 2025-08-18T06:18:44.240Z
   hash: "df2fc531c380b47e92ce890faf8d5ca28fb30d408a122b8da7a227b961f1edee"
 ---
 

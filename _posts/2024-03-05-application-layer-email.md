@@ -4,11 +4,9 @@ description: "Email에 대한 간단한 요약"
 date: 2024-03-05T08:37:30.009Z
 tags: ["network"]
 slug: "Application-Layer-Email"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.282Z
+  lastSyncedAt: 2025-08-18T06:18:48.026Z
   hash: "4371e6c299c2baa1093fcdff9a467b3a2c2910d60bf09d6e604db37ec6abd69d"
 ---
 

@@ -4,11 +4,9 @@ description: "HTTP Status Code의 종류와 특징"
 date: 2024-03-12T05:31:11.932Z
 tags: ["network"]
 slug: "Application-Layer-HTTP-Status-Code"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.144Z
+  lastSyncedAt: 2025-08-18T06:18:47.867Z
   hash: "8ad10d455f5be994bd8eac18bf51aece485144a2908ca7ed45b8008f55258752"
 ---
 

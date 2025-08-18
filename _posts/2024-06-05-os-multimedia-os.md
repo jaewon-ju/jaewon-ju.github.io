@@ -4,11 +4,9 @@ description: "Multimedia에 대해서"
 date: 2024-06-05T04:51:11.936Z
 tags: ["OS"]
 slug: "OS-Multimedia-OS"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.889Z
+  lastSyncedAt: 2025-08-18T06:18:46.440Z
   hash: "b2e3c6d05c31dcb08496541933e8a87f0bcdcb31a4daee341c9b0c19d225372e"
 ---
 

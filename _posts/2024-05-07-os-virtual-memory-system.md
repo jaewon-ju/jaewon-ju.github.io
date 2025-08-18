@@ -4,11 +4,9 @@ description: "운영체제의 Virtual Memory System에 대해서"
 date: 2024-05-07T01:47:33.205Z
 tags: ["OS"]
 slug: "OS-Virtual-Memory-System"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.307Z
+  lastSyncedAt: 2025-08-18T06:18:46.966Z
   hash: "7220de5d859122d1e99454da151666fb30b3d6a74fa5c2e15cfd3e693dfb9ecf"
 ---
 

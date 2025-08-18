@@ -4,11 +4,9 @@ description: "Refresh 토큰 발급을 통한 보안 강화"
 date: 2024-10-13T14:19:48.708Z
 tags: ["Spring","spring security"]
 slug: "Spring-Security-JWT-3"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.728Z
+  lastSyncedAt: 2025-08-18T06:18:45.152Z
   hash: "95a8bb9998e1a443096d39bfa942c00307fc41b4738898ff621c054cbe8d8669"
 ---
 

@@ -5,11 +5,9 @@ date: 2024-04-01T06:58:05.031Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Introduction"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/8f88b7b9-7187-468d-b0a7-e158e815a698/image.jpg"
-series:
-  id: f3e01f5b-65b1-4f04-94dc-3fb49b49d1a7
-  name: "Spring Boot"
+categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.740Z
+  lastSyncedAt: 2025-08-18T06:18:47.425Z
   hash: "fc7a4cd929a21a4d8e25d0c4871e46cfd0a7366d1070f8d2e2ac3f1f63d7a498"
 ---
 

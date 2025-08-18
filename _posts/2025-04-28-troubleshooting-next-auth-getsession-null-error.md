@@ -4,11 +4,9 @@ description: "next-auth getSession cookie issue #NextAuthError #SessionNullError
 date: 2025-04-28T05:04:25.915Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-next-auth-getSession-null-error"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.016Z
+  lastSyncedAt: 2025-08-18T06:18:44.356Z
   hash: "e96d932cd8295ffb9dd7849a5a3b91b5ec3db4826424a1f6b1ff0442152545a1"
 ---
 

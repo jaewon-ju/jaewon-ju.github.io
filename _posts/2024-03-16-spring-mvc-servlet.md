@@ -4,11 +4,9 @@ description: "Servlet에 대해 자세히 알아보자."
 date: 2024-03-16T08:18:29.713Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-Servlet"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.994Z
+  lastSyncedAt: 2025-08-18T06:18:47.711Z
   hash: "4e06f2a1b4f93b8f6b56cea3d52cdda249e75dc20746e9381bb29dfb62f4c0f6"
 ---
 

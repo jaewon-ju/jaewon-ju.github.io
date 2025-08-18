@@ -4,11 +4,9 @@ description: "Servlet, JSP의 단점과 MVC 패턴을 사용하게 된 배경"
 date: 2024-03-18T13:59:20.534Z
 tags: ["Spring"]
 slug: "Spring-MVC-Servlet-JSP-MVC-패턴"
-series:
-  id: 866f07ed-1183-4166-8319-98e0b8faa1a1
-  name: "Spring"
+categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:51.969Z
+  lastSyncedAt: 2025-08-18T06:18:47.684Z
   hash: "648bd95478086b7f6f98129f8fbdb12fe998189e13f4ffe140be12a2ecedacc1"
 ---
 

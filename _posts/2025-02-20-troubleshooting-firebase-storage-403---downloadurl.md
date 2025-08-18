@@ -4,11 +4,9 @@ description: "firebase storage admin sdk downloadURL 403 error. #adminsdk, #node
 date: 2025-02-20T00:59:42.389Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Firebase-Storage-403-오류-downloadUrl"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.406Z
+  lastSyncedAt: 2025-08-18T06:18:44.736Z
   hash: "09ae6dcc804bdce3e64b54cfad55ffb03b9b1b97bd701e532fb02ce7eac93a33"
 ---
 

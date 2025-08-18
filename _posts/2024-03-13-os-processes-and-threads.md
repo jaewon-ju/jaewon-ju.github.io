@@ -4,11 +4,9 @@ description: "프로세스와 스레드에 대해서"
 date: 2024-03-13T09:55:21.949Z
 tags: ["OS"]
 slug: "OS-Processes-and-Threads"
-series:
-  id: 68b31a47-60e2-4f31-a1a1-36f9e262527e
-  name: "OS"
+categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.093Z
+  lastSyncedAt: 2025-08-18T06:18:47.814Z
   hash: "bd56a8d03f7e3f544060ca0865a7656b6ab9d35af86ce3210173bab74fbcd986"
 ---
 

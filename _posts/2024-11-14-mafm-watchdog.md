@@ -5,11 +5,9 @@ date: 2024-11-13T16:18:20.229Z
 tags: ["프로젝트"]
 slug: "MAFM-watchdog"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/74bc8317-827f-4791-9f9a-52ff488167fa/image.png"
-series:
-  id: f1c772f1-a5a9-4a12-ae8d-d10149c9e876
-  name: "프로젝트"
+categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.631Z
+  lastSyncedAt: 2025-08-18T06:18:45.012Z
   hash: "466a73633d280a75091e10597fce0afbaa6c20934e809ad5f17d66b0870a15d7"
 ---
 

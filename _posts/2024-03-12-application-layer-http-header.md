@@ -4,11 +4,9 @@ description: "HTTP 메시지 Header의 종류와 역할"
 date: 2024-03-12T07:24:46.691Z
 tags: ["network"]
 slug: "Application-Layer-HTTP-Header"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:52.121Z
+  lastSyncedAt: 2025-08-18T06:18:47.841Z
   hash: "b5c0a6f968a1bce3b11d8bcfb2a565244922e2aa9e8d7a6550f52eb48cde83c6"
 ---
 

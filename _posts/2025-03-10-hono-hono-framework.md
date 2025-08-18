@@ -5,7 +5,7 @@ date: 2025-03-10T02:20:17.222Z
 tags: ["Hono"]
 slug: "Hono-Hono-Framework"
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.338Z
+  lastSyncedAt: 2025-08-18T06:18:44.662Z
   hash: "6127d9517c24f1cacd2240a222ba189dbfa02cbe5f5e53dbf688af2c6b30f0b1"
 ---
 

@@ -4,11 +4,9 @@ description: "무선 네트워크와 모바일 네트워크에 대해서"
 date: 2024-06-14T02:50:58.918Z
 tags: ["network"]
 slug: "Network-Wireless-Mobile-Network"
-series:
-  id: 286776ce-3b67-40a8-b62e-6932373b0109
-  name: "Network"
+categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:50.820Z
+  lastSyncedAt: 2025-08-18T06:18:46.371Z
   hash: "538d788553b8b3428722669c895de6389019452a2b25a12b74c5efc8db3065c3"
 ---
 

@@ -4,11 +4,9 @@ description: "EC2 인스턴스가 멈취버리는 오류와 Github Secrets 인�
 date: 2024-11-26T14:09:34.006Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-EC2가-터지는-오류-Github-Secret-오류"
-series:
-  id: 3530ae60-5e2d-416b-9327-13c5e62bf4c7
-  name: "TroubleShooting"
+categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:08:49.587Z
+  lastSyncedAt: 2025-08-18T06:18:44.922Z
   hash: "f3a0093b19c36bc3eeb566b6491687200d8124d892a6e6973dcef3f8f2bbaa26"
 ---
 
