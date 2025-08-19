@@ -7,7 +7,7 @@ slug: "Application-Layer-HTTP-Intro"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.773Z
+  lastSyncedAt: 2025-08-19T12:07:31.230Z
   hash: "27d14c49bc556dd243eaba244880e44c6dac491520567ab804cd1c93e7202418"
 ---
 
@@ -110,7 +110,7 @@ HTTP는 기본적으로 연결을 유지하지 않는 모델이다.
 #### 【 해결 - Persistent HTTP】
 HTML, CSS, JS 파일 각각을 보낼 때마다 연결을 맺지 않고, 하나의 Connection으로 object 여러개를 보낸다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/11dabec8-4858-4246-9d82-36b7bf46f3d1/image.png)
+![](/assets/posts/image.png)
 
 
 <br>

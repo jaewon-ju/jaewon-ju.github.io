@@ -7,7 +7,7 @@ slug: "Auth-Authentik에-Passkey-붙이기"
 categories: Auth
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:38:59.523Z
+  lastSyncedAt: 2025-08-19T12:05:55.089Z
   hash: "5b5b7cf5fdd9817bc46a478d00b7e4880f61cf96d1ea12e5d2c4c33f9160c07a"
 ---
 

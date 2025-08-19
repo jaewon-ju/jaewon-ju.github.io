@@ -7,7 +7,7 @@ slug: "Transport-Layer-Transport-Layer-Services"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.528Z
+  lastSyncedAt: 2025-08-19T12:07:25.084Z
   hash: "8c4ee5338ad104906038eab48c8d6b9aba35fe2445ea344546d38a4188e00eb1"
 ---
 
@@ -67,7 +67,7 @@ DNS, SNMP, HTTP/3에서 사용한다.
 multicast, broadcast 어플리케이션에서 사용
 
 > UDP Message Format
-![](https://velog.velcdn.com/images/jaewon-ju/post/7bdbb132-0e35-422e-aa6d-9250081b8b8c/image.png)
+![](/assets/posts/image.png)
 
 
 <br>
@@ -114,7 +114,7 @@ Transport 계층에서 Reliability를 제공할 수 있도록 프로토콜을 �
 
 FSM (Finite state Machine)을 통해 그림으로 설명한다.
 이벤트가 발생해서 StateA 에서 StateB로 넘어갈 때는 Action을 취하면서 넘어간다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/e94a9286-4d93-4de8-a5c1-dc29ba8cb92d/image.png)
+![](/assets/posts/image.png)
 
 <br>
 
@@ -124,7 +124,7 @@ FSM (Finite state Machine)을 통해 그림으로 설명한다.
 - no bit error
 - no loss of packets
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/e3889490-fa75-4943-8b60-310f65f7c6f9/image.png)
+![](/assets/posts/image.png)
 
 >#### 송신측 Transport
 State 개수: 1
@@ -155,7 +155,7 @@ Action ①
 - bit error
 - No loss of packets
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/1ed7bd5a-2af3-4f1f-8492-03f1630d0ddb/image.png)
+![](/assets/posts/image.png)
 
 - Checksum을 사용해서 bit error check
 - Retransmission을 써서 error correction
@@ -224,7 +224,7 @@ duplicate
 - bit error
 - No loss of packets
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/57921ed5-fa97-481f-a32a-3df23c075ba7/image.png)
+![](/assets/posts/image.png)
 
 
 
@@ -256,7 +256,7 @@ Action ③
 
 <br>
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/72c546b0-2a15-4981-92e3-4590331a7da4/image.png)
+![](/assets/posts/image.png)
 
 
 >#### 수신측 Transport
@@ -309,7 +309,7 @@ Action ③
 - No loss of packets
 
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/911d7026-d85c-459e-9761-97680a1145d7/image.png)
+![](/assets/posts/image.png)
 
 
 - V2.1에서 NAK 없이 ACK만 사용한다.
@@ -340,7 +340,7 @@ Action ③
 
 <br>
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/991584ce-d463-4d82-9fc6-c813742f6560/image.png)
+![](/assets/posts/image.png)
 
 
 >#### 수신측 Transport
@@ -373,7 +373,7 @@ Loss: 데이터를 보냈는데 ACK가 돌아오지 않는다.
 Loss를 해결하기 위해 추가로 timer를 사용한다.
 
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/9a39280f-14c5-49c4-b0aa-b9c6310aefaa/image.png)
+![](/assets/posts/image.png)
 
 
 >#### 송신측 Transport
@@ -426,7 +426,7 @@ Receiver는 V2.2와 동일
 ## ■ Stop And Wait의 단점
 위에서 설명한 방식을 Stop And Wait이라고 하는데, 효율성이 좋지 않다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/f2828d63-6139-47ca-b28c-7607b1186431/image.png)
+![](/assets/posts/image.png)
 
 >송신자가 link를 쓴 시간 = Transmission time(L/R)
 나머지 시간(2𝜏 == RTT)은 대기
@@ -468,8 +468,8 @@ window 사이즈: N
 N = ACK를 받지 않고 전송할 수 있는 패킷 최대 개수
 순서번호: 0 ~ 2^k-1 (Packet 당 하나씩)
 modulo 2^k-1 연산을 사용한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/c8846da6-799c-418a-ba6c-ec13f96f0121/image.png)
-![](https://velog.velcdn.com/images/jaewon-ju/post/e486fc4e-a6f1-4302-ae2a-ca35973466be/image.png)
+![](/assets/posts/image.png)
+![](/assets/posts/image.png)
 
 ><span style = "color:red">⚠️</span> 데이터 하나 보내고 ACK 하나 받는 Stop And Wait과는 달리, Sliding Window에서는 ACK는 쌓여서 도착할 수 있다. (Cumulative ACK)
 따라서, ACK(n)이 도착하면, sequence n 이전의 패킷은 모두 ACK 받은 것으로 판단한다.
@@ -494,7 +494,7 @@ ACK를 받지 못한 패킷 중 가장 오래된 것을 기준으로 타이머�
 - 수신자는 순서대로 잘 받은 패킷 중 가장 높은 순서번호로 ACK를 보낸다.
 - 수신 윈도우의 크기는 1이다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/9686e47b-512a-4e92-8dc8-b4ea67876355/image.png)
+![](/assets/posts/image.png)
 
 
 <br>
@@ -505,7 +505,7 @@ ACK를 받지 못한 패킷 중 가장 오래된 것을 기준으로 타이머�
 - 타이머 개수가 <span style = "color:red">N개</span>
 - ACK가 개별적으로 처리된다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/74c2d422-f15d-49e5-9d56-d1473a4f6027/image.png)
+![](/assets/posts/image.png)
 
 
 > #### ARQ
@@ -520,7 +520,7 @@ Go-Back-N에 비해서 수신측의 윈도우 크기가 N으로 늘어난다.
 
 - 순서대로 오지 않아도 그냥 Accept(buffering) 한다.
 - 아직 안온거는 그냥 기다린다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/1a6ccfc6-8b58-457c-b9b2-7e46f7092410/image.png)
+![](/assets/posts/image.png)
 
 <br>
 

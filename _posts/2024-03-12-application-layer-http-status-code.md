@@ -7,7 +7,7 @@ slug: "Application-Layer-HTTP-Status-Code"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.727Z
+  lastSyncedAt: 2025-08-19T12:07:30.396Z
   hash: "8ad10d455f5be994bd8eac18bf51aece485144a2908ca7ed45b8008f55258752"
 ---
 

@@ -7,7 +7,7 @@ slug: "Spring-Security-기본"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.194Z
+  lastSyncedAt: 2025-08-19T12:06:33.279Z
   hash: "8f7d0dd4850318a1ad7cd3094882f168dc8e34d1a8c6216315144d24143b3eca"
 ---
 
@@ -51,7 +51,7 @@ velogSync:
 
 자세한 동작 원리는 다음과 같다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/5c6560f5-6b01-4c55-84c6-7d2f9c77a3ec/image.png)
+![](/assets/posts/image.png)
 
 1. HTTP 요청이 들어온다. (로그인)
 

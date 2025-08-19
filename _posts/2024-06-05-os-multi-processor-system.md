@@ -7,7 +7,7 @@ slug: "OS-Multi-Processor-System"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.424Z
+  lastSyncedAt: 2025-08-19T12:06:43.691Z
   hash: "7672269884e86ccd091a95daff88add52e98ec3c4e1f8d4147b286366b121df7"
 ---
 
@@ -18,7 +18,7 @@ velogSync:
 - 메모리 모듈, CPU 모듈이 따로 존재한다.
 - 메모리 접근을 위해 네트워크 스위치를 사용하여, 특정 메모리 모듈로 라우팅한다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/89c49aa9-3a09-49cc-afac-a45408f2fee2/image.png)
+![](/assets/posts/image.png)
 특정 CPU가 000 메모리 모듈에 액세스 요청을 보내는 경우
 ➜ 패킷을 보냄
 ➜ Network Switch가 000 메모리 모듈로 연결
@@ -31,7 +31,7 @@ velogSync:
 > Omega Switching
 : 메모리 주소의 비트에 따라 스위치 경로를 동적으로 결정하여 효율적으로 트래픽을 관리하는 방식
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/fa5b3954-8b87-4e77-87d8-e93730fd56fb/image.png)
+![](/assets/posts/image.png)
 
 001번 CPU가 001 메모리에 액세스하는 경우
 메모리의 첫 bit: 0 ➜ 스위치의 윗쪽으로
@@ -377,7 +377,7 @@ Mutli-Computer에는 3가지 스케줄링 방식이 존재한다.
 
 ## ✏️ virtualization
 ### ■ Type1 Hypervisor
-![](https://velog.velcdn.com/images/jaewon-ju/post/a2d9e556-17f4-4633-8d1c-b4e84cb3480b/image.png)
+![](/assets/posts/image.png)
 
 - 하드웨어에 직접 설치
 - 운영체제 위에서 실행되는 것이 아니라, 운영체제 자체를 호스팅한다.
@@ -388,7 +388,7 @@ Mutli-Computer에는 3가지 스케줄링 방식이 존재한다.
 <br>
 
 ### ■ Type2 Hypervisor
-![](https://velog.velcdn.com/images/jaewon-ju/post/d3742553-e4ca-4d25-8191-657665f39a7d/image.png)
+![](/assets/posts/image.png)
 
 - Typ2 Hypervisor의 예시로 VMWare가 있다.
 - 기존 운영체제 위에 설치된다.
@@ -402,7 +402,7 @@ Virtual Machine은 구현이 너무 어려워!
 ➜ 운영체제를 바꾸자
 ➜ Paravirtualization
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/6778f582-f719-4dd5-aa2b-1423df49560f/image.png)
+![](/assets/posts/image.png)
 
 - Type1 Hypervisor의 일종이다.
 - Guest OS에서 입출력할게 있으면 Hypervisor call해서 Hypervisor에게 부탁한다.

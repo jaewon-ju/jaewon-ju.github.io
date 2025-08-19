@@ -4,11 +4,11 @@ description: "스프링이란 무엇인가"
 date: 2024-02-08T08:23:10.936Z
 tags: ["Spring"]
 slug: "Spring-What-is-Spring"
-thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/608e1c39-0880-41a3-b1ed-5dba5422e071/image.png"
+thumbnail: "/assets/posts/image.png"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:03.164Z
+  lastSyncedAt: 2025-08-19T12:07:39.475Z
   hash: "30cdeec333d942ece4451d90a43749b8b82c5c123342920bb43309f2946a4599"
 ---
 

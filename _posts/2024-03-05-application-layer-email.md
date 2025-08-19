@@ -7,7 +7,7 @@ slug: "Application-Layer-Email"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.869Z
+  lastSyncedAt: 2025-08-19T12:07:34.840Z
   hash: "4371e6c299c2baa1093fcdff9a467b3a2c2910d60bf09d6e604db37ec6abd69d"
 ---
 

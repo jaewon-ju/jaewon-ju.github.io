@@ -7,7 +7,7 @@ slug: "Network-Layer-Control-Plane"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.592Z
+  lastSyncedAt: 2025-08-19T12:06:51.535Z
   hash: "d2a12230b21470183b8c55125b4f4a42099581664f6092906b25e47a85f111f4"
 ---
 
@@ -83,7 +83,7 @@ OSPF의 동작 과정은 다음과 같다.
 - 이 때, flooding을 사용해서 broadCast 한다.
 - Flooding은 각 라우터가 받은 LSA를 자신의 모든 인접 라우터에게 재전송하는 과정이다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/346bcbf5-dff3-4825-bf71-20159fa7c174/image.png)
+![](/assets/posts/image.png)
 - 라우터의 정보를 중복 수신하는 경우, 해당 정보를 버린다.
 - flooding의 Message Complexity는 ```O(n^2)```이다.
    - ```각 라우터가 다른 n-1개의 라우터에게 자신의 정보를 전달 * 라우터 n개``` <br>➜ ```O(n^2)```
@@ -177,7 +177,7 @@ Cost가 줄어드는 경우는 문제가 발생하지 않는다.
 
 > Link Cost가 줄어드는 경우
 ➜ 수렴이 빨리 된다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/11db1eaa-0b94-4b4f-b70f-f37b9e21780f/image.png)
+![](/assets/posts/image.png)
 1. y가 변환을 감지 ➜ D(y,x) 재계산: 1 ➜ 이웃들에게 전달
 2. z가 y로부터 업데이트를 받음 ➜ D(z,x) 재계산: 2 ➜ 이웃들에게 전달
 3. y가 z로부터 업데이트를 받음 ➜ D(y,x) 재계산: 변화 없음 ➜ <span style = "background-color: lightgreen; color:black">수렴 완료</span>
@@ -187,7 +187,7 @@ Cost가 줄어드는 경우는 문제가 발생하지 않는다.
 > Link Cost가 증가하는 경우
 - <span style = "color:red">Count-to-Infinity</span> 문제 발생
 ➜ 수렴이 느리게 된다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/bb8b836f-b902-4bc2-ac91-efc07b828997/image.png)
+![](/assets/posts/image.png)
 현재 y가 갖고 있는 <span style = "color:red">D(z,x)는 5이다.</span>
 1. y가 변환을 감지 
 ➜ D(y,x) 재계산 ```D(y,x) = min(C(y, x) + D(x,x), C(y,z) + D(z,x)) = min(60, 6) ```
@@ -219,7 +219,7 @@ Cost가 줄어드는 경우는 문제가 발생하지 않는다.
 Routing Loop를 해결하기 위한 방식
 >z가 <span style = "color:red">y를 거쳐서</span> x로 간다면, z는 y에게 D(z,x)가 무한대라고 알려준다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/cf31fe45-b422-416b-90be-7fe1829cf763/image.png)
+![](/assets/posts/image.png)
 - Cost가 바뀌기 전, 실제 ```D(z,x) = 5``` 이다.
 - 하지만, y를 거쳐서 가므로 y에게 ```D(z,x) = ∞``` 라고 알려준다.
  ➜ Cost가 60으로 바뀌어도 ```D(z,x) = ∞``` 이므로, ```D(y,x) = min(C(y, x) + D(x,x), C(y,z) + D(z,x)) = min(60, ∞) = 60```<br>
@@ -320,7 +320,7 @@ OSPF는 __ECMP(Equal Cost Multiple Path)__를 특징으로 가진다.
 
 ### ► Hierarchical OSPF
 OSPF를 2가지 계층으로 분리함으로써 확장성을 높일 수 있다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/0b323656-4e88-48de-87c3-40b04ba17247/image.png)
+![](/assets/posts/image.png)
 
 | 라우터 | 기능 |
 | - | - |
@@ -355,7 +355,7 @@ inter-AS routing에서 사용되는 유일한 프로토콜
 
 자신에게 찾아올 수 있게 하려면, 자신이 속한 AS 주소를 advertise 해야 한다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/2522dba8-3cde-4a81-b51b-5b4c5ffb5da4/image.png)
+![](/assets/posts/image.png)
 
 - eBGP (External BGP): 다른 AS에 속한 이웃(neighbor) 라우터에게 자신의 AS 정보를 알린다.
 - iBGP (Internal BGP): 같은 AS 내의 다른 라우터들에게 라우팅 정보를 알린다.
@@ -370,13 +370,13 @@ inter-AS routing에서 사용되는 유일한 프로토콜
 BGP 기능을 가지고 있는 라우터를 peer라고 부른다.
 두 peer 간 TCP 연결이 설정된다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/66aca03d-965b-46e0-8d08-f566a6dcd872/image.png)
+![](/assets/posts/image.png)
 
 - 이 연결은 semi-permanent 하다.
 
 <br>
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/ba583b92-6c4b-4af9-9443-1d3a6d47c629/image.png)
+![](/assets/posts/image.png)
 
 1. 새로운 노드(New)가 AS3에 추가되면, AS3의 BGP router는 New로 가려면 AS3으로 보내라고 이웃들에게 알려준다.
 
@@ -432,7 +432,7 @@ cost가 가장 작은(queue length가 가장 짧은) 인터페이스 쪽으로 �
 <br>
 
 ### ► ISP policy
-![](https://velog.velcdn.com/images/jaewon-ju/post/8b5a0517-f845-4d4a-b471-b328d3cd21db/image.png)
+![](/assets/posts/image.png)
 >ISP는 다른 ISP가 자신의 네트워크를 "중간 경유지"로 사용하지 못하게 한다.
 
 예를 들어, C는 A로 바로 데이터를 전송할 수 있지만, Bandwidth를 아끼기 위해 B를 경유하는 방식을 사용할 수 있다.

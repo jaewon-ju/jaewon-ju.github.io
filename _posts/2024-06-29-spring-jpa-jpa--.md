@@ -7,7 +7,7 @@ slug: "Spring-JPA-JPA-소개"
 categories: Spring Boot
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.328Z
+  lastSyncedAt: 2025-08-19T12:06:36.566Z
   hash: "b37ae88c4a1067919b525142062d2d12a4116f9e174770caa919fae0f0633c2b"
 ---
 
@@ -45,7 +45,7 @@ velogSync:
 
 ### ■ JPA 동작 방식
 애플리케이션과 JDBC 사이에서 동작, SQL을 객체로 자동 변환
-![](https://velog.velcdn.com/images/jaewon-ju/post/cb17fb65-b316-416b-b551-45eb57a16440/image.png)
+![](/assets/posts/image.png)
 
 
 <br>

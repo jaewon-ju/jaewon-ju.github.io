@@ -7,7 +7,7 @@ slug: "OS-File-System"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.790Z
+  lastSyncedAt: 2025-08-19T12:06:56.313Z
   hash: "67dbe7a2dcdb83ab9f722c7ec49a2347879ec75128bfba048051bde40ee94e12"
 ---
 
@@ -159,7 +159,7 @@ Directory에서 이름으로 Attribute(Inode 번호)를 찾는 것
 <br>
 
 ### ■ File System Layout
-![](https://velog.velcdn.com/images/jaewon-ju/post/4a1d5840-2419-4571-9977-300dfbd22792/image.png)
+![](/assets/posts/image.png)
 
 - HDD의 0번 트랙 0번 섹터에는 MBR(Master Boot Record)이 코드로 적혀있다.
 - HDD 내부에 Partition은 4개까지 존재할 수 있다.
@@ -271,7 +271,7 @@ Indexed Allocation을 사용할 때, 파일의 크기가 너무 큰 경우
 
 ### ■ FAT File System
 FAT(File Allocation Table) 파일 시스템을 알아보자.
-![](https://velog.velcdn.com/images/jaewon-ju/post/70c344d8-83c7-400c-a045-d8f754dc5a7f/image.png)
+![](/assets/posts/image.png)
 
 - FAT을 통해서 Free block을 찾을 수 있음
 - FAT을 통해서 다음 블록을 찾을 수 있음
@@ -301,7 +301,7 @@ Fast File System이라 부르기도 함
 > Unix File System은 Indexed Allocation 방식에서 Index Block 대신 Inode를 사용한다.
 ```Inode = Index Block + File의 Attribute```
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/cb6f020d-2754-45a8-bec3-db4006d0ea73/image.png)
+![](/assets/posts/image.png)
 
 - inode의 크기는 256 Bytes 이다.
 - inode list의 위치는 고정되어 있다.

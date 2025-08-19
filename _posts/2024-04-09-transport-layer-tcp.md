@@ -7,7 +7,7 @@ slug: "Transport-Layer-TCP"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.065Z
+  lastSyncedAt: 2025-08-19T12:07:06.121Z
   hash: "1da3b1826a9005d483a98454444d03a0d6fa5a5271fdb0e0771f5a18ba69f954"
 ---
 
@@ -48,9 +48,9 @@ ACK를 보내야하는데, 세그먼트로 만들어서 보내면 오버헤드�
 TCP에서 sequence Number는 세그먼트의 <span style = "color:red">첫 바이트</span>를 기준으로 할당된다.
 예를 들어, 1000 Bytes의 데이터를 보내는데 MSS가 100 Bytes인 경우, 세그먼트는 100개로 분할된다.
 그럼 첫 세그먼트의 sequence Number는 0, 두 번째는 100, 세 번째는 200... 이런식으로 증가한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/d3f592e4-514a-4bbf-b669-d0fe65d63e8b/image.png)
+![](/assets/posts/image.png)
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/b96c7e77-89b3-4e9c-bee8-f951c5b11a51/image.png)
+![](/assets/posts/image.png)
 - sequence Number: 2^32-1 사용가능
    - 송신하는 데이터의 가장 첫 Byte Number를 sequence Number로 넣어 보낸다.
 - ACK Number: 2^32-1 사용가능
@@ -126,7 +126,7 @@ Sender에서는 한개의 Retransmission Timer를 사용한다.
 | 상위 계층에서 데이터 전송 요청 | 타이머 시작(sequence Number는 세그먼트의 첫 Byte Number)<br>|
 | Time Out | 1. ACK 받지 못한 세그먼트 중 가장 작은 sequence Number를 가진 세그먼트 재전송<br>2. 타이머 시작 |
 | ACK(n) 받음 | 1. ACK(n) 이전에 ACK 받지 못한 세그먼트들을 모두 ACK 받았다고 처리(Cumulative ACK)<br>2. sequence n 이후에 보낸 세그먼트가 있으면 Timer start|
->![](https://velog.velcdn.com/images/jaewon-ju/post/844ae901-8865-465b-acb5-d174d6a0a874/image.png)
+>![](/assets/posts/image.png)
 #### Event ③
 A가 보낸 sequence 100을 잘 수신한 B는 ACK 200을 보낸다. 하지만, Loss가 발생한다.
 A가 보낸 sequence 200을 잘 수신한 B는 ACK 300을 보낸다.
@@ -144,7 +144,7 @@ Receiver 에서는 한개의 piggyback 타이머를 사용한다.
 | 순서에 맞는 세그먼트 도착.<br>이전 세그먼트 중 아직 ACK 전송을 기다리는 세그먼트가 존재 | 즉시 Cumulative ACK를 전송한다. |
 | 순서에 맞지 않는 세그먼트 도착.<br>예상 했던 sequence Number보다 큼<br>즉, 이전에 송신측에서 보낸 세그먼트가 Loss 되었음 | 즉시 Duplicate ACK를 전송한다.<br>즉, 순서대로 잘 받은 Byte + 1 전송<br>송신측에서는 이미 해당 ACK를 받은 것이므로 Duplicate ACK이다.|
 | 순서를 끼워 맞춰줄 세그먼트 도착.<br> Event ③, ④가 순차적으로 발생하면, 중간에 못받은 세그먼트가 존재할 것이다.<br>그 세그먼트가 도착한 경우| 즉시 ACK 전송 |
->![](https://velog.velcdn.com/images/jaewon-ju/post/00ad0c21-0291-4eb9-9118-e67b95707f19/image.png)
+>![](/assets/posts/image.png)
 A가 보낸 sequence 100을 잘 수신한 B는 ACK 200을 보낸다.
 A가 보낸 sequence 200은 Loss
 A가 보낸 sequence 300을 잘 수신했지만, 순서대로 오지 않았기 때문에 순서대로 온 데이터 중 가장 큰 Byte + 1을 보낸다.(ACK200)
@@ -153,10 +153,10 @@ A가 보낸 sequence 300을 잘 수신했지만, 순서대로 오지 않았기 �
 
 > #### 여러 시나리오들
 1. Premature Timeout 발생
-![](https://velog.velcdn.com/images/jaewon-ju/post/78cd3caa-bc31-4d0a-aa18-ce9ab7c11493/image.png)
+![](/assets/posts/image.png)
 <br>
 2. 3번의 duplicate ACK (fast Retransmit)
-![](https://velog.velcdn.com/images/jaewon-ju/post/76cd8475-1a28-4edf-b0b4-cfe18282b8a2/image.png)
+![](/assets/posts/image.png)
 Original ACK + 3번의 duplicate ACK가 발생하면 Time out이 발생하지 않아도 즉시 재전송한다.
 ```c
 // 송신측 fast Retransmit 알고리즘
@@ -193,7 +193,7 @@ if(y > sendBase){
 ```LastByteSent - LastByteAcked <= rwnd```
 
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/636c42c7-60f7-4935-aa11-5de78843ad6c/image.png)
+![](/assets/posts/image.png)
 
 
 
@@ -229,7 +229,7 @@ Session 설정할 때 주고 받는 정보는 다음과 같다.
 
 3 Way Handshake는 다음과 같이 이루어진다.
 
->![](https://velog.velcdn.com/images/jaewon-ju/post/10520350-bccb-458e-a970-55e082ae085f/image.png)
+>![](/assets/posts/image.png)
 - 송신: SYNbit=1, 자신의 초기 sequnce number(x)
 - 수신: SYNbit=1, 자신의 초기 sequnce number(y) 
 ACKbit=1, ACKnum=x+1
@@ -241,7 +241,7 @@ ACKbit=1, ACKnum=x+1
 F(Fin) flag(bit)를 1로 설정해서 보낸다.
 
 
->![](https://velog.velcdn.com/images/jaewon-ju/post/8b276cfa-54f4-49c4-8eaa-0daed59d8b26/image.png)
+>![](/assets/posts/image.png)
 - 송신: FIN
 - 수신: ACK
 - 수신: FIN (closed)
@@ -369,7 +369,7 @@ TCP 송신 윈도우 크기가 Addictive(linear)하게 올라가다가, Multipli
 - loss가 detect되면 윈도우 크기(cwnd)를 반으로 줄인다.
 ➜ Multiplicative Decrease
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/5db5ba18-5d29-4602-9a8a-91971949f734/image.png)
+![](/assets/posts/image.png)
 
 <br>
 
@@ -386,7 +386,7 @@ TCP 송신 윈도우 크기가 Addictive(linear)하게 올라가다가, Multipli
 ### ■ Congestion Avoidance
 >패킷의 개수가 일정수준(slow start threshold) 에 다다르면 더이상 Slow Start로 동작하지 않고, Congestion Avoidance로 동작한다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/a5e1737b-514d-408a-8f76-8d67853f54f2/image.png)
+![](/assets/posts/image.png)
 
 - slow start로 더이상 동작하지 않고, RTT마다 1씩 window 크기가 증가한다.
 - loss가 발생하는 경우, loss가 발생된 시점의 cwnd의 절반으로 ssthresh가 설정된다.
@@ -399,7 +399,7 @@ TCP 송신 윈도우 크기가 Addictive(linear)하게 올라가다가, Multipli
 <br>
 
 ### ■ Finite State machine 
-![](https://velog.velcdn.com/images/jaewon-ju/post/43a0e67d-2251-4c3b-ae42-3a5e87abbf59/image.png)
+![](/assets/posts/image.png)
 
 >#### Slow Start
 | State | Event | Action |
@@ -450,7 +450,7 @@ W_max: Loss가 발생한 지점의 cwnd 값
 
 - K는 cwnd가 WMAX에 도달할거라고 예측되는 시점
 - cwnd는 time과 K 사이의 거리의 3제곱으로 속도를 증가시킨다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/83880029-7b18-496a-9fbe-4ef65eb47822/image.png)
+![](/assets/posts/image.png)
 
 
 
@@ -499,7 +499,7 @@ TCP Session은 공평하게 link를 공유한다.
 처음에는 공평하지 못하지만, 통신을 지속하다보면 공평해진다.
 
 >
-![](https://velog.velcdn.com/images/jaewon-ju/post/4bd256cb-f64e-478a-a4ce-ddb74acec3aa/image.png)
+![](/assets/posts/image.png)
 ex) TCP Session이 2개 존재한다.
 1. 처음에는 Throughput이 불공평하게 분배될 수 있다.
 2. Addictive하게 증가하다보면 Loss가 발생한다.
@@ -567,7 +567,7 @@ QUIC는 <span style = "background-color: lightgreen; color:black">application la
 - Congestion Control
 - error control
 - 보안있음 (TLS를 대체함)
-![](https://velog.velcdn.com/images/jaewon-ju/post/582af2c3-bbdd-45ac-9cc4-60013ae615f5/image.png)
+![](/assets/posts/image.png)
 - multiplex: stream 여러개가 하나의 QUIC connection을 사용한다.
    - Per Stream based Reliability
    
@@ -576,7 +576,7 @@ QUIC는 <span style = "background-color: lightgreen; color:black">application la
 
 <span style = "color:red">⚠️</span> TCP는 3 way handshake를 해야했지만, QUIC은 1RTT 안에 끝난다.
 <span style = "color:red">⚠️</span> Reliability는 stream 단위, Congestion Control은 connection 단위
-![](https://velog.velcdn.com/images/jaewon-ju/post/bff69fa9-ba81-4ad0-b6c2-bb25929cfec1/image.png)
+![](/assets/posts/image.png)
 
 <br>
 

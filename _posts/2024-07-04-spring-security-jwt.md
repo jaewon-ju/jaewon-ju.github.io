@@ -7,7 +7,7 @@ slug: "Spring-Security-JWT"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.121Z
+  lastSyncedAt: 2025-08-19T12:06:30.570Z
   hash: "e39e3d488537f20e3474f95fc162a4c6b090ebce1ca69a733bc53bb4ad0578bb"
 ---
 
@@ -87,14 +87,14 @@ JWT를 이해하기 전에, 먼저 쿠키와 세션에 대해서 알아야 한�
 
 세션의 동작 과정을 더 자세히 알아보자.
 > #### Session ID 발급 과정
-![](https://velog.velcdn.com/images/jaewon-ju/post/cc2d1793-e3c0-4e73-8221-53ad7a45ba16/image.png)
+![](/assets/posts/image.png)
 1. 클라이언트가 서버에 페이지를 요청
 2. 서버는 세션 ID를 생성하고, 사용자 정보를 저장할 공간을 미리 만들어 둔다.
 3. 세션 ID가 포함된 쿠키를 Header에 넣어서 응답
 4. 클라이언트는 웹 브라우저에 세션 ID가 들어있는 쿠키를 보관
 
 > #### 로그인 과정
-![](https://velog.velcdn.com/images/jaewon-ju/post/0b5d522a-9d5e-4732-8b24-5557512de94d/image.png)
+![](/assets/posts/image.png)
 1. 클라이언트가 서버에 로그인 요청
 2. 서버는 사용자가 회원가입이 되어있는지 확인(인증)
 3. 인증된 사용자라면, 해당 사용자의 정보를 세션 ID와 함께 저장

@@ -7,7 +7,7 @@ slug: "UniCircle-백엔드-개발-기초"
 categories: 프로젝트
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:00.429Z
+  lastSyncedAt: 2025-08-19T12:06:13.322Z
   hash: "26f942af5eeef4a3793d1ef22133104434dfb54d7feac22504f9d6b83deb17c5"
 ---
 

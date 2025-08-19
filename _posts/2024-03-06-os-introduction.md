@@ -7,7 +7,7 @@ slug: "OS-Introduction"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.797Z
+  lastSyncedAt: 2025-08-19T12:07:32.875Z
   hash: "0a304549518279e901495a74d27f6b5a64ccec440e63d381c25df985c1e115d2"
 ---
 
@@ -18,7 +18,7 @@ velogSync:
 - Storage (Disk)
 
 각 컴포넌트는 버스를 통해서 연결된다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/3370a109-9a1e-4c41-8d81-89b344793f4b/image.png)
+![](/assets/posts/image.png)
 
 <br>
 
@@ -206,7 +206,7 @@ CPU는 Main Memory보다 훨씬 빠르다.
 <br>
 
 Cache는 다음과 같이 구성된다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/1240f96b-e48a-424c-b4a5-cfcc30e38f82/image.png)
+![](/assets/posts/image.png)
 
 #### Cache의 고려사항
 생각보다 Overhead가 크다.

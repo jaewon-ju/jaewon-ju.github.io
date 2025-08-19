@@ -7,7 +7,7 @@ slug: "OS-Multimedia-OS"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.448Z
+  lastSyncedAt: 2025-08-19T12:06:45.229Z
   hash: "b2e3c6d05c31dcb08496541933e8a87f0bcdcb31a4daee341c9b0c19d225372e"
 ---
 
@@ -23,7 +23,7 @@ Video server가 있고, 그 서버의 내용을 빠르게 전송할 수 있는 n
 - network는 광섬유 망을 사용
 - 광섬유로 온 빛 신호를 전기 신호로 바꾸는 Junction box가 필요
 - 예전에는 케이블 선을 사용했지만, 현재는 LAN 선 사용
-![](https://velog.velcdn.com/images/jaewon-ju/post/f0338217-f28f-47d9-820d-527f05f3ad5f/image.png)
+![](/assets/posts/image.png)
 
 
 <br>
@@ -188,7 +188,7 @@ RMS의 유효성 검사를 위해서는 schedulability Test가 필요하다.
 - A는 30ms마다 한 번씩 실행해야 한다. 한번에 10ms 실행한다.
 - B는 40ms마다 한 번씩 실행해야 한다. 한번에 15ms 실행한다.
 - C는 50ms마다 한 번씩 실행해야 한다. 한번에 5ms 실행한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/19e27516-56f6-42e7-ad59-6fc7c55d459d/image.png)
+![](/assets/posts/image.png)
 위의 경우, 테스트 통과
 프로세스 주기들의 <span style = "background-color: lightgreen; color:black">최소 공배수</span>까지 테스트를 실행해봐야 한다!
 

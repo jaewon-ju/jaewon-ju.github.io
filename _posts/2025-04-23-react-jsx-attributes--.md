@@ -6,7 +6,7 @@ tags: ["React","프론트엔드"]
 slug: "React-JSX-Attributes-정리"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:38:59.462Z
+  lastSyncedAt: 2025-08-19T12:05:55.017Z
   hash: "b11e17b71be347ca4f2253613b0849e3ad45807c281eaca9120c0f9a2fe96f67"
 ---
 

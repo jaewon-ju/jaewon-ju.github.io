@@ -7,7 +7,7 @@ slug: "quantHelper-개발-Domain"
 categories: 프로젝트
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.154Z
+  lastSyncedAt: 2025-08-19T12:07:08.987Z
   hash: "1b27d36fa4756b160b373f7127475446f3de957ed352cec30a9794844e8ca0a3"
 ---
 
@@ -73,9 +73,9 @@ JPA와 ORM 개념을 어느정도 이해할 수 있었지만, 바로 실전에 �
 
 ### 2. Spring Web Layer
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/71e215d9-e67b-4996-b40b-e75cd5624f7d/image.png)
+![](/assets/posts/image.png)
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/35b45425-d116-4836-a9f7-2f3d416a03bb/image.png)
+![](/assets/posts/image.png)
 
 우리가 만드는 것: 주식 분석 및 예측 프로그램
 

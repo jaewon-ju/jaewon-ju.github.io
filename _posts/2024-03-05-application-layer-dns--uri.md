@@ -4,11 +4,11 @@ description: "DNS란 무엇인가?"
 date: 2024-03-05T09:53:39.791Z
 tags: ["network"]
 slug: "Application-Layer-DNS와-URI"
-thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/c096bc81-3aa4-4d5a-9d74-c31e28ff9c72/image.png"
+thumbnail: "/assets/posts/image.png"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.846Z
+  lastSyncedAt: 2025-08-19T12:07:34.571Z
   hash: "1444ae00976794352e09885f23e874f6490e6507832bd29d9ebf26de0ac2c8a0"
 ---
 
@@ -29,7 +29,7 @@ ex) [www.naver.com](www.naver.com) ↔︎ 192.89.02.11
 ## ✏️ DNS 구조
 DNS는 Distributed & hierarchical 구조를 가지고 있다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/c096bc81-3aa4-4d5a-9d74-c31e28ff9c72/image.png)
+![](/assets/posts/image.png)
 
 | 구분 | 특징 |
 | - | - |
@@ -46,7 +46,7 @@ DNS는 Distributed & hierarchical 구조를 가지고 있다.
 
 ## ✏️ Name Resolution
 Name에 대응되는 IP 주소를 찾아라!
-![](https://velog.velcdn.com/images/jaewon-ju/post/5e8738c5-ee71-4e1b-8ec4-1e828a92603b/image.png)
+![](/assets/posts/image.png)
 
 1. Host가 Local에 DNS query 전송
 Q: 【 jaewon-ju.velog.com 주소 어디야? 】

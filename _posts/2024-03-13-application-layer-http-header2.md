@@ -7,7 +7,7 @@ slug: "Application-Layer-HTTP-header2"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.659Z
+  lastSyncedAt: 2025-08-19T12:07:28.985Z
   hash: "78204f71095bf0d9b1d451b26f41651d70e3d01ac709438bc1703f607fbc523c"
 ---
 
@@ -323,17 +323,17 @@ Cache를 확실하게 사용하지 못하도록 하려면 어떻게 해야할까
 
 > - no-cache의 경우 
 클라이언트 A, Proxy Server P, Origin Server O 가 존재한다.<br>
-![](https://velog.velcdn.com/images/jaewon-ju/post/4b094076-5988-4766-8b38-23f2b32b2ed9/image.png)
+![](/assets/posts/image.png)
 no-cache 옵션만 적용되었을 때는, 데이터를 Origin Server에 검증 받은 뒤 캐시해도 된다.
 따라서, 클라이언트 A는 데이터를 P에 요청하고, P는 O의 검증을 받는다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/3b61edd0-e077-403e-92bb-d97254a80046/image.png)
+![](/assets/posts/image.png)
 갑자기, O와 연결이 끊어졌다.
 no-cache 이면 반드시 Origin Server의 검증을 받아야 하지만, O와 통신이 불가능한 상태이다.
 이 경우, P는 오류가 나는 것보다는 오래된 데이터라도 보여주는 것을 선택한다.
 
 > - must revalidate의 경우
 마찬가지로, O와 연결이 끊어진 상황을 가정해보자.
-![](https://velog.velcdn.com/images/jaewon-ju/post/8d942e76-5ca7-4bc7-a01d-1e3ddf68702d/image.png)
+![](/assets/posts/image.png)
 must-revalidate 는 Origin Server에 접근할 수 없는 경우, <span style="color:red">반드시 오류</span>가 발생해야 한다.
 따라서, 이 경우에는 A에게 ```504 Gateway Timeout``` 이 응답으로 전달된다.
 

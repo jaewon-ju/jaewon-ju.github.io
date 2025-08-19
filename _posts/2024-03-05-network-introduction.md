@@ -7,7 +7,7 @@ slug: "Network-Introduction"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.889Z
+  lastSyncedAt: 2025-08-19T12:07:36.007Z
   hash: "9acf6d952c63ea309602e9f33a9eda6abbfcf24a1f4156eac55b475c505ca1fa"
 ---
 
@@ -104,7 +104,7 @@ ISP는 IXP로 서로 연결된다.
 > Packet Switching 방식의 Delay
 = Transmission + Propagation + Queueing + Processing
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/ee2527a2-faa7-464c-9ab9-da31a60f4261/image.png)
+![](/assets/posts/image.png)
 
 1 == 최대 용량의 Traffic 부하
 부하가 걸릴수록 delay가 기하급수적으로 증가한다.

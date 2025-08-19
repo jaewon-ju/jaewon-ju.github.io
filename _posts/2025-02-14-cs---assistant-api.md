@@ -4,10 +4,10 @@ description: "OpenAi의 Assistant API에 대해서"
 date: 2025-02-14T06:40:13.632Z
 tags: ["CS지식"]
 slug: "CS-지식-Assistant-API"
-thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/e84e75c7-fc85-46a9-bfbc-2eff246bf02f/image.png"
+thumbnail: "/assets/posts/image.png"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:38:59.766Z
+  lastSyncedAt: 2025-08-19T12:06:04.037Z
   hash: "1da3daf9e7cbb7db9da8262f130f15c801fcc2dfc07bbe5c4dc7cc2978149ca8"
 ---
 
@@ -85,7 +85,7 @@ Assistant API를 사용하여 AI의 응답을 받기 위해서는 다음과 같�
 5. Get Message From Thread
 
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/e84e75c7-fc85-46a9-bfbc-2eff246bf02f/image.png)
+![](/assets/posts/image.png)
 
 
 <br>

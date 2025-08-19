@@ -7,7 +7,7 @@ slug: "OS-Deadlocks"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.473Z
+  lastSyncedAt: 2025-08-19T12:06:46.733Z
   hash: "3c9a75bf10cd3426a0ad1bddb63fb5c31ed3c2548bae02e506261c0e060545b1"
 ---
 
@@ -50,7 +50,7 @@ resource1을 흭득하지 못한 프로세스는 resource1에 대해서 대기�
 
 <br>
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/29e1419b-ba6a-4e76-b0f7-846a2fffd12f/image.png)
+![](/assets/posts/image.png)
 
 <span style = "color:red">⚠️</span> Deadlock의 조건이 만족되더라도, Deadlock이 걸리지 않을 수도 있다.
 
@@ -91,7 +91,7 @@ resource1을 흭득하지 못한 프로세스는 resource1에 대해서 대기�
 2. Banker's algorithm
    - 각 프로세스가 작업을 위해 필요한 자원의 양과 시스템이 가진 총 자원의 양을 비교하여 deadlock의 발생 가능성을 판단한다.
 > 남은 자원 수 R1: 3개, R2: 3개, R3: 3개
-![](https://velog.velcdn.com/images/jaewon-ju/post/15329738-ba2c-498a-ae86-e81af38c9754/image.png)
+![](/assets/posts/image.png)
 B ➜ D ➜ C ➜ A
 다음과 같은 순서로 자원을 할당하고, 끝난 작업의 자원을 회수해서 재분배하면 Deadlock을 피할 수 있다.
    - Deadlock을 피할 수 있는 자원 할당 순서를 <span style = "background-color: lightgreen; color:black">safe order</span>라고 한다.

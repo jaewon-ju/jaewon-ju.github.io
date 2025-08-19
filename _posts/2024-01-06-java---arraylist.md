@@ -6,7 +6,7 @@ tags: ["Java"]
 slug: "JAVA-배열과-Arraylist"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:03.559Z
+  lastSyncedAt: 2025-08-19T12:07:53.851Z
   hash: "d6b3249d0ced87b040d50e8c44566f2f73064e2056769cce61b023701c24b073"
 ---
 
@@ -81,7 +81,7 @@ int scores[2][3] = {{1,2,3},{4,5,6}};
 scores는 2차원 배열의 첫번째 배열요소 scores[0]의 주소이다.
 C언어에서 배열은 연속적으로 메모리에 할당된다. 
 배열의 시작주소를 0x00이라 가정하자. scores는 0x00을 가리키고 scores[1]은 0x0c를 가리킨다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/0c44a116-05e5-43f9-8816-d62b4fac47d8/image.jpeg)
+![](/assets/posts/image.jpeg)
 동적할당된 배열이 아니므로, 스택 메모리에 할당된다.
 
 > Java에서 2차원 배열은 다음과 같이 선언 및 생성한다.
@@ -89,7 +89,7 @@ C언어에서 배열은 연속적으로 메모리에 할당된다.
 int[][] scores = new scores[2][3];
 ```
 위의 코드를 실행하면, 총 <span style = "background-color: #0A3B24">3개의</span> 배열 객체를 생성한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/764dae97-9674-4edd-b374-82ab60722cbf/image.jpeg)
+![](/assets/posts/image.jpeg)
 <span style = "color: green">STACK</span> | 배열 변수 scores: 참조 변수로서, 배열 A를 참조한다.
 <span style = "color: red">HEAP</span> | 배열 객체 A: scores[0]와 scores[1]를 참조하는 배열. 
 <span style = "color: red">HEAP</span> | 배열 객체 B(scores[0]): 길이가 3인 배열  

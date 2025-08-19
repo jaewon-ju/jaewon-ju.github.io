@@ -7,7 +7,7 @@ slug: "OS-Virtual-Memory-System"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.866Z
+  lastSyncedAt: 2025-08-19T12:07:01.002Z
   hash: "7220de5d859122d1e99454da151666fb30b3d6a74fa5c2e15cfd3e693dfb9ecf"
 ---
 
@@ -49,10 +49,10 @@ MMU(Memory Managment Unit)는 가상 메모리를 구현한 회로이다.
 Paging 과정은 다음과 같다.
 
 1. 프로세스의 가상 주소 공간을 0번지부터 동일한 크기의 페이지로 나눈다.
->![](https://velog.velcdn.com/images/jaewon-ju/post/f3551b46-2798-483c-85b0-f41c2c2cdd13/image.png)
+>![](/assets/posts/image.png)
 32bit CPU에서, 가상 주소를 표현할 때는 다음과 같은 체계를 사용한다.
 상위 20bit -> 페이지 번호, 하위 12bit -> offset
-![](https://velog.velcdn.com/images/jaewon-ju/post/b8cc99db-dfbd-4697-b971-b9ea42e6437b/image.png)
+![](/assets/posts/image.png)
 
 2. DRAM도 똑같이 0번지부터 동일한 크기의 페이지로 나눈다.
 이를 Frame이라 부른다.
@@ -93,7 +93,7 @@ CPU가 프로그램 A를 실행시키려 한다.<br>
 #### Page Table의 구조
 
 Table에는 Flag와 frame number가 존재한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/ffedf1ba-c2cd-4626-b615-10d6b869542a/image.png)
+![](/assets/posts/image.png)
 
 각 flag는 정보를 담고있다.
 
@@ -137,7 +137,7 @@ page p의 매핑정보를 찾는경우
 <br>
 
 ## ✏️ Protection and Sharing
-![](https://velog.velcdn.com/images/jaewon-ju/post/5c4dba49-1512-4a17-aada-75b3cb32db31/image.png)
+![](/assets/posts/image.png)
 
 Page Table은 다음 두 비트를 통해 보호 기능을 제공한다.
 
@@ -196,13 +196,13 @@ Copy On Write는 두 개의 프로세스가 하나의 메모리 영역을 공유
 ### ■ Multilevel Paging
 페이지를 계층적으로 구조화 한다. 
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/5491d72d-2fe1-4a01-b74a-03600848fd20/image.png)
+![](/assets/posts/image.png)
 
 - 상위 10 bits: Top Level Page Table의 index
 - 중간 10 bits: Second Level Page Table의 index 
 - 하위 12 bits: Offset
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/d4796df6-0306-411d-85e1-f18a3069e4f2/image.png)
+![](/assets/posts/image.png)
 
 <span style = "color:red">⚠️</span> 결과적으로 단일 페이징과 사이즈가 동일하다
 > #### 그럼 싱글 페이징보다 무엇이 좋은가?
@@ -222,7 +222,7 @@ Copy On Write는 두 개의 프로세스가 하나의 메모리 영역을 공유
 - Inverted Page Table에는 Process Id(PID)와 Page number가 존재한다.
 - Inverted Page Table의 인덱스가 Frame의 위치 정보이다.
 - 순차검색이 아니라 hashing을 사용한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/bb497c81-1f5c-46a9-9de3-196be0ffa3a9/image.png)
+![](/assets/posts/image.png)
 
 <br>
 
@@ -238,7 +238,7 @@ Copy On Write는 두 개의 프로세스가 하나의 메모리 영역을 공유
 - Disk 접근 시간: 25ms
 - Page fault(mapping되지 않은 페이지에 접근)의 발생 확률: p
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/f5401c82-bac0-4e52-bfe7-a36e4ba8a7bf/image.png)
+![](/assets/posts/image.png)
 
 ``` Effective Access Time = (1-p) * Memory 접근 시간 + p * Disk 접근 시간```
 
@@ -303,7 +303,7 @@ Copy On Write는 두 개의 프로세스가 하나의 메모리 영역을 공유
 - 쫒아내려는 페이지의 reference bit가 1인 경우, 쫒아내지 않고 reference bit를 0으로 만든 후에 큐의 마지막으로 옮긴다.
 - 해당 페이지는 새로 적재된 페이지로 판단한다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/448c222f-a640-4e4f-9a2e-0bd0bfa08541/image.png)
+![](/assets/posts/image.png)
 
 <br>
 
@@ -311,7 +311,7 @@ Copy On Write는 두 개의 프로세스가 하나의 메모리 영역을 공유
 - Second Chance의 큐를 원형으로 배치시킨다.
 - Reference bit가 0이면 쫒아내고, Reference bit가 1이면 0으로 만든 다음 hand를 전진시킨다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/b88f0bda-b2c6-4ea5-a759-5e942a2c8515/image.png)
+![](/assets/posts/image.png)
 
 <br>
 
@@ -321,14 +321,14 @@ Copy On Write는 두 개의 프로세스가 하나의 메모리 영역을 공유
 - 스택으로 구현하는 경우
    - 참조되는 페이지를 스택의 제일 위로 올린다. (Most Recently Used)
    - 제일 오래전에 참조된 것은 자연스럽게 스택 제일 아래에 배치된다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/c6657f67-c407-44b5-add1-f5be2f870630/image.png)
+![](/assets/posts/image.png)
 <br>
 - 행렬로 구현하는 경우
    - 참조되는 페이지의 행을 다 1로 만들고, 열을 다 0으로 만든다.
 ex) 0번 페이지가 참조되면 0번 행을 다 1로 만든 다음, 0번 열을 다 0으로 만듦
 ex) 1번 페이지가 참조되면 1번 행을 다 1로 만든 다음, 1번 열을 다 0으로 만듦
    - 행을 봤을 때 0이 제일 많은 페이지를 버린다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/d7b1876d-8c19-4257-b841-87f4c163f46d/image.png)
+![](/assets/posts/image.png)
 
 <br>
 
@@ -365,7 +365,7 @@ ex) 1번 페이지가 참조되면 1번 행을 다 1로 만든 다음, 1번 열�
 - 페이지가 참조될 때마다 카운터의 가장 높은 비트에 1을 설정한다.
 - 카운터는 주기적으로 Right Shift 된다.
 - 특정 시간에 확인했을 때, 2진수 값이 가장 작은 페이지를 버린다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/7d6752fd-c381-4df5-b304-7c9de498b789/image.png)
+![](/assets/posts/image.png)
 - 참조 시간 + 참조 횟수까지 고려한 방법이다.
 
 <br>
@@ -425,7 +425,7 @@ Paging System에 존재하는 Issue들에 대해서 알아보자.
 - 프레임을 적게 할당 받으면 Thrasing이 발생할 수 있다.
 - 프레임을 많이 할당 받으면 메모리 낭비가 발생할 수 있다.
 - 적당한 프레임 개수 할당을 위해 PFF 그래프를 사용한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/dcccf106-ed99-43fe-85a0-140953a552be/image.png)
+![](/assets/posts/image.png)
 
 
 <br>
@@ -469,7 +469,7 @@ Trashing은 연속적으로 Page Fault가 발생하는 상황을 의미한다.
    - overhead: 쓰지 않고 낭비되는 공간 
 - 책의 저자는 아래와 같은 Overhead 공식을 만들었다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/726bd5ea-a3b4-49d2-b1d8-2a9f005c4ddc/image.png)
+![](/assets/posts/image.png)
 
 - Overhead가 최소가 되는 페이지 사이즈를 위와 같이 정의했다.
 
@@ -691,7 +691,7 @@ Segmentation With Paging 방식을 실행시키기 위해서는 CPU 안에 STBR(
 
 - 근데 하드웨어가 따라주질 못했음
 - Page fault가 나면, Segment Table -> Page Table 순서로 데이터를 교체한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/44347e90-2018-4b2b-867b-b5d165e7b4b4/image.png)
+![](/assets/posts/image.png)
 - 34bit를 사용
 - CPU에 TLB를 내장했다.
 

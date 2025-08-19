@@ -7,7 +7,7 @@ slug: "Network-Layer-Data-Plane"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.842Z
+  lastSyncedAt: 2025-08-19T12:06:58.945Z
   hash: "b82b05a81bb2bc3fa23b7a1cc27648f55bf31d3224772c4de0d633bee0b1e8fa"
 ---
 
@@ -83,7 +83,7 @@ Routing Table을 작성하는 것은 Control Plane 영역에서 담당한다.
 
 # ✏️ Router
 라우터는 다음과 같이 구성되어 있다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/bb013b2b-5a45-4ff5-bcc1-e3cfc6eb37bc/image.png)
+![](/assets/posts/image.png)
 
 - Control plane 보다 Data plane이 빠르다.
 - Control plane은 소프트웨어 영역이고, Data plane은 하드웨어 영역이다.
@@ -112,7 +112,7 @@ destination-based forwarding에서 사용하는 lookup 방식이다.
 - entry 가 들어왔을 때, prefix가 Destination address와 가장 길게 매칭되는 Output Port로 fowarding.
 
 - 예시) 다음과 같이, 라우터에 Destination Address가 존재할 때
-![](https://velog.velcdn.com/images/jaewon-ju/post/70d5c161-d479-47b9-99a5-04d7c379407f/image.png)
+![](/assets/posts/image.png)
 Entry: 11001000 00010111 00011000 10101010
 Link 1,2와 둘 다 매칭되지만, 1이 더 길게 매칭된다.
 ➜ 1번 Output Port로 fowarding
@@ -214,7 +214,7 @@ Switching Fabric이 input port 속도보다 느리면 Input Port에 큐를 설�
 # ✏️ IP
 ## ■ IP Datagram format
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/34b9ecf3-09b6-473b-afcb-0896b9fb49f0/image.png)
+![](/assets/posts/image.png)
 
 | format | Detail |
 | - | - |
@@ -246,7 +246,7 @@ Datagram의 사이즈가 큰 경우, 여러개로 나눠서 Fragment로 만든�
 - 데이터그램이 살아있을 수 있는 시간이며, hops 수로 카운팅한다.
 - Forwarding할 때 TTL 값을 감소시킨다.
 - 0이 되었을 때도 목적지가 아니면 ICMP(Error를 source에 전송)
-![](https://velog.velcdn.com/images/jaewon-ju/post/114d13fe-0367-4637-a007-75620c22d64b/image.png)
+![](/assets/posts/image.png)
 - 나한테 제일 가까운 서버를 찾을 때도 사용한다. 
 
 > #### Upper Layer
@@ -333,8 +333,8 @@ host가 주소를 부여받는 방법
 2. DHCP(Dynamic Host Configuration Protocol)로 동적으로 할당
     - DHCP 서버로부터 동적으로 IP 주소를 받아온다.
     - 최대 사용 기한이 존재한다.
-    - ![](https://velog.velcdn.com/images/jaewon-ju/post/d2391f7e-292c-42f9-86e7-56f6e59c4a96/image.png)
-    - ![](https://velog.velcdn.com/images/jaewon-ju/post/be53fa37-6743-436c-8300-7afea280c476/image.png)
+    - ![](/assets/posts/image.png)
+    - ![](/assets/posts/image.png)
     - First-hop router, DNS 서버의 이름/IP 주소, subnet 마스크 등도 같이 제공한다.
     
 <br>
@@ -351,12 +351,12 @@ host <- DHCP <- ISP <- ICANN
 ### ► Hierarchical addressing
 Route aggregation
 - aggregation 한 IP 주소를 상위 라우터에 전달한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/6f3d087b-3eca-4e76-a375-ec60c246f34c/image.png)
+![](/assets/posts/image.png)
 - 상위 계층의 router에서는 목적지와 <span style = "color:red">가장 길게 매치되는</span> IP 주소로 보낸다. 
 <br>
 
 - 만약 ISP를 이동한다면 상위 Router에 정보를 보내줘야한다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/5d5ce49e-2060-4132-849a-a67774372228/image.png)new Entry가 Routing Table에 생성된다.
+![](/assets/posts/image.png)new Entry가 Routing Table에 생성된다.
 
 
 <br>
@@ -379,7 +379,7 @@ Route aggregation
 <br>
 
 ### ► Port
-![](https://velog.velcdn.com/images/jaewon-ju/post/cada9087-84a6-4b5d-8290-710c8a705275/image.png)
+![](/assets/posts/image.png)
 내부 ➜ 외부로 패킷을 보내는 경우
 
 【 source IP address, source port number】 를
@@ -420,7 +420,7 @@ Route aggregation
 
 <br>
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/989652eb-2696-49c7-a527-2092ea3f7f07/image.png)
+![](/assets/posts/image.png)
 
 | format | Dtail |
 | - | - |
@@ -461,7 +461,7 @@ payLoad에 extenstion header가 있으면 next header도 같이 들어있다.
 : IPv6로 들어온 Datagram을 IPv4 로 인식되도록 만드는 기술
 
 - IPv6를 IPv4 header로 encapsulate.
-![](https://velog.velcdn.com/images/jaewon-ju/post/cf719be5-511a-46ba-94fb-b9e260528de1/image.png)
+![](/assets/posts/image.png)
 
 
 

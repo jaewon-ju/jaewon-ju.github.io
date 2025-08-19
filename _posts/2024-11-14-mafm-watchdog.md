@@ -4,11 +4,11 @@ description: "셈틀제 최종 결과물"
 date: 2024-11-13T16:18:20.229Z
 tags: ["프로젝트"]
 slug: "MAFM-watchdog"
-thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/74bc8317-827f-4791-9f9a-52ff488167fa/image.png"
+thumbnail: "/assets/posts/image.png"
 categories: 프로젝트
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:38:59.988Z
+  lastSyncedAt: 2025-08-19T12:06:06.485Z
   hash: "466a73633d280a75091e10597fce0afbaa6c20934e809ad5f17d66b0870a15d7"
 ---
 
@@ -145,7 +145,7 @@ def delete_db_lock_file(db_name):
 이 문제는 Milvus 자체의 오류로 보였다.
 GitHub에 Issue를 등록한 결과, .lock 파일은 프로세스가 완전히 종료된 경우에만 삭제된다는 답변을 받았다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/74bc8317-827f-4791-9f9a-52ff488167fa/image.png)
+![](/assets/posts/image.png)
 
 `client.close()`를 호출해도 프로세스가 남아 있으면 .lock 파일이 유지되는 것이 Milvus의 기본 동작이었다.
 

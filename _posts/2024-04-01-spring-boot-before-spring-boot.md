@@ -7,7 +7,7 @@ slug: "Spring-Boot-Before-Spring-Boot"
 categories: Spring Boot
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:02.293Z
+  lastSyncedAt: 2025-08-19T12:07:13.627Z
   hash: "eed4782bfba589c2f347fa268ca6de45dd44448dadf3a8a38ece69957a034abc"
 ---
 
@@ -129,7 +129,7 @@ public class AppInitServlet implements AppInit {
 3. ```MyInitializer```는 서블릿 컨테이너에 서블릿을 등록하는 클래스(```AppInitServlet```)를 실행한다.
 
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/b0075905-7c2c-4b7c-a72b-456f5ee7d0bc/image.png)
+![](/assets/posts/image.png)
 
 <br>
 

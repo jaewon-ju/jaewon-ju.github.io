@@ -6,7 +6,7 @@ tags: ["CS 지식"]
 slug: "CS-지식-Binary-Data-총정리"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:38:59.251Z
+  lastSyncedAt: 2025-08-19T12:05:54.781Z
   hash: "891fc959d6a15ed82c3fc07ca9b8a5b0d711a70764daa690e41716fb526a929b"
 ---
 

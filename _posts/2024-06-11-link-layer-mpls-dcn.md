@@ -7,7 +7,7 @@ slug: "Link-Layer-MPLS-DCN"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:01.400Z
+  lastSyncedAt: 2025-08-19T12:06:41.916Z
   hash: "8e3665c5053f1477061fbd0189eaadeef6fdea637f2bb3fad122348e421a36ca"
 ---
 
@@ -30,7 +30,7 @@ velogSync:
 <br>
 
 ### ■ MPLS Header
-![](https://velog.velcdn.com/images/jaewon-ju/post/afcdc80e-81dc-4ae4-aa86-82b4c4039897/image.png)
+![](/assets/posts/image.png)
 
 - label
 : VCID 역할 ➜ Direct Indexing이 가능하다
@@ -80,7 +80,7 @@ MPLS는 Signaling Protocol로 <span style = "background-color: lightgreen; color
 : 수 만개의 host가 근접하여 연결되어 있는 network
 
 ### ■ 구성
-![](https://velog.velcdn.com/images/jaewon-ju/post/e86701d8-5008-4fd7-86a4-3058dd7c73f5/image.png)
+![](/assets/posts/image.png)
 
 
 | 요소 | 설명 |

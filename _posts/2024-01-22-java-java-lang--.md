@@ -6,7 +6,7 @@ tags: ["Java"]
 slug: "JAVA-java.lang-패키지"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:39:03.327Z
+  lastSyncedAt: 2025-08-19T12:07:46.328Z
   hash: "f6546fb64a9565bee6bf22e181ceadc6854bc609d5b9404eca2151b8b09aaa0a"
 ---
 
@@ -110,7 +110,7 @@ hashcode 메소드의 리턴 값까지 일치해야 비로소 두 객체가 동�
 
 하지만, hashcode() 메소드의 결과 값이 같아도 다른 객체일 수 있다. 충돌이 발생할 수 있기 때문이다. 따라서 equals() 메소드로 한번 더 값을 검사해야 한다.
 
-자바의 동등성 판단 과정: ![](https://velog.velcdn.com/images/jaewon-ju/post/9dfe00db-c199-4c64-ba23-eef5e4aa131c/image.png)
+자바의 동등성 판단 과정: ![](/assets/posts/image.png)
 
 따라서, equals() 메소드를 재정의 할 때는 hashcode()도 재정의 해야 한다.
 

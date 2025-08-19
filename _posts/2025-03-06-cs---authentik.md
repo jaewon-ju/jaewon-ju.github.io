@@ -4,11 +4,11 @@ description: "#Authentik #Authentik_not_found #Authentik_permission_denied # Aut
 date: 2025-03-06T07:40:02.946Z
 tags: ["Auth","CS지식"]
 slug: "CS-지식-Authentik"
-thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/23297721-b5b4-4aee-872e-3f34a83f0444/image.png"
+thumbnail: "/assets/posts/image.png"
 categories: Auth
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T11:38:59.705Z
+  lastSyncedAt: 2025-08-19T12:05:59.854Z
   hash: "bfe09000f07a9b2bdcbf135c177808737c57242050aa562a74828d6ba284a258"
 ---
 
@@ -81,7 +81,7 @@ Authentik은 두 가지 역할을 할 수 있다.
 
 ### ◼︎ 인증 과정
 OAuth 2.0의 기본적인 인증 흐름은 다음과 같다.
->![](https://velog.velcdn.com/images/jaewon-ju/post/23297721-b5b4-4aee-872e-3f34a83f0444/image.png)
+>![](/assets/posts/image.png)
 1. 사용자가 애플리케이션(RP) 에 접속한다.
 2. RP는 Authentik(OP) 로 사용자를 보낸다.
 3. 사용자가 Authentik에서 로그인하면, 인증 코드가 RP로 반환된다.
@@ -167,7 +167,7 @@ export { handler as GET, handler as POST };
 <br>
 
 결론은 `AUTHENTIK_ISSUER` 환경변수의 문제였다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/42dabb4f-1542-4740-bc76-55e855539027/image.png)
+![](/assets/posts/image.png)
 왜 이걸 이제야 봤을까...
 `AUTHENTIK_ISSUER` 환경변수의 끝에 있는 슬래시를 제거했더니 잘 동작했다.
 
@@ -187,7 +187,7 @@ Starting with authentik 2024.2, applications only receive an access token. To re
 Authentik에서는 기본적으로 refresh token을 발급해주지 않는다.
 refresh token을 발급하기 위해서는 authentik의 provider 설정을 바꿔줘야 한다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/fcbbf35a-e6e1-4a63-8284-6f670e006f52/image.png)
+![](/assets/posts/image.png)
 
 Authentik 관리자로 로그인 한뒤, 아래의 과정을 수행한다.
 [공급자 - 수정 - 고급 프로토콜 설정 - offline_access 추가] 
