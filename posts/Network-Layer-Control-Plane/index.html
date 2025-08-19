@@ -1809,7 +1809,7 @@
   <li>Flooding은 각 라우터가 받은 LSA를 자신의 모든 인접 라우터에게 재전송하는 과정이다.</li>
 </ul>
 
-<p><a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/7a43f2c30e8ed1fa551d42275522450668200c077419d159b3cca465bea4d032.png" class="popup img-link shimmer"><img src="/assets/posts/7a43f2c30e8ed1fa551d42275522450668200c077419d159b3cca465bea4d032.png" alt="" loading="lazy"></a></p>
 <ul>
   <li>라우터의 정보를 중복 수신하는 경우, 해당 정보를 버린다.</li>
   <li>flooding의 Message Complexity는 <code class="language-plaintext highlighter-rouge">O(n^2)</code>이다.
@@ -1933,7 +1933,7 @@ D(x,y): x ➜ y 의 최소 비용
 <blockquote>
   <p>Link Cost가 줄어드는 경우
 ➜ 수렴이 빨리 된다.
-<a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<a href="/assets/posts/a62e3ad450855ead9fa22b725f2bea464098511e3e7afa63980a6d2889a5ba3d.png" class="popup img-link shimmer"><img src="/assets/posts/a62e3ad450855ead9fa22b725f2bea464098511e3e7afa63980a6d2889a5ba3d.png" alt="" loading="lazy"></a></p>
   <ol>
     <li>y가 변환을 감지 ➜ D(y,x) 재계산: 1 ➜ 이웃들에게 전달</li>
     <li>z가 y로부터 업데이트를 받음 ➜ D(z,x) 재계산: 2 ➜ 이웃들에게 전달</li>
@@ -1948,7 +1948,7 @@ D(x,y): x ➜ y 의 최소 비용
   <ul>
     <li><span style="color:red">Count-to-Infinity</span> 문제 발생
 ➜ 수렴이 느리게 된다.
-<a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a>
+<a href="/assets/posts/3b37d304842bdc6d2f6cc571acb2e6bb6750639a98d64ac42a58258a4a30fc5d.png" class="popup img-link shimmer"><img src="/assets/posts/3b37d304842bdc6d2f6cc571acb2e6bb6750639a98d64ac42a58258a4a30fc5d.png" alt="" loading="lazy"></a>
 현재 y가 갖고 있는 <span style="color:red">D(z,x)는 5이다.</span>
       <ol>
         <li>y가 변환을 감지 
@@ -1986,7 +1986,7 @@ D(x,y): x ➜ y 의 최소 비용
   <p>z가 <span style="color:red">y를 거쳐서</span> x로 간다면, z는 y에게 D(z,x)가 무한대라고 알려준다.</p>
 </blockquote>
 
-<p><a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/633ea0199bbe4e9e80da3b23e4d9c35772cc5e0b59cf56f93a98c4918249615d.png" class="popup img-link shimmer"><img src="/assets/posts/633ea0199bbe4e9e80da3b23e4d9c35772cc5e0b59cf56f93a98c4918249615d.png" alt="" loading="lazy"></a></p>
 <ul>
   <li>Cost가 바뀌기 전, 실제 <code class="language-plaintext highlighter-rouge">D(z,x) = 5</code> 이다.</li>
   <li>하지만, y를 거쳐서 가므로 y에게 <code class="language-plaintext highlighter-rouge">D(z,x) = ∞</code> 라고 알려준다.
@@ -2111,7 +2111,7 @@ Routing은 2가지 종류로 구분할 수 있다.</p>
 
 <h3 id="-hierarchical-ospf"><span class="me-2">► Hierarchical OSPF</span><a href="#-hierarchical-ospf" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p>OSPF를 2가지 계층으로 분리함으로써 확장성을 높일 수 있다.
-<a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<a href="/assets/posts/c69638c80b3a443e42dc934109b358803a73e7080b27178d800bc6f53037d8dd.png" class="popup img-link shimmer"><img src="/assets/posts/c69638c80b3a443e42dc934109b358803a73e7080b27178d800bc6f53037d8dd.png" alt="" loading="lazy"></a></p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -2171,7 +2171,7 @@ Routing은 2가지 종류로 구분할 수 있다.</p>
 
 <p>자신에게 찾아올 수 있게 하려면, 자신이 속한 AS 주소를 advertise 해야 한다.</p>
 
-<p><a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/565e5b6c04b09b1d904bf85bfbd71055a8c803f8c840f2c3784b50716124f0af.png" class="popup img-link shimmer"><img src="/assets/posts/565e5b6c04b09b1d904bf85bfbd71055a8c803f8c840f2c3784b50716124f0af.png" alt="" loading="lazy"></a></p>
 
 <ul>
   <li>eBGP (External BGP): 다른 AS에 속한 이웃(neighbor) 라우터에게 자신의 AS 정보를 알린다.</li>
@@ -2184,7 +2184,7 @@ Routing은 2가지 종류로 구분할 수 있다.</p>
 <p>BGP 기능을 가지고 있는 라우터를 peer라고 부른다.
 두 peer 간 TCP 연결이 설정된다.</p>
 
-<p><a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/0cfcdfab28254307c9ee5d3b86608a9c916b54e89bdf59fe1dec38818b5117e7.png" class="popup img-link shimmer"><img src="/assets/posts/0cfcdfab28254307c9ee5d3b86608a9c916b54e89bdf59fe1dec38818b5117e7.png" alt="" loading="lazy"></a></p>
 
 <ul>
   <li>이 연결은 semi-permanent 하다.</li>
@@ -2192,7 +2192,7 @@ Routing은 2가지 종류로 구분할 수 있다.</p>
 
 <p><br /></p>
 
-<p><a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/ef5483f834c848b1b16c2d1fb291ea4df75ab346c0c1922cfb5c9e67e403267a.png" class="popup img-link shimmer"><img src="/assets/posts/ef5483f834c848b1b16c2d1fb291ea4df75ab346c0c1922cfb5c9e67e403267a.png" alt="" loading="lazy"></a></p>
 
 <ol>
   <li>
@@ -2283,7 +2283,7 @@ ex. (AS1, X)라는 메시지가 AS2로 옴
 <p><br /></p>
 
 <h3 id="-isp-policy"><span class="me-2">► ISP policy</span><a href="#-isp-policy" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/c29256136a1b449af41bd8e2bdae592c0969f8cbe55442d667e5ae09b32a8d1c.png" class="popup img-link shimmer"><img src="/assets/posts/c29256136a1b449af41bd8e2bdae592c0969f8cbe55442d667e5ae09b32a8d1c.png" alt="" loading="lazy"></a></p>
 <blockquote>
   <p>ISP는 다른 ISP가 자신의 네트워크를 “중간 경유지”로 사용하지 못하게 한다.</p>
 </blockquote>

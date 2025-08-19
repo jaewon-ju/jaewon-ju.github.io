@@ -1304,11 +1304,11 @@ Spring Security는 기본적으로 세션을 기반으로 인증을 진행한다
   <li><code class="language-plaintext highlighter-rouge">UsernamePasswordAuthenticationFilter</code> 대신 <code class="language-plaintext highlighter-rouge">LoginFilter</code> 를 사용하도록 <code class="language-plaintext highlighter-rouge">SecurityConfig</code>를 수정해야 한다.</li>
 </ul>
 
-<p><a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/8c1a16c6a6139fb92dd8c38f5d35631937f14dbdf7e3a80194be3b9102dfa1e2.png" class="popup img-link shimmer"><img src="/assets/posts/8c1a16c6a6139fb92dd8c38f5d35631937f14dbdf7e3a80194be3b9102dfa1e2.png" alt="" loading="lazy"></a></p>
 
 <p>위의 그림은 <code class="language-plaintext highlighter-rouge">UsernamePasswordAuthenticationFilter</code> 의 동작과정이다.
 아래의 그림은 <code class="language-plaintext highlighter-rouge">LoginFilter</code>와 <code class="language-plaintext highlighter-rouge">JwtUtil</code>을 사용했을 때의 동작과정이다.
-<a href="/assets/posts/image.png" class="popup img-link shimmer"><img src="/assets/posts/image.png" alt="" loading="lazy"></a></p>
+<a href="/assets/posts/344c17f6805294bf409e93c9b6833116dcfc82cf26a7d0c9337f9bf19df0327c.png" class="popup img-link shimmer"><img src="/assets/posts/344c17f6805294bf409e93c9b6833116dcfc82cf26a7d0c9337f9bf19df0327c.png" alt="" loading="lazy"></a></p>
 
 <p><code class="language-plaintext highlighter-rouge">UsernamePasswordAuthenticationFilter</code> 자리를 대체할 <code class="language-plaintext highlighter-rouge">LoginFilter</code> 클래스를 구현해야 한다.
 인증이 완료되면 <code class="language-plaintext highlighter-rouge">JwtUtil</code>로 JWT 토큰을 발급해서 다음 필터로 전달한다.</p>

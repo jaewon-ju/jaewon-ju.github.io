@@ -749,7 +749,7 @@ quant-helper.online에 https 인증을 받기 위해서 다음과 같은 방법�
 #### Load Balancer 사용
 load balancer를 사용하면, 마치 우리의 사이트가 https를 지원하는 것처럼 보이게 만들어준다.
 사실 load balancer는 다량의 트래픽을 여러 서버에 분산시키기 위한 기능이다.
-![](/assets/posts/image.png)
+![](/assets/posts/d9d8d8d3b2664dbac7f9053e4ba33c604660fa260f0682210d4cb0d69f6b8a2a.png)
 Client에서 들어오는 Http, Https 요청을 Load Balancer가 받은 다음, EC2와는 8080 포트를 통해서 통신하도록 만들었다.
 Https의 인증은 ACM에서 담당한다.(AWS의 서버를 사용하기 때문에 가능한 과정이다! 만약 다른 클라우드 서비스를 이용한다면 SSL 인증서를 따로 받아야 한다.)<br />
 1. AWS의 EC2에서 대상 그룹 설정 (HTTP:8080)
@@ -760,7 +760,7 @@ Https의 인증은 ACM에서 담당한다.(AWS의 서버를 사용하기 때문�
 Load Balancer를 사용한 이후에 사이트에 접속하면 500번대 오류가 발생했다.
 - 503 Server error
    - Load balancer의 subnet에 서울이 설정되어있지 않았음
-   - 가용영역에 ap-northeast-ec를 넣어줘야 한다.![](/assets/posts/image.png)
+   - 가용영역에 ap-northeast-ec를 넣어줘야 한다.![](/assets/posts/23b383ddd8faeb00144435c23568368ec8c64fc4c75bb5c09f05f8a8b2553aa3.png)
 
 - 502 Bad Gateway
    - Load Balancer를 설정할 때, 8080 인바운드 규칙이 적용된 보안 그룹을 포함해야 한다.
@@ -818,7 +818,7 @@ MyGPT에 Instruction을 작성해야 한다.
 ROE가 시중금리보다 높을 경우, 주가가 오를 가능성이 있다.
 현재주가가 20일 이동평균선보다 높은 경우, 주가가 오를 가능성이 있다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/883384a3a0f5bf338b59421225d113ded322fdb8e20f38ea9f7faf271853ea7d.png)
 
 
 
