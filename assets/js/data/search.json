@@ -352,15 +352,6 @@
   },
   
   {
-    "title": "[MAFM] Watchdog 적용, 최종 결과물",
-    "url": "/posts/MAFM-watchdog/",
-    "categories": "프로젝트",
-    "tags": "프로젝트",
-    "date": "2024-11-14 01:18:20 +0900",
-    "content": "셈틀제 최종 결과물"
-  },
-  
-  {
     "title": "[프로젝트] 프랑크톤 해커톤 후기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%94%84%EB%9E%91%ED%81%AC%ED%86%A4-%ED%95%B4%EC%BB%A4%ED%86%A4-%ED%9B%84%EA%B8%B0/",
     "categories": "프로젝트",
@@ -865,15 +856,6 @@
   },
   
   {
-    "title": "[프롬프트 엔지니어링] 초기 설정",
-    "url": "/posts/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95/",
-    "categories": "프로젝트",
-    "tags": "프로젝트",
-    "date": "2024-05-15 00:23:08 +0900",
-    "content": "liquibase, docker 설정"
-  },
-  
-  {
     "title": "[Spring Boot] Actuator",
     "url": "/posts/Spring-Boot-Actuator/",
     "categories": "Spring, Boot",
@@ -1009,15 +991,6 @@
   },
   
   {
-    "title": "[quantHelper] 개발 - API2",
-    "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-7%EC%9D%BC%EC%B0%A8/",
-    "categories": "프로젝트",
-    "tags": "프로젝트",
-    "date": "2024-04-12 00:48:54 +0900",
-    "content": "7일차"
-  },
-  
-  {
     "title": "[quantHelper] 개발 - API",
     "url": "/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-5%EC%9D%BC%EC%B0%A8/",
     "categories": "프로젝트",
@@ -1033,15 +1006,6 @@
     "tags": "network",
     "date": "2024-04-09 13:47:27 +0900",
     "content": "TCP의 기능과 특징에 대해서 알아보자."
-  },
-  
-  {
-    "title": "[quantHelper] 개발 - 재무제표 클래스",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-4%EC%9D%BC%EC%B0%A8/",
-    "categories": "프로젝트",
-    "tags": "프로젝트",
-    "date": "2024-04-09 00:28:50 +0900",
-    "content": "4일차"
   },
   
   {
@@ -1159,15 +1123,6 @@
     "tags": "OS",
     "date": "2024-03-27 20:22:26 +0900",
     "content": "IPC에서 발생하는 문제점들과 해결방안을 알아보자."
-  },
-  
-  {
-    "title": "[Spring MVC] 요청 관련 기본기능",
-    "url": "/posts/Spring-MVC-%EA%B8%B0%EB%B3%B8-%EA%B8%B0%EB%8A%A5/",
-    "categories": "Spring",
-    "tags": "MVC, Spring",
-    "date": "2024-03-27 08:56:20 +0900",
-    "content": "Spring MVC의 기본 기능 중, 요청에 관련된 기능들에 대해서 알아보자."
   },
   
   {
@@ -1396,15 +1351,6 @@
   },
   
   {
-    "title": "[스프링 핵심 원리] 싱글톤 컨테이너",
-    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EC%8B%B1%EA%B8%80%ED%86%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88/",
-    "categories": "Spring",
-    "tags": "Spring",
-    "date": "2024-02-18 00:16:44 +0900",
-    "content": "스프링 컨테이너는 싱글톤 컨테이너 역할도 한다."
-  },
-  
-  {
     "title": "[스프링 핵심 원리] 스프링 컨테이너와 빈",
     "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EC%99%80-%EB%B9%88/",
     "categories": "Spring",
@@ -1447,15 +1393,6 @@
     "tags": "진로",
     "date": "2024-02-06 22:10:22 +0900",
     "content": "2024년이 시작된지 한달. 1월에는 자바를 복습했다. 사실 군대가기 전에 배웠지만..(2021년 초) 군대 갔다오니 머리가 리셋되어 버려서 다시 공부했다. 확실히 C, 자료구조, 유닉스 등을 배우고 난 뒤에 자바를 배우니 더 쉬웠다. 정확히 말해서 쉬웠다기 보다는, "
-  },
-  
-  {
-    "title": "[JAVA] 입출력 관련 API",
-    "url": "/posts/JAVA-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EA%B4%80%EB%A0%A8-API/",
-    "categories": "",
-    "tags": "Java",
-    "date": "2024-02-03 00:14:24 +0900",
-    "content": "자바의 입출력 API에 관한 스터디 노트"
   },
   
   {
@@ -1522,15 +1459,6 @@
   },
   
   {
-    "title": "[JAVA] 예외",
-    "url": "/posts/JAVA-%EC%98%88%EC%99%B8/",
-    "categories": "",
-    "tags": "Java",
-    "date": "2024-01-22 00:34:07 +0900",
-    "content": "자바의 예외에 관한 스터디 메모"
-  },
-  
-  {
     "title": "[JAVA] 익명 객체",
     "url": "/posts/JAVA-%EC%9D%B5%EB%AA%85-%EA%B0%9D%EC%B2%B4/",
     "categories": "",
@@ -1567,30 +1495,12 @@
   },
   
   {
-    "title": "[JAVA] 클래스",
-    "url": "/posts/JAVA-%ED%81%B4%EB%9E%98%EC%8A%A4/",
-    "categories": "",
-    "tags": "Java",
-    "date": "2024-01-16 00:23:46 +0900",
-    "content": "자바의 클래스에 관한 스터디 메모"
-  },
-  
-  {
     "title": "[CS 지식] 주소 연산",
     "url": "/posts/CS-%EC%A7%80%EC%8B%9D-%EC%A3%BC%EC%86%8C-%EC%97%B0%EC%82%B0/",
     "categories": "",
     "tags": "CS지식",
     "date": "2024-01-14 23:06:09 +0900",
     "content": "0x00과 0x01 간의 차이는 왜 1 byte인가?"
-  },
-  
-  {
-    "title": "[JAVA]  메모리 사용 영역",
-    "url": "/posts/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-%EC%98%81%EC%97%AD/",
-    "categories": "",
-    "tags": "C, Java",
-    "date": "2024-01-14 00:45:34 +0900",
-    "content": "JAVA의 메모리 사용 영역에 관한 스터디 메모"
   },
   
   {
