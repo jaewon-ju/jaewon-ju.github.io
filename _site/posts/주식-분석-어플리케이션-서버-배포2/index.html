@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[quantHelper] 서버 배포2" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T20:39:04+09:00","datePublished":"2024-05-12T16:59:55+09:00","description":"ELB 연결, Https 설정","headline":"[quantHelper] 서버 배포2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC2/"},"url":"http://localhost:4000/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T21:12:34+09:00","datePublished":"2024-05-12T16:59:55+09:00","description":"ELB 연결, Https 설정","headline":"[quantHelper] 서버 배포2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC2/"},"url":"http://localhost:4000/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -635,7 +635,7 @@
 
 <time
   
-  data-ts="1755603544"
+  data-ts="1755605554"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -771,7 +771,7 @@ quant-helper.online에 https 인증을 받기 위해서 다음과 같은 방법�
 #### Load Balancer 사용
 load balancer를 사용하면, 마치 우리의 사이트가 https를 지원하는 것처럼 보이게 만들어준다.
 사실 load balancer는 다량의 트래픽을 여러 서버에 분산시키기 위한 기능이다.
-![](https://velog.velcdn.com/images/jaewon-ju/post/e6db6308-c3c2-4314-b6d4-3385280daf25/image.png)
+![](/assets/posts/d9d8d8d3b2664dbac7f9053e4ba33c604660fa260f0682210d4cb0d69f6b8a2a.png)
 Client에서 들어오는 Http, Https 요청을 Load Balancer가 받은 다음, EC2와는 8080 포트를 통해서 통신하도록 만들었다.
 Https의 인증은 ACM에서 담당한다.(AWS의 서버를 사용하기 때문에 가능한 과정이다! 만약 다른 클라우드 서비스를 이용한다면 SSL 인증서를 따로 받아야 한다.)<br />
 1. AWS의 EC2에서 대상 그룹 설정 (HTTP:8080)
@@ -782,7 +782,7 @@ Https의 인증은 ACM에서 담당한다.(AWS의 서버를 사용하기 때문�
 Load Balancer를 사용한 이후에 사이트에 접속하면 500번대 오류가 발생했다.
 - 503 Server error
    - Load balancer의 subnet에 서울이 설정되어있지 않았음
-   - 가용영역에 ap-northeast-ec를 넣어줘야 한다.![](https://velog.velcdn.com/images/jaewon-ju/post/7a968cc8-1535-4c85-9242-1c9cc5aae35a/image.png)
+   - 가용영역에 ap-northeast-ec를 넣어줘야 한다.![](/assets/posts/23b383ddd8faeb00144435c23568368ec8c64fc4c75bb5c09f05f8a8b2553aa3.png)
 
 - 502 Bad Gateway
    - Load Balancer를 설정할 때, 8080 인바운드 규칙이 적용된 보안 그룹을 포함해야 한다.
@@ -840,7 +840,7 @@ MyGPT에 Instruction을 작성해야 한다.
 ROE가 시중금리보다 높을 경우, 주가가 오를 가능성이 있다.
 현재주가가 20일 이동평균선보다 높은 경우, 주가가 오를 가능성이 있다.
 
-![](https://velog.velcdn.com/images/jaewon-ju/post/3dfbc3a5-9375-47de-bc32-05c50681681d/image.png)
+![](/assets/posts/883384a3a0f5bf338b59421225d113ded322fdb8e20f38ea9f7faf271853ea7d.png)
 
 
 

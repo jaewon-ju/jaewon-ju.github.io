@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[Spring Security] JWT (2)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T20:39:04+09:00","datePublished":"2024-07-04T21:37:18+09:00","description":"Spring Security에서 JWT를 구현하는 방법","headline":"[Spring Security] JWT (2)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Spring-Security-JWT-2/"},"url":"http://localhost:4000/posts/Spring-Security-JWT-2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T21:12:34+09:00","datePublished":"2024-07-04T21:37:18+09:00","description":"Spring Security에서 JWT를 구현하는 방법","headline":"[Spring Security] JWT (2)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Spring-Security-JWT-2/"},"url":"http://localhost:4000/posts/Spring-Security-JWT-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1005,7 +1005,7 @@
 
 <time
   
-  data-ts="1755603544"
+  data-ts="1755605554"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1326,11 +1326,11 @@ Spring Security는 기본적으로 세션을 기반으로 인증을 진행한다
   <li><code class="language-plaintext highlighter-rouge">UsernamePasswordAuthenticationFilter</code> 대신 <code class="language-plaintext highlighter-rouge">LoginFilter</code> 를 사용하도록 <code class="language-plaintext highlighter-rouge">SecurityConfig</code>를 수정해야 한다.</li>
 </ul>
 
-<p><a href="https://velog.velcdn.com/images/jaewon-ju/post/8abff33a-12e9-48e9-bad2-1c7ecf25b7a8/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/8abff33a-12e9-48e9-bad2-1c7ecf25b7a8/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/8c1a16c6a6139fb92dd8c38f5d35631937f14dbdf7e3a80194be3b9102dfa1e2.png" class="popup img-link shimmer"><img src="/assets/posts/8c1a16c6a6139fb92dd8c38f5d35631937f14dbdf7e3a80194be3b9102dfa1e2.png" alt="" loading="lazy"></a></p>
 
 <p>위의 그림은 <code class="language-plaintext highlighter-rouge">UsernamePasswordAuthenticationFilter</code> 의 동작과정이다.
 아래의 그림은 <code class="language-plaintext highlighter-rouge">LoginFilter</code>와 <code class="language-plaintext highlighter-rouge">JwtUtil</code>을 사용했을 때의 동작과정이다.
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/fcde8a79-2ee6-4421-a0aa-cff4d1c833ec/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/fcde8a79-2ee6-4421-a0aa-cff4d1c833ec/image.png" alt="" loading="lazy"></a></p>
+<a href="/assets/posts/344c17f6805294bf409e93c9b6833116dcfc82cf26a7d0c9337f9bf19df0327c.png" class="popup img-link shimmer"><img src="/assets/posts/344c17f6805294bf409e93c9b6833116dcfc82cf26a7d0c9337f9bf19df0327c.png" alt="" loading="lazy"></a></p>
 
 <p><code class="language-plaintext highlighter-rouge">UsernamePasswordAuthenticationFilter</code> 자리를 대체할 <code class="language-plaintext highlighter-rouge">LoginFilter</code> 클래스를 구현해야 한다.
 인증이 완료되면 <code class="language-plaintext highlighter-rouge">JwtUtil</code>로 JWT 토큰을 발급해서 다음 필터로 전달한다.</p>

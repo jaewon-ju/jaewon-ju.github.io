@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[Application Layer] HTTP - header2" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T20:39:04+09:00","datePublished":"2024-03-13T18:58:36+09:00","description":"Cache header와 Conditional Get","headline":"[Application Layer] HTTP - header2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Application-Layer-HTTP-header2/"},"url":"http://localhost:4000/posts/Application-Layer-HTTP-header2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T21:12:34+09:00","datePublished":"2024-03-13T18:58:36+09:00","description":"Cache header와 Conditional Get","headline":"[Application Layer] HTTP - header2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Application-Layer-HTTP-header2/"},"url":"http://localhost:4000/posts/Application-Layer-HTTP-header2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -939,7 +939,7 @@
 
 <time
   
-  data-ts="1755603544"
+  data-ts="1755605554"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1457,10 +1457,10 @@ Cache를 확실하게 사용하지 못하도록 하려면 어떻게 해야할까
   <ul>
     <li>no-cache의 경우 
 클라이언트 A, Proxy Server P, Origin Server O 가 존재한다.<br />
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/4b094076-5988-4766-8b38-23f2b32b2ed9/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/4b094076-5988-4766-8b38-23f2b32b2ed9/image.png" alt="" loading="lazy"></a>
+<a href="/assets/posts/20b9e2d3f04a1b7e0ce1fa155aeb5a3700f57d303af4ccd84d03422e8a651323.png" class="popup img-link shimmer"><img src="/assets/posts/20b9e2d3f04a1b7e0ce1fa155aeb5a3700f57d303af4ccd84d03422e8a651323.png" alt="" loading="lazy"></a>
 no-cache 옵션만 적용되었을 때는, 데이터를 Origin Server에 검증 받은 뒤 캐시해도 된다.
 따라서, 클라이언트 A는 데이터를 P에 요청하고, P는 O의 검증을 받는다.
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/3b61edd0-e077-403e-92bb-d97254a80046/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/3b61edd0-e077-403e-92bb-d97254a80046/image.png" alt="" loading="lazy"></a>
+<a href="/assets/posts/a4dc2e89380920b8f6c04b927e498b65ed1f0991d7ef145519f6018cf2555bbe.png" class="popup img-link shimmer"><img src="/assets/posts/a4dc2e89380920b8f6c04b927e498b65ed1f0991d7ef145519f6018cf2555bbe.png" alt="" loading="lazy"></a>
 갑자기, O와 연결이 끊어졌다.
 no-cache 이면 반드시 Origin Server의 검증을 받아야 하지만, O와 통신이 불가능한 상태이다.
 이 경우, P는 오류가 나는 것보다는 오래된 데이터라도 보여주는 것을 선택한다.</li>
@@ -1471,7 +1471,7 @@ no-cache 이면 반드시 Origin Server의 검증을 받아야 하지만, O와 �
   <ul>
     <li>must revalidate의 경우
 마찬가지로, O와 연결이 끊어진 상황을 가정해보자.
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/8d942e76-5ca7-4bc7-a01d-1e3ddf68702d/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/8d942e76-5ca7-4bc7-a01d-1e3ddf68702d/image.png" alt="" loading="lazy"></a>
+<a href="/assets/posts/a3e48e4b79a814d37433a737161d469fe5a315b87a2d9aa2e081df08af62f9b3.png" class="popup img-link shimmer"><img src="/assets/posts/a3e48e4b79a814d37433a737161d469fe5a315b87a2d9aa2e081df08af62f9b3.png" alt="" loading="lazy"></a>
 must-revalidate 는 Origin Server에 접근할 수 없는 경우, <span style="color:red">반드시 오류</span>가 발생해야 한다.
 따라서, 이 경우에는 A에게 <code class="language-plaintext highlighter-rouge">504 Gateway Timeout</code> 이 응답으로 전달된다.</li>
   </ul>

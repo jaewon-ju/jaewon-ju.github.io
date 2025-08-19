@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[Network Layer] Data Plane" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T20:39:04+09:00","datePublished":"2024-05-07T12:47:18+09:00","description":"Network 계층의 Data plane 영역에 대해서","headline":"[Network Layer] Data Plane","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Network-Layer-Data-Plane/"},"url":"http://localhost:4000/posts/Network-Layer-Data-Plane/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-19T21:12:34+09:00","datePublished":"2024-05-07T12:47:18+09:00","description":"Network 계층의 Data plane 영역에 대해서","headline":"[Network Layer] Data Plane","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Network-Layer-Data-Plane/"},"url":"http://localhost:4000/posts/Network-Layer-Data-Plane/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1722,7 +1722,7 @@
 
 <time
   
-  data-ts="1755603544"
+  data-ts="1755605554"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1949,7 +1949,7 @@ Routing Table을 작성하는 것은 Control Plane 영역에서 담당한다.</p
 
 <h1 id="️-router">✏️ Router</h1>
 <p>라우터는 다음과 같이 구성되어 있다.
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/bb013b2b-5a45-4ff5-bcc1-e3cfc6eb37bc/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/bb013b2b-5a45-4ff5-bcc1-e3cfc6eb37bc/image.png" alt="" loading="lazy"></a></p>
+<a href="/assets/posts/33e050ae71457c691db79eb1a154e055487a1ebc802cc50339106f3a548a1b64.png" class="popup img-link shimmer"><img src="/assets/posts/33e050ae71457c691db79eb1a154e055487a1ebc802cc50339106f3a548a1b64.png" alt="" loading="lazy"></a></p>
 
 <ul>
   <li>Control plane 보다 Data plane이 빠르다.</li>
@@ -1994,7 +1994,7 @@ Routing Table을 작성하는 것은 Control Plane 영역에서 담당한다.</p
   </li>
   <li>
     <p>예시) 다음과 같이, 라우터에 Destination Address가 존재할 때
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/70d5c161-d479-47b9-99a5-04d7c379407f/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/70d5c161-d479-47b9-99a5-04d7c379407f/image.png" alt="" loading="lazy"></a>
+<a href="/assets/posts/a3d7c47626eefd02f3e5fc667bc6bd1c5c115d7ec76b88ca6a89a4971b09d0a5.png" class="popup img-link shimmer"><img src="/assets/posts/a3d7c47626eefd02f3e5fc667bc6bd1c5c115d7ec76b88ca6a89a4971b09d0a5.png" alt="" loading="lazy"></a>
 Entry: 11001000 00010111 00011000 10101010
 Link 1,2와 둘 다 매칭되지만, 1이 더 길게 매칭된다.
 ➜ 1번 Output Port로 fowarding</p>
@@ -2133,7 +2133,7 @@ Link 1,2와 둘 다 매칭되지만, 1이 더 길게 매칭된다.
 <h1 id="️-ip">✏️ IP</h1>
 <h2 id="-ip-datagram-format"><span class="me-2">■ IP Datagram format</span><a href="#-ip-datagram-format" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p><a href="https://velog.velcdn.com/images/jaewon-ju/post/34b9ecf3-09b6-473b-afcb-0896b9fb49f0/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/34b9ecf3-09b6-473b-afcb-0896b9fb49f0/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/b26dc67d8c4eed89d75dd540eaeae8939bf1fa9c8b1fcccb9dbb38c3274f0fd1.png" class="popup img-link shimmer"><img src="/assets/posts/b26dc67d8c4eed89d75dd540eaeae8939bf1fa9c8b1fcccb9dbb38c3274f0fd1.png" alt="" loading="lazy"></a></p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -2202,7 +2202,7 @@ Link 1,2와 둘 다 매칭되지만, 1이 더 길게 매칭된다.
     <li>데이터그램이 살아있을 수 있는 시간이며, hops 수로 카운팅한다.</li>
     <li>Forwarding할 때 TTL 값을 감소시킨다.</li>
     <li>0이 되었을 때도 목적지가 아니면 ICMP(Error를 source에 전송)
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/114d13fe-0367-4637-a007-75620c22d64b/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/114d13fe-0367-4637-a007-75620c22d64b/image.png" alt="" loading="lazy"></a></li>
+<a href="/assets/posts/1bdff54421ffbf8751afadd76317c10e447f627f0f30b5da16c873d785474701.png" class="popup img-link shimmer"><img src="/assets/posts/1bdff54421ffbf8751afadd76317c10e447f627f0f30b5da16c873d785474701.png" alt="" loading="lazy"></a></li>
     <li>나한테 제일 가까운 서버를 찾을 때도 사용한다.</li>
   </ul>
 </blockquote>
@@ -2319,8 +2319,8 @@ ex) 192.35.36.7/24
     <ul>
       <li>DHCP 서버로부터 동적으로 IP 주소를 받아온다.</li>
       <li>최대 사용 기한이 존재한다.</li>
-      <li><a href="https://velog.velcdn.com/images/jaewon-ju/post/d2391f7e-292c-42f9-86e7-56f6e59c4a96/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/d2391f7e-292c-42f9-86e7-56f6e59c4a96/image.png" alt="" loading="lazy"></a></li>
-      <li><a href="https://velog.velcdn.com/images/jaewon-ju/post/be53fa37-6743-436c-8300-7afea280c476/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/be53fa37-6743-436c-8300-7afea280c476/image.png" alt="" loading="lazy"></a></li>
+      <li><a href="/assets/posts/6a6155aa2252991bff5eb194c27b657b20b316b0862a0e574ea5aa18b74f6835.png" class="popup img-link shimmer"><img src="/assets/posts/6a6155aa2252991bff5eb194c27b657b20b316b0862a0e574ea5aa18b74f6835.png" alt="" loading="lazy"></a></li>
+      <li><a href="/assets/posts/89e6c7c4c9426f9a2222731ce52b9d7c72c97a6b0cbe4a902d0503fde9867bc1.png" class="popup img-link shimmer"><img src="/assets/posts/89e6c7c4c9426f9a2222731ce52b9d7c72c97a6b0cbe4a902d0503fde9867bc1.png" alt="" loading="lazy"></a></li>
       <li>First-hop router, DNS 서버의 이름/IP 주소, subnet 마스크 등도 같이 제공한다.</li>
     </ul>
   </li>
@@ -2343,13 +2343,13 @@ host &lt;- DHCP &lt;- ISP &lt;- ICANN</p>
 <p>Route aggregation</p>
 <ul>
   <li>aggregation 한 IP 주소를 상위 라우터에 전달한다.
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/6f3d087b-3eca-4e76-a375-ec60c246f34c/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/6f3d087b-3eca-4e76-a375-ec60c246f34c/image.png" alt="" loading="lazy"></a></li>
+<a href="/assets/posts/c84c7b80dd0e3f5f82d6aa38f80bba239a1df3a7ae3ccc2e5c20eeda6b669866.png" class="popup img-link shimmer"><img src="/assets/posts/c84c7b80dd0e3f5f82d6aa38f80bba239a1df3a7ae3ccc2e5c20eeda6b669866.png" alt="" loading="lazy"></a></li>
   <li>
     <p>상위 계층의 router에서는 목적지와 <span style="color:red">가장 길게 매치되는</span> IP 주소로 보낸다. 
 <br /></p>
   </li>
   <li>만약 ISP를 이동한다면 상위 Router에 정보를 보내줘야한다.
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/5d5ce49e-2060-4132-849a-a67774372228/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/5d5ce49e-2060-4132-849a-a67774372228/image.png" alt="" loading="lazy"></a>new Entry가 Routing Table에 생성된다.</li>
+<a href="/assets/posts/a54257b09fc125531e9e257466a43ba01d696d474c6f0a22aa62ff5e1bbbfbf3.png" class="popup img-link shimmer"><img src="/assets/posts/a54257b09fc125531e9e257466a43ba01d696d474c6f0a22aa62ff5e1bbbfbf3.png" alt="" loading="lazy"></a>new Entry가 Routing Table에 생성된다.</li>
 </ul>
 
 <p><br /></p>
@@ -2380,7 +2380,7 @@ host &lt;- DHCP &lt;- ISP &lt;- ICANN</p>
 <p><br /></p>
 
 <h3 id="-port"><span class="me-2">► Port</span><a href="#-port" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p><a href="https://velog.velcdn.com/images/jaewon-ju/post/cada9087-84a6-4b5d-8290-710c8a705275/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/cada9087-84a6-4b5d-8290-710c8a705275/image.png" alt="" loading="lazy"></a>
+<p><a href="/assets/posts/ee48d6540650685d25f717576e2cffef0445fa70e9476386295e386062a4bf3b.png" class="popup img-link shimmer"><img src="/assets/posts/ee48d6540650685d25f717576e2cffef0445fa70e9476386295e386062a4bf3b.png" alt="" loading="lazy"></a>
 내부 ➜ 외부로 패킷을 보내는 경우</p>
 
 <p>【 source IP address, source port number】 를
@@ -2426,7 +2426,7 @@ host &lt;- DHCP &lt;- ISP &lt;- ICANN</p>
 
 <p><br /></p>
 
-<p><a href="https://velog.velcdn.com/images/jaewon-ju/post/989652eb-2696-49c7-a527-2092ea3f7f07/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/989652eb-2696-49c7-a527-2092ea3f7f07/image.png" alt="" loading="lazy"></a></p>
+<p><a href="/assets/posts/d990b222c2e0da8aa58914f0374b66ba57bde17e4bd39ac838bb6a87d1690f79.png" class="popup img-link shimmer"><img src="/assets/posts/d990b222c2e0da8aa58914f0374b66ba57bde17e4bd39ac838bb6a87d1690f79.png" alt="" loading="lazy"></a></p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -2499,7 +2499,7 @@ host &lt;- DHCP &lt;- ISP &lt;- ICANN</p>
 
 <ul>
   <li>IPv6를 IPv4 header로 encapsulate.
-<a href="https://velog.velcdn.com/images/jaewon-ju/post/cf719be5-511a-46ba-94fb-b9e260528de1/image.png" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/cf719be5-511a-46ba-94fb-b9e260528de1/image.png" alt="" loading="lazy"></a></li>
+<a href="/assets/posts/7c9ccd6a513407df16e01452a1804803124f2d511e89b9cd2fc36f91bef84b63.png" class="popup img-link shimmer"><img src="/assets/posts/7c9ccd6a513407df16e01452a1804803124f2d511e89b9cd2fc36f91bef84b63.png" alt="" loading="lazy"></a></li>
 </ul>
 
 <p><br /></p>
