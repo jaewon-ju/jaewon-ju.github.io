@@ -34,15 +34,15 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="JAVA의 배열에 관한 스터디 메모" />
 <meta property="og:description" content="JAVA의 배열에 관한 스터디 메모" />
-<link rel="canonical" href="https://jaewon-ju.github.io/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/" />
-<meta property="og:url" content="https://jaewon-ju.github.io/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/" />
+<link rel="canonical" href="http://localhost:4000/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/" />
+<meta property="og:url" content="http://localhost:4000/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/" />
 <meta property="og:site_name" content="JUJU" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-01-06T23:59:04+09:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="[JAVA] 배열" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-13T19:51:37+09:00","datePublished":"2024-01-06T23:59:04+09:00","description":"JAVA의 배열에 관한 스터디 메모","headline":"[JAVA] 배열","mainEntityOfPage":{"@type":"WebPage","@id":"https://jaewon-ju.github.io/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/"},"url":"https://jaewon-ju.github.io/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-18T15:18:49+09:00","datePublished":"2024-01-06T23:59:04+09:00","description":"JAVA의 배열에 관한 스터디 메모","headline":"[JAVA] 배열","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/"},"url":"http://localhost:4000/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -253,10 +253,10 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="/" id="avatar" class="rounded-circle"><img src="https://chirpy-img.netlify.app/./avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
+    <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <a class="site-title d-block" href="/">JUJU</a>
-    <p class="site-subtitle fst-italic mb-0">Develop Blog</p>
+    <p class="site-subtitle fst-italic mb-0">Development Blog</p>
   </header>
   <!-- .profile-wrapper -->
 
@@ -830,13 +830,13 @@
 
 <time
   
-  data-ts="1755082297"
+  data-ts="1755497929"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Aug 13, 2025
+  Aug 18, 2025
 </time>
 
       </span>
@@ -926,17 +926,16 @@
   </dialog>
   
 
-  <div class="content"><h2 id="1-배열의-정의"><span class="me-2">1. 배열의 정의</span><a href="#1-배열의-정의" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <br />
 
+  <div class="content"><h2 id="1-배열의-정의"><span class="me-2">1. 배열의 정의</span><a href="#1-배열의-정의" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <blockquote>
   <p>배열 (Array)이란 <span style="color:red">같은 타입</span>의 여러 변수를 하나의 묶음으로 다루는 것이다.
-JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
+ JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
 </blockquote>
 
 <h2 id="2-선언-방법"><span class="me-2">2. 선언 방법</span><a href="#2-선언-방법" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
 <p>int형 배열의 선언 방식은 2가지가 있다.</p>
-
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -944,7 +943,6 @@ JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
 </pre></td><td class="rouge-code"><pre><span class="kt">int</span><span class="o">[]</span> <span class="n">s</span><span class="o">;</span> <span class="c1">// s는 int형 데이터의 주소값을 저장한다.</span>
 <span class="kt">int</span> <span class="n">s</span><span class="o">[];</span>
 </pre></td></tr></tbody></table></code></div></div>
-
 <p>자료형[] 이름;
 —-또는—-
 자료형 이름[];</p>
@@ -952,20 +950,16 @@ JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
 <p>위의 과정으로 배열의 <span style="color:skyblue">참조 변수</span> 공간을 메모리에 할당했다. JAVA에서 참조 변수란, 실제 데이터의 값이 저장되는 것이 아니라 주소가 저장되는 변수이다. 참조 변수를 선언했다고 해서 배열이 생성된 것은 아니다. 실제 배열은 new 연산자를 사용하여 생성한다.</p>
 
 <h2 id="3-배열의-생성"><span class="me-2">3. 배열의 생성</span><a href="#3-배열의-생성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
 </pre></td></tr></tbody></table></code></div></div>
-
 <p>int 형 변수 10개만큼의 크기가 메모리에 할당되었다. 참조 변수 s는 할당된 메모리의 시작주소를 갖고 있다.</p>
 
 <h2 id="4-배열의-초기화"><span class="me-2">4. 배열의 초기화</span><a href="#4-배열의-초기화" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
 <p>위의 과정으로 int형 변수의 배열을 생성하면, 모든 요소들은 <span style="color:red">0으로 초기화 된다.</span> 문자열 배열은 null, boolean 배열은 false로 초기화된다.
 0이 아닌 다른 값으로 초기화 하는 방법은 다음과 같다.</p>
-
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -989,9 +983,7 @@ JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="5-배열의-사용"><span class="me-2">5. 배열의 사용</span><a href="#5-배열의-사용" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
 <p>배열 각각의 요소는 인덱스 번호로 접근할 수 있다.</p>
-
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1013,9 +1005,7 @@ JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
 <span class="o">}</span>
 
 </pre></td></tr></tbody></table></code></div></div>
-
 <p>for-each 문법을 사용하면, for문 보다 쉽게 코드를 짤 수 있다.</p>
-
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1027,7 +1017,6 @@ JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="-다차원-배열"><span class="me-2">※ 다차원 배열</span><a href="#-다차원-배열" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
 <p>다차원 배열이란 2차원 이상의 배열을 의미한다.</p>
 
 <p>자바에서 다차원 배열을 공부하면서, 나는 당연히 자바의 다차원 배열도 C언어와 비슷하게 동작할 것이라고 예상했다(메모리 관리적인 부분에서). 하지만, <span style="background-color: #0A3B24">실제 메모리를 사용하는 방식이 달랐다.</span></p>
@@ -1036,40 +1025,34 @@ JAVA의 배열은 <span style="color:red">객체</span>이다.</p>
 
 <blockquote>
   <p>C언어에서 2차원 배열은 다음과 같이 선언 및 생성한다.</p>
-</blockquote>
-
-<div class="language-c highlighter-rouge"><div class="code-header">
+  <div class="language-c highlighter-rouge"><div class="code-header">
         <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">scores</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">},{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">}};</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>scores는 2차원 배열의 첫번째 배열요소 scores[0]의 주소이다.
-C언어에서 배열은 연속적으로 메모리에 할당된다.
+</pre></td></tr></tbody></table></code></div>  </div>
+  <p>scores는 2차원 배열의 첫번째 배열요소 scores[0]의 주소이다.
+C언어에서 배열은 연속적으로 메모리에 할당된다. 
 배열의 시작주소를 0x00이라 가정하자. scores는 0x00을 가리키고 scores[1]은 0x0c를 가리킨다.
 <a href="https://velog.velcdn.com/images/jaewon-ju/post/0c44a116-05e5-43f9-8816-d62b4fac47d8/image.jpeg" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/0c44a116-05e5-43f9-8816-d62b4fac47d8/image.jpeg" alt="" loading="lazy"></a>
 동적할당된 배열이 아니므로, 스택 메모리에 할당된다.</p>
+</blockquote>
 
 <blockquote>
   <p>Java에서 2차원 배열은 다음과 같이 선언 및 생성한다.</p>
-</blockquote>
-
-<div class="language-java highlighter-rouge"><div class="code-header">
+  <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre><span class="kt">int</span><span class="o">[][]</span> <span class="n">scores</span> <span class="o">=</span> <span class="k">new</span> <span class="n">scores</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">3</span><span class="o">];</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>위의 코드를 실행하면, 총 <span style="background-color: #0A3B24">3개의</span> 배열 객체를 생성한다.
+</pre></td></tr></tbody></table></code></div>  </div>
+  <p>위의 코드를 실행하면, 총 <span style="background-color: #0A3B24">3개의</span> 배열 객체를 생성한다.
 <a href="https://velog.velcdn.com/images/jaewon-ju/post/764dae97-9674-4edd-b374-82ab60722cbf/image.jpeg" class="popup img-link shimmer"><img src="https://velog.velcdn.com/images/jaewon-ju/post/764dae97-9674-4edd-b374-82ab60722cbf/image.jpeg" alt="" loading="lazy"></a>
 <span style="color: green">STACK</span> | 배열 변수 scores: 참조 변수로서, 배열 A를 참조한다.
-<span style="color: red">HEAP</span> | 배열 객체 A: scores[0]와 scores[1]를 참조하는 배열.
+<span style="color: red">HEAP</span> | 배열 객체 A: scores[0]와 scores[1]를 참조하는 배열. 
 <span style="color: red">HEAP</span> | 배열 객체 B(scores[0]): 길이가 3인 배열<br />
 <span style="color: red">HEAP</span> | 배열 객체 C(scores[1]): 길이가 3인 배열
 <br />
 Java에서도 배열은 연속적으로 메모리에 할당된다. 하지만, 직접적인 메모리 주소는 확인할 수 없다. Java는 메모리 관리를 추상화하여 안전성을 높였기 때문이다.</p>
-
-<div class="language-java highlighter-rouge"><div class="code-header">
+  <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -1093,12 +1076,11 @@ Java에서도 배열은 연속적으로 메모리에 할당된다. 하지만, �
         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Reference of scores[1] array: "</span> <span class="o">+</span> <span class="n">scores</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
     	<span class="o">}</span>
     <span class="o">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>위의 코드로는 배열의 참조만 확인할 수 있으며, 실제 메모리 주소를 나타내지 않는다.</p>
+</pre></td></tr></tbody></table></code></div>  </div>
+  <p>위의 코드로는 배열의 참조만 확인할 수 있으며, 실제 메모리 주소를 나타내지 않는다.</p>
+</blockquote>
 
 <h3 id="공부를-하다가-생긴-의문점"><span class="me-2">공부를 하다가 생긴 의문점</span><a href="#공부를-하다가-생긴-의문점" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
 <ol>
   <li>
     <p>C언어에서, 배열명도 메모리의 공간을 차지하는가? –&gt; 결론: 차지 안함
@@ -1132,7 +1114,7 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
 
     <div
-      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2 opacity-50"
     >
       <div class="license-wrapper">
           This post is licensed under 
@@ -1155,21 +1137,21 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=[JAVA]%20%EB%B0%B0%EC%97%B4%20-%20JUJU&url=https%3A%2F%2Fjaewon-ju.github.io%2Fposts%2FJAVA-%25EB%25B0%25B0%25EC%2597%25B4%25EA%25B3%25BC-Arraylist%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=[JAVA]%20%EB%B0%B0%EC%97%B4%20-%20JUJU&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25B0%25B0%25EC%2597%25B4%25EA%25B3%25BC-Arraylist%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=[JAVA]%20%EB%B0%B0%EC%97%B4%20-%20JUJU&u=https%3A%2F%2Fjaewon-ju.github.io%2Fposts%2FJAVA-%25EB%25B0%25B0%25EC%2597%25B4%25EA%25B3%25BC-Arraylist%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=[JAVA]%20%EB%B0%B0%EC%97%B4%20-%20JUJU&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25B0%25B0%25EC%2597%25B4%25EA%25B3%25BC-Arraylist%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2Fjaewon-ju.github.io%2Fposts%2FJAVA-%25EB%25B0%25B0%25EC%2597%25B4%25EA%25B3%25BC-Arraylist%2F&text=[JAVA]%20%EB%B0%B0%EC%97%B4%20-%20JUJU" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25B0%25B0%25EC%2597%25B4%25EA%25B3%25BC-Arraylist%2F&text=[JAVA]%20%EB%B0%B0%EC%97%B4%20-%20JUJU" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1192,6 +1174,25 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     <!-- .post-tail-bottom -->
   </div>
   <!-- div.post-tail-wrapper -->
+
+  <br />
+
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="jaewon-ju/jaewon-ju.github.io"
+    data-repo-id="R_kgDOPZ-BFA"
+    data-category="General"
+    data-category-id="DIC_kwDOPZ-BFM4Ct9Si"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    crossorigin="anonymous"
+    async
+  ></script>
 </article>
 
 
@@ -1224,35 +1225,35 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-%EB%B0%B0%EC%97%B4%EA%B3%BC-Arraylist/">[JAVA] 배열</a>
+          <a href="/posts/Spring-Boot-%EC%99%B8%EB%B6%80-%EC%84%A4%EC%A0%95%EA%B3%BC-%ED%94%84%EB%A1%9C%ED%95%84-2/">[Spring Boot] 외부 설정과 프로필 2</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JPA-%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8/">[JPA] 영속성 컨텍스트</a>
+          <a href="/posts/Docker/">[CS 지식] Docker</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-%ED%81%B4%EB%9E%98%EC%8A%A4/">[JAVA] 클래스</a>
+          <a href="/posts/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81-%ED%95%84%EC%9A%94-%EA%B8%B0%EB%8A%A5/">[프롬프트 엔지니어링] 필요 기능</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-%EC%83%81%EC%86%8D/">[JAVA] 상속</a>
+          <a href="/posts/%EC%A3%BC%EC%8B%9D-%EB%B6%84%EC%84%9D-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B2%84-%EB%B0%B0%ED%8F%AC2/">[quantHelper] 서버 배포2</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Stripe-Stripe%EB%A1%9C-%EC%B9%B4%EB%93%9C-%EC%A0%95%EB%B3%B4-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0-WO-checkout-Session/">[Stripe] Stripe로 카드 정보 저장하기 W/O checkout Session </a>
+          <a href="/posts/Spring-Boot-Actuator/">[Spring Boot] Actuator</a>
         </li>
       
     </ul>
@@ -1500,7 +1501,79 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1690,80 +1763,6 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2006,25 +2005,6 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2076,6 +2056,23 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2153,10 +2150,10 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
         <a class="post-tag btn btn-outline-primary" href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/">프로젝트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/troubleshooting/">TROUBLESHOOTING</a>
@@ -2168,10 +2165,10 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
         <a class="post-tag btn btn-outline-primary" href="/tags/os/">OS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/auth/">Auth</a>
@@ -2415,54 +2412,6 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2476,6 +2425,62 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/JAVA-java.lang-%ED%8C%A8%ED%82%A4%EC%A7%80/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705934924"
+  data-df="ll"
+  
+>
+  Jan 22, 2024
+</time>
+
+              <h4 class="pt-0 my-2">[JAVA] java.lang 패키지</h4>
+              <div class="text-muted">
+                <p>자바의 lang 패키지에 관한 스터디 메모</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/JAVA-%EC%98%88%EC%99%B8/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705851247"
+  data-df="ll"
+  
+>
+  Jan 22, 2024
+</time>
+
+              <h4 class="pt-0 my-2">[JAVA] 예외</h4>
+              <div class="text-muted">
+                <p>자바의 예외에 관한 스터디 메모</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/JAVA-%EC%9D%B5%EB%AA%85-%EA%B0%9D%EC%B2%B4/" class="post-preview card h-100">
@@ -2500,62 +2505,6 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
               <h4 class="pt-0 my-2">[JAVA] 익명 객체</h4>
               <div class="text-muted">
                 <p>자바의 익명 객체에 관한 스터디 메모</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/JAVA-%EC%A4%91%EC%B2%A9-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80-%EC%A4%91%EC%B2%A9-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1705838861"
-  data-df="ll"
-  
->
-  Jan 21, 2024
-</time>
-
-              <h4 class="pt-0 my-2">[JAVA] 중첩 클래스와 중첩 인터페이스</h4>
-              <div class="text-muted">
-                <p>자바의 중첩 클래스와 인터페이스에 관한 스터디 메모</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/JAVA-%EC%83%81%EC%86%8D/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1705552289"
-  data-df="ll"
-  
->
-  Jan 18, 2024
-</time>
-
-              <h4 class="pt-0 my-2">[JAVA] 상속</h4>
-              <div class="text-muted">
-                <p>자바의 상속에 관한 스터디 메모</p>
               </div>
             </div>
           </a>
@@ -2881,7 +2830,79 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3071,80 +3092,6 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3387,25 +3334,6 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3457,6 +3385,23 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3534,10 +3479,10 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
         <a class="post-tag btn btn-outline-primary" href="/tags/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/">프로젝트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/network/">network</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/troubleshooting/">TROUBLESHOOTING</a>
@@ -3549,10 +3494,10 @@ https://velog.io/@jaewon-ju/JAVA-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9A%A9-
         <a class="post-tag btn btn-outline-primary" href="/tags/os/">OS</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/springboot/">Springboot</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mvc/">MVC</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/auth/">Auth</a>

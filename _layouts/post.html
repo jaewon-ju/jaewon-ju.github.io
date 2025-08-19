@@ -134,6 +134,8 @@ script_includes:
   </dialog>
   {% endif %}
 
+  <br />
+
   <div class="content">{{ content }}</div>
 
   <div class="post-tail-wrapper text-muted">
@@ -166,7 +168,7 @@ script_includes:
     {% endif %}
 
     <div
-      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"
+      class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2 opacity-50"
     >
       <div class="license-wrapper">
         {% if site.data.locales[lang].copyright.license.template %} {% capture
@@ -183,4 +185,23 @@ script_includes:
     <!-- .post-tail-bottom -->
   </div>
   <!-- div.post-tail-wrapper -->
+
+  <br />
+
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="jaewon-ju/jaewon-ju.github.io"
+    data-repo-id="R_kgDOPZ-BFA"
+    data-category="General"
+    data-category-id="DIC_kwDOPZ-BFM4Ct9Si"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="ko"
+    crossorigin="anonymous"
+    async
+  ></script>
 </article>

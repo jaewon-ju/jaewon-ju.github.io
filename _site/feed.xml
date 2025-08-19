@@ -1,133 +1,140 @@
-
-
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://jaewon-ju.github.io/</id>
-  <title>JUJU</title>
-  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-08-14T20:03:37+09:00</updated>
-  <author>
-    <name>Jaewon Ju</name>
-    <uri>https://jaewon-ju.github.io/</uri>
-  </author>
-  <link rel="self" type="application/atom+xml" href="https://jaewon-ju.github.io/feed.xml"/>
-  <link rel="alternate" type="text/html" hreflang="en"
-    href="https://jaewon-ju.github.io/"/>
-  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
-  <rights> © 2025 Jaewon Ju </rights>
-  <icon>/assets/img/favicons/favicon.ico</icon>
-  <logo>/assets/img/favicons/favicon-96x96.png</logo>
-
-
-  
-  <entry>
-    <title>7개월간의 스타트업 인턴 회고</title>
-    <link href="https://jaewon-ju.github.io/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/" rel="alternate" type="text/html" title="7개월간의 스타트업 인턴 회고" />
-    <published>2025-08-11T14:23:43+09:00</published>
-  
-    <updated>2025-08-11T14:23:43+09:00</updated>
-  
-    <id>https://jaewon-ju.github.io/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/</id>
-    <content type="text/html" src="https://jaewon-ju.github.io/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/" />
-    <author>
-      <name>Jaewon Ju</name>
-    </author>
-
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>A minimal, responsive and feature-rich Jekyll theme for technical writing.</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+	<lastBuildDate>Sun, 17 Aug 2025 22:42:44 +0900</lastBuildDate>
+	
+	<item>
+		<title>[코딩테스트] Backtracking</title>
+        
+        
+            <description>&lt;p&gt;이 시리즈의 목표는, 코딩테스트에서 자주 사용되는 핵심 문법들을 템플릿 형태로 정리하고, 이를 빠르게 외워서 실전 문제에 바로 적용할 수 있도록 만드는 것이다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sun, 17 Aug 2025 22:42:44 +0900</pubDate>
+        <link>http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</guid>
+      </item>
     
-  
-
-  <summary>퇴사했습니다~</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>[코딩테스트] BFS, DFS</title>
-    <link href="https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/" rel="alternate" type="text/html" title="[코딩테스트] BFS, DFS" />
-    <published>2025-08-06T11:08:11+09:00</published>
-  
-    <updated>2025-08-09T12:04:07+09:00</updated>
-  
-    <id>https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</id>
-    <content type="text/html" src="https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/" />
-    <author>
-      <name>Jaewon Ju</name>
-    </author>
-
-  
+	<item>
+		<title>7개월간의 스타트업 인턴 회고</title>
+        
+        
+            <description>&lt;p&gt;작년 12월 말부터 진행한 7개월간의 인턴 생활이 끝났다.
+정말 많이 배웠고, 살면서 이렇게까지 코딩만 했던 적이 있었나 싶을 정도로 말 그대로 죽어라 코딩만 했다.
+무엇을 배웠는지, 스타트업 개발 인턴은 어떤지, 그리고 다른 사람에게 추천할만한지 등을 정리해보고자 책상 앞에 앉았다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 11 Aug 2025 14:23:43 +0900</pubDate>
+        <link>http://localhost:4000/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/</guid>
+      </item>
     
-  
-
-  <summary>Python으로 BFS, DFS를 구현하는 방법</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>[CS 지식] Binary Data 총정리</title>
-    <link href="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="[CS 지식] Binary Data 총정리" />
-    <published>2025-07-14T17:56:15+09:00</published>
-  
-    <updated>2025-08-09T12:04:07+09:00</updated>
-  
-    <id>https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</id>
-    <content type="text/html" src="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/" />
-    <author>
-      <name>Jaewon Ju</name>
-    </author>
-
-  
+	<item>
+		<title>[코딩테스트] BFS, DFS</title>
+        
+        
+            <description>&lt;p&gt;이 포스팅의 목표는, 코딩테스트에서 자주 사용되는 핵심 문법들을 템플릿 형태로 정리하고, 이를 빠르게 외워서 실전 문제에 바로 적용할 수 있도록 만드는 것이다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 06 Aug 2025 11:08:11 +0900</pubDate>
+        <link>http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</guid>
+      </item>
     
-  
-
-  <summary>ArrayBuffer, Buffer, Uint8Array 등 Binary Data에 대한 정리본</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>[TroubleShooting] Authentik API 403 Forbidden</title>
-    <link href="https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/" rel="alternate" type="text/html" title="[TroubleShooting] Authentik API 403 Forbidden" />
-    <published>2025-07-07T15:36:08+09:00</published>
-  
-    <updated>2025-08-09T12:04:07+09:00</updated>
-  
-    <id>https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/</id>
-    <content type="text/html" src="https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/" />
-    <author>
-      <name>Jaewon Ju</name>
-    </author>
-
-  
+	<item>
+		<title>[CS 지식] Binary Data 총정리</title>
+        
+        
+            <description>&lt;blockquote&gt;
+  &lt;p&gt;현대 웹과 Node.js 애플리케이션에서는 이미지, 영상, 오디오, 압축 파일 등 다양한 &lt;strong&gt;바이너리 데이터&lt;/strong&gt;를 다루는 일이 흔하다. 이러한 데이터는 기본적인 문자열로는 표현할 수 없기 때문에, 자바스크립트는 이를 처리하기 위한 다양한 저수준 타입들을 제공한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        
+        <pubDate>Mon, 14 Jul 2025 17:56:15 +0900</pubDate>
+        <link>http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</guid>
+      </item>
     
-  
-
-  <summary>Authentik API 403 Forbidden Error</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>[CS 지식] HyperDrvie</title>
-    <link href="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/" rel="alternate" type="text/html" title="[CS 지식] HyperDrvie" />
-    <published>2025-06-23T17:12:42+09:00</published>
-  
-    <updated>2025-08-09T12:04:07+09:00</updated>
-  
-    <id>https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</id>
-    <content type="text/html" src="https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/" />
-    <author>
-      <name>Jaewon Ju</name>
-    </author>
-
-  
+	<item>
+		<title>[TroubleShooting] Authentik API 403 Forbidden</title>
+        
+        
+            <description>&lt;p&gt;&lt;a href=&quot;#English&quot;&gt;English Version&lt;/a&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 07 Jul 2025 15:36:08 +0900</pubDate>
+        <link>http://localhost:4000/posts/TroubleShooting-Authentik-API-403-Forbidden/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-Authentik-API-403-Forbidden/</guid>
+      </item>
     
-  
-
-  <summary>Cloudflare의 기능중 하나인 HyperDrive에 대해서</summary>
-
-  </entry>
-
-</feed>
-
-
+	<item>
+		<title>[CS 지식] HyperDrvie</title>
+        
+        
+            <description>&lt;h3 id=&quot;cloudflare-workers&quot;&gt;Cloudflare Workers&lt;/h3&gt;
+&lt;p&gt;환경에서 PostgreSQL 데이터베이스에 접근할 때 가장 큰 병목 중 하나는 TCP 연결 시간이다. Workers는 요청마다 콜드스타트를 동반하며, 매번 TCP 핸드셰이크를 수행해야 한다. 이로 인해 단순 SELECT 쿼리조차 평균 500ms 이상의 지연이 발생하는 경우가 많다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 23 Jun 2025 17:12:42 +0900</pubDate>
+        <link>http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</guid>
+      </item>
+    
+	<item>
+		<title>[TroubleShooting] NextAuth - Authentik Docker Issue (2)</title>
+        
+        
+            <description>&lt;p&gt;&lt;a href=&quot;#English&quot;&gt;English Version&lt;/a&gt;
+Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하고자 하였고, docker-compose 기반에서 Authentik을 server:9000 으로 내부 연결하였다.
+이 과정에서 NextAuth.js가 wellKnown 메커니즘을 통해 Authentik의 Public URL을 잘못 해석하면서 OAuth 인증 흐름이 정상적으로 동작하지 않는 문제가 발생했다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 16 Jun 2025 16:23:38 +0900</pubDate>
+        <link>http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/</guid>
+      </item>
+    
+	<item>
+		<title>[TroubleShooting] NextAuth - Authentik Docker Issue (1)</title>
+        
+        
+            <description>&lt;p&gt;&lt;a href=&quot;#English&quot;&gt;English Version&lt;/a&gt;
+Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, docker-compose 환경에서 Nginx를 통해 리버스 프록시를 구성하였다.
+이 과정에서 /authentik/와 같은 서브패스 방식으로 Authentik을 배포하려 했으나, 정적 파일 로드 실패로 인해 인증 화면 자체가 정상 렌더링되지 않았다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 16 Jun 2025 16:12:24 +0900</pubDate>
+        <link>http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</guid>
+      </item>
+    
+	<item>
+		<title>[TroubleShooting] Canvas Docker install 오류</title>
+        
+        
+            <description>&lt;p&gt;Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm ci 명령어 실행 시 canvas 모듈의 네이티브 바이너리 설치 실패로 인해 빌드가 중단되었다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 09 Jun 2025 14:38:40 +0900</pubDate>
+        <link>http://localhost:4000/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</guid>
+      </item>
+    
+	<item>
+		<title>[TroubleShooting] Cloudflare Workers-JOSEError</title>
+        
+        
+            <description>&lt;p&gt;Cloudflare Workers에서 jose를 사용해 JWT를 검증하는 도중, JWKS 키셋을 불러오는 요청에서 200 OK가 오지 않아 JOSEError가 발생했다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 19 May 2025 15:38:31 +0900</pubDate>
+        <link>http://localhost:4000/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</guid>
+      </item>
+    
+  </channel>
+</rss>
