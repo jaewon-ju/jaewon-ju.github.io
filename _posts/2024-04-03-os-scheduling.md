@@ -6,7 +6,7 @@ tags: ["OS"]
 slug: "OS-Scheduling"
 categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.322Z
+  lastSyncedAt: 2025-08-19T08:36:52.427Z
   hash: "d1fa64a838b571de2f9694ad60e6bf799d3b8ea8dc8af88c0efed897926167d7"
 ---
 

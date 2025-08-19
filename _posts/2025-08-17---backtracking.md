@@ -6,7 +6,7 @@ tags: ["코딩테스트"]
 slug: "코딩테스트-Backtracking"
 categories: 코딩테스트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:44.092Z
+  lastSyncedAt: 2025-08-19T08:36:49.290Z
   hash: "4b629302935adf7b3984f836cca567896c2cbca1bf83a5c7f9c4886b025178c2"
 ---
 

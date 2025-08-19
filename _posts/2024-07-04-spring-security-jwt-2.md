@@ -7,7 +7,7 @@ slug: "Spring-Security-JWT-2"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/8abff33a-12e9-48e9-bad2-1c7ecf25b7a8/image.png"
 categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.092Z
+  lastSyncedAt: 2025-08-19T08:36:51.241Z
   hash: "bb082443d32454f4afef579836d71f29e3f72415a03b4eb49573badc13691af4"
 ---
 

@@ -6,7 +6,7 @@ tags: ["OS"]
 slug: "OS-Input-Output"
 categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.614Z
+  lastSyncedAt: 2025-08-19T08:36:51.727Z
   hash: "277e114133d149f6caa7d1a03075689c26b6566e81549919fab1edb3bfd818c9"
 ---
 

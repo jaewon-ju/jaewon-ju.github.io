@@ -6,7 +6,7 @@ tags: ["OS"]
 slug: "OS-Multimedia-OS"
 categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.440Z
+  lastSyncedAt: 2025-08-19T08:36:51.618Z
   hash: "b2e3c6d05c31dcb08496541933e8a87f0bcdcb31a4daee341c9b0c19d225372e"
 ---
 

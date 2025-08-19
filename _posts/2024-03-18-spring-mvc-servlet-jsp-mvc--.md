@@ -6,7 +6,7 @@ tags: ["Spring"]
 slug: "Spring-MVC-Servlet-JSP-MVC-패턴"
 categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.684Z
+  lastSyncedAt: 2025-08-19T08:36:52.842Z
   hash: "648bd95478086b7f6f98129f8fbdb12fe998189e13f4ffe140be12a2ecedacc1"
 ---
 

@@ -6,7 +6,7 @@ tags: ["OS"]
 slug: "OS-Processes-and-Threads"
 categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.814Z
+  lastSyncedAt: 2025-08-19T08:36:52.976Z
   hash: "bd56a8d03f7e3f544060ca0865a7656b6ab9d35af86ce3210173bab74fbcd986"
 ---
 

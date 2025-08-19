@@ -6,7 +6,7 @@ tags: ["프로젝트"]
 slug: "QuantHelper-개요"
 categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:45.806Z
+  lastSyncedAt: 2025-08-19T08:36:50.941Z
   hash: "ab760a73ad014249d592e1a7189155a6f9a7bb937ac5e3add5ac11e19b0490a3"
 ---
 

@@ -5,7 +5,7 @@ date: 2024-04-18T13:56:44.549Z
 tags: ["CS지식"]
 slug: "CS-지식-System-Call-Interrupt"
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.051Z
+  lastSyncedAt: 2025-08-19T08:36:52.153Z
   hash: "ae1403602c4fce8867066277500e94200702189b1ca582f67f3002480542a053"
 ---
 

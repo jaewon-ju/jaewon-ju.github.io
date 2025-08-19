@@ -6,7 +6,7 @@ tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Firebase-Storage-403-오류-downloadUrl"
 categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:44.736Z
+  lastSyncedAt: 2025-08-19T08:36:49.931Z
   hash: "09ae6dcc804bdce3e64b54cfad55ffb03b9b1b97bd701e532fb02ce7eac93a33"
 ---
 

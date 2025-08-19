@@ -6,7 +6,7 @@ tags: ["Spring","spring security"]
 slug: "Spring-Security-OAuth2"
 categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.148Z
+  lastSyncedAt: 2025-08-19T08:36:51.297Z
   hash: "26b789f7ebe6011cf46ddd1eeec8a146b837f5c5027f6c804f1716ddc2401109"
 ---
 

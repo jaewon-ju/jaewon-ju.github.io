@@ -6,7 +6,7 @@ tags: ["OS"]
 slug: "OS-Introduction"
 categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.943Z
+  lastSyncedAt: 2025-08-19T08:36:53.121Z
   hash: "0a304549518279e901495a74d27f6b5a64ccec440e63d381c25df985c1e115d2"
 ---
 

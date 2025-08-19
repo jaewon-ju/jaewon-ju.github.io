@@ -6,7 +6,7 @@ tags: ["MVC","Spring"]
 slug: "Spring-MVC-응답-관련-기본-기능"
 categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.448Z
+  lastSyncedAt: 2025-08-19T08:36:52.525Z
   hash: "844d24bf7e22365f8b8bc99a8388a691dbfde7884df9475bf5c80903d268d7e4"
 ---
 

@@ -7,7 +7,7 @@ slug: "CS-지식-Authentik"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/23297721-b5b4-4aee-872e-3f34a83f0444/image.png"
 categories: Auth
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:44.687Z
+  lastSyncedAt: 2025-08-19T08:36:49.878Z
   hash: "bfe09000f07a9b2bdcbf135c177808737c57242050aa562a74828d6ba284a258"
 ---
 

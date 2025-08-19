@@ -6,7 +6,7 @@ tags: ["OS"]
 slug: "OS-Virtual-Memory-System"
 categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.966Z
+  lastSyncedAt: 2025-08-19T08:36:52.083Z
   hash: "7220de5d859122d1e99454da151666fb30b3d6a74fa5c2e15cfd3e693dfb9ecf"
 ---
 

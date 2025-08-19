@@ -6,7 +6,7 @@ tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-syntax-error-at-or-near-1"
 categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:44.553Z
+  lastSyncedAt: 2025-08-19T08:36:49.734Z
   hash: "a2dd8f35c06c225f87bfd12254d516544a32a62342699a8f5e93cfd245a973bc"
 ---
 

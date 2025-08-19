@@ -6,7 +6,7 @@ tags: ["network"]
 slug: "Transport-Layer-Transport-Layer-Services"
 categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.659Z
+  lastSyncedAt: 2025-08-19T08:36:52.811Z
   hash: "8c4ee5338ad104906038eab48c8d6b9aba35fe2445ea344546d38a4188e00eb1"
 ---
 

@@ -6,7 +6,7 @@ tags: ["프로젝트"]
 slug: "LingoConnect-개발2-fmxlhcfs"
 categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:45.981Z
+  lastSyncedAt: 2025-08-19T08:36:51.122Z
   hash: "2491780ee0dd70127be2debb11ab40d4d940ebcf0689d9f13c6df8b17cd4a78e"
 ---
 

@@ -6,7 +6,7 @@ tags: ["MVC","Spring"]
 slug: "Spring-MVC-Spring-MVC의-이해"
 categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.585Z
+  lastSyncedAt: 2025-08-19T08:36:52.748Z
   hash: "5725d8900e2804e2ff741619e01293db91eb31ddc9b1c7717d8179d921c5967e"
 ---
 

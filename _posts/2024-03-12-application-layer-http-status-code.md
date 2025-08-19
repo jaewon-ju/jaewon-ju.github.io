@@ -6,7 +6,7 @@ tags: ["network"]
 slug: "Application-Layer-HTTP-Status-Code"
 categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.867Z
+  lastSyncedAt: 2025-08-19T08:36:53.024Z
   hash: "8ad10d455f5be994bd8eac18bf51aece485144a2908ca7ed45b8008f55258752"
 ---
 

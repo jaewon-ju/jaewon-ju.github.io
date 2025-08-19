@@ -7,7 +7,7 @@ slug: "Spring-Boot-Introduction"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/8f88b7b9-7187-468d-b0a7-e158e815a698/image.jpg"
 categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.425Z
+  lastSyncedAt: 2025-08-19T08:36:52.501Z
   hash: "fc7a4cd929a21a4d8e25d0c4871e46cfd0a7366d1070f8d2e2ac3f1f63d7a498"
 ---
 

@@ -6,7 +6,7 @@ tags: ["network"]
 slug: "Application-Layer"
 categories: Network
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:48.176Z
+  lastSyncedAt: 2025-08-19T08:36:53.248Z
   hash: "22d16eff16cea4b2e1d47d39602fd77539ee8dee08113bfd1933035bb3b32cf5"
 ---
 

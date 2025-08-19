@@ -6,7 +6,7 @@ tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-EC2가-터지는-오류-Github-Secret-오류"
 categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:44.922Z
+  lastSyncedAt: 2025-08-19T08:36:50.140Z
   hash: "f3a0093b19c36bc3eeb566b6491687200d8124d892a6e6973dcef3f8f2bbaa26"
 ---
 

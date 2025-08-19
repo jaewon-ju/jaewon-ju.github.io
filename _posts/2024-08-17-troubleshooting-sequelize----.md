@@ -6,7 +6,7 @@ tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Sequelize-상속-오류"
 categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:45.740Z
+  lastSyncedAt: 2025-08-19T08:36:50.883Z
   hash: "fb31f363a93ab56967c977512f38cdd4796dec8822a683ecea9efe5886b6102d"
 ---
 

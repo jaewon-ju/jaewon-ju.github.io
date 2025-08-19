@@ -6,7 +6,7 @@ tags: ["Spring","spring security"]
 slug: "Spring-Security-JWT"
 categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.121Z
+  lastSyncedAt: 2025-08-19T08:36:51.266Z
   hash: "e39e3d488537f20e3474f95fc162a4c6b090ebce1ca69a733bc53bb4ad0578bb"
 ---
 

@@ -6,7 +6,7 @@ tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-next-auth-getSession-null-error"
 categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:44.356Z
+  lastSyncedAt: 2025-08-19T08:36:49.554Z
   hash: "e96d932cd8295ffb9dd7849a5a3b91b5ec3db4826424a1f6b1ff0442152545a1"
 ---
 

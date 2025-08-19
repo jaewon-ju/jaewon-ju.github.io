@@ -6,7 +6,7 @@ tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-C언어-SIGSEGV"
 categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:45.065Z
+  lastSyncedAt: 2025-08-19T08:36:50.243Z
   hash: "5ac6fd7d3b2a368c7d2db44fb158b485dd1295474f226b98f83a46fda04fe99a"
 ---
 

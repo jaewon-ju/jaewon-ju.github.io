@@ -6,7 +6,7 @@ tags: ["MVC","Spring"]
 slug: "Spring-MVC-Web-Application-Server"
 categories: Spring
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:47.742Z
+  lastSyncedAt: 2025-08-19T08:36:52.897Z
   hash: "077759332bc07b393331f38f11333a48a81769a999586eb4e267aacb7391d3b1"
 ---
 

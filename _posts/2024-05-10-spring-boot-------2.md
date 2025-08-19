@@ -6,7 +6,7 @@ tags: ["Spring","Springboot"]
 slug: "Spring-Boot-외부-설정과-프로필-2"
 categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.841Z
+  lastSyncedAt: 2025-08-19T08:36:51.945Z
   hash: "170ae6192f3ccc018cd056aa9f20a1087ccd835efd2a94f7788e1163833bb24c"
 ---
 

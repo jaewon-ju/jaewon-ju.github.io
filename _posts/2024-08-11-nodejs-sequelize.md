@@ -6,7 +6,7 @@ tags: ["nodejs"]
 slug: "Nodejs-Sequelize"
 categories: Nodejs
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:45.831Z
+  lastSyncedAt: 2025-08-19T08:36:50.966Z
   hash: "bd5509d89499bba6445ffc55611c8401e59e6467a408f5fbb0c5cfce92eb32ce"
 ---
 

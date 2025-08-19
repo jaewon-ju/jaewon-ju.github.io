@@ -7,7 +7,7 @@ slug: "LingoConnect-개발"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/4df8fcfe-7826-48d2-b65c-7a995b9339cf/image.png"
 categories: 프로젝트
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.014Z
+  lastSyncedAt: 2025-08-19T08:36:51.151Z
   hash: "b44b31c9e6d0e783fbfad040f8986bca94f25e45dc3ded70c18c4e3f1e6210a9"
 ---
 

@@ -6,7 +6,7 @@ tags: ["OS"]
 slug: "OS-Deadlocks"
 categories: OS
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.466Z
+  lastSyncedAt: 2025-08-19T08:36:51.649Z
   hash: "3c9a75bf10cd3426a0ad1bddb63fb5c31ed3c2548bae02e506261c0e060545b1"
 ---
 

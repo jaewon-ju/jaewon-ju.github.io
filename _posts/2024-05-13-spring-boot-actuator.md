@@ -6,7 +6,7 @@ tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Actuator"
 categories: Spring Boot
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:46.736Z
+  lastSyncedAt: 2025-08-19T08:36:51.852Z
   hash: "92d54237c8ba6c9a497e0778f0eef699bf613840f8702ee6e2e696b7e0e43ea4"
 ---
 

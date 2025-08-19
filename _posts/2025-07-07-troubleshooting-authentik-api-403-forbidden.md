@@ -6,7 +6,7 @@ tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-Authentik-API-403-Forbidden"
 categories: TroubleShooting
 velogSync:
-  lastSyncedAt: 2025-08-18T06:18:44.189Z
+  lastSyncedAt: 2025-08-19T08:36:49.403Z
   hash: "1aa9391d82ad3e0d1d78985dfe5cd96153b6c210a13d53ce06b4bfc230279ff4"
 ---
 
