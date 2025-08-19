@@ -6,7 +6,7 @@ tags: ["CS 지식"]
 slug: "CS-지식-HyperDrvie"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:05:54.834Z
+  lastSyncedAt: 2025-08-19T12:11:50.404Z
   hash: "ae5ead9f5b05945b4ed545f8ac0d2c6d5449b964588548cfef90a1f0f1d81e2c"
 ---
 

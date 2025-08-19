@@ -7,7 +7,7 @@ slug: "네트워크-보안-Access-Control-및-클라우드-보안"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:11.486Z
+  lastSyncedAt: 2025-08-19T12:11:55.336Z
   hash: "acb86dc83c682c4a6def6c675a40b60f6bb9c266ae09825fc36c875dcac4d01d"
 ---
 
@@ -72,7 +72,7 @@ velogSync:
 - AR과 인증 서버(AS) 간 다양한 인증 방법 수행
 - 네트워크, 링크 계층 장치에서 작동
 
-![EAP 구조](/assets/posts/image.jpeg)
+![EAP 구조](/assets/posts/682a5b42835bfdf04379c9b19d9f47ddcfff1be156a31b98412151d4c2d8fe15.jpeg)
 
 <br>
 
@@ -85,7 +85,7 @@ velogSync:
 
 EAP는 인증 방법의 큰 틀을 제공하며, 다양한 인증 시나리오에 활용 가능하다.
 
-![EAP 동작 방식](/assets/posts/image.png)
+![EAP 동작 방식](/assets/posts/cc0c709071d3b5d79eb054ee0139b8f32dd0faf5392724182e4d5f0aefc96ee1.png)
 
 <br>
 
@@ -116,7 +116,7 @@ EAP는 <span style = "background-color: lightgreen; color:black">Pass Through Mo
 |------------------|-------------------|
 | 요청자가 인증된 후 요청자와 AS 간의 PDU 교환 | 인증 여부와 무관하게 시스템 간 PDU 교환 |
 
-![IEEE 802.1X 구조](/assets/posts/image.png)
+![IEEE 802.1X 구조](/assets/posts/435b7197de66170b944baddfdd3bfb477939f7844cf64152498c5febad72a429.png)
 
 <br>
 

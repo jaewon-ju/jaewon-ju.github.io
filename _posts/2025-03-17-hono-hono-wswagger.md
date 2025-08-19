@@ -6,7 +6,7 @@ tags: ["Hono","Swagger"]
 slug: "Hono-Hono-WSwagger"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:05:57.707Z
+  lastSyncedAt: 2025-08-19T12:11:51.612Z
   hash: "daf8936d289f3da3177b29b82bf843b8d39bfca9aec3fcc98c101623d6ceeb5e"
 ---
 

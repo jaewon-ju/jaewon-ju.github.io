@@ -4,11 +4,11 @@ description: "Spring Security에서 JWT를 구현하는 방법"
 date: 2024-07-04T12:37:18.496Z
 tags: ["Spring","spring security"]
 slug: "Spring-Security-JWT-2"
-thumbnail: "/assets/posts/image.png"
+thumbnail: "/assets/posts/8c1a16c6a6139fb92dd8c38f5d35631937f14dbdf7e3a80194be3b9102dfa1e2.png"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:29.022Z
+  lastSyncedAt: 2025-08-19T12:12:05.356Z
   hash: "bb082443d32454f4afef579836d71f29e3f72415a03b4eb49573badc13691af4"
 ---
 
@@ -162,11 +162,11 @@ public class SecurityConfig {
    - 로그인 성공시 ```JwtUtil``` 을 통해 JWT 토큰 발급
 - ```UsernamePasswordAuthenticationFilter``` 대신 ```LoginFilter``` 를 사용하도록 ```SecurityConfig```를 수정해야 한다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/8c1a16c6a6139fb92dd8c38f5d35631937f14dbdf7e3a80194be3b9102dfa1e2.png)
 
 위의 그림은 ```UsernamePasswordAuthenticationFilter``` 의 동작과정이다.
 아래의 그림은 ```LoginFilter```와 ```JwtUtil```을 사용했을 때의 동작과정이다.
-![](/assets/posts/image.png)
+![](/assets/posts/344c17f6805294bf409e93c9b6833116dcfc82cf26a7d0c9337f9bf19df0327c.png)
 
 
 ```UsernamePasswordAuthenticationFilter``` 자리를 대체할 ```LoginFilter``` 클래스를 구현해야 한다.

@@ -7,7 +7,7 @@ slug: "TroubleShooting-syntax-error-at-or-near-1"
 categories: TroubleShooting
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:05:57.624Z
+  lastSyncedAt: 2025-08-19T12:11:51.553Z
   hash: "a2dd8f35c06c225f87bfd12254d516544a32a62342699a8f5e93cfd245a973bc"
 ---
 

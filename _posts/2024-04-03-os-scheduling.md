@@ -7,7 +7,7 @@ slug: "OS-Scheduling"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:12.183Z
+  lastSyncedAt: 2025-08-19T12:12:23.196Z
   hash: "d1fa64a838b571de2f9694ad60e6bf799d3b8ea8dc8af88c0efed897926167d7"
 ---
 
@@ -88,7 +88,7 @@ Scheduling ➜ Ready Queue 또는 Ready/Suspend
 4. I/O scheduling:
 입출력 장치 각각이 어떤 작업을 먼저 처리할지 결정하는 스케줄링
 
-![](/assets/posts/image.png)
+![](/assets/posts/af71f5f42826dc60d3b27b5870a08ab946917a6a1f1dc014680a706fbaeb3856.png)
 
 <br>
 
@@ -172,7 +172,7 @@ Interactive System의 스케줄링 알고리즘들에 대해서 알아보자.
 각 프로세스에 똑같은 Time Quantum을 줘서 번갈아가며 실행한다.
 Time Quantum: 시스템을 실행하는 단위(더 이상 쪼개질 수 없음)
 
-![](/assets/posts/image.png)
+![](/assets/posts/09231a0c8125d511505775b56bdab60d94dd6c5d6aaa8716db479815655d8401.png)
 - 큐에 여러개 프로세스가 매달려 있음
 - B를 실행하다가 Time Quantum이 끝나면 F를 실행
 
@@ -231,13 +231,13 @@ Random Number 발행해서 복권 값이 맞으면 해당 프로그램을 실행
 ### ■ Fair-share Scheduling
 고전적인 Unix Scheduling에 Group CPU count를 추가한 알고리즘
 
-![](/assets/posts/image.png)
+![](/assets/posts/76e08d0645f7ba42589ca90f630af1cb2b50002c686b9ecacc2d56ab07e7a30f.png)
 
 
 - 프로세스를 한번 실행 하면 CPU 시간이 커져서 P가 커짐. 그러면 우선순위가 낮아짐
 - <span style = "color:red">기다리면 CPU count가 점점 작아져서 우선순위가 높아짐</span>
 - 거기다 group 별로 weight를 준다.
-![](/assets/posts/image.png)
+![](/assets/posts/acdc77c6f5f93ff9e9eb396b83fe9fcbcd0a2cd15df2da26795e349b2efe0b60.png)
 
 
 
@@ -315,7 +315,7 @@ OS는 스레드의 존재를 알고 있고, 스레드 단위로 스케줄링함
    - nice 값을 마음대로 감소시키는 것은 super user만 가능하다.
    - P는 1초마다 재계산된다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/f28f2ac4686ef0c3c02db0713233cfa96c3bd1034724ebd39a3c3823068e82f9.png)
 
 <br>
 
@@ -469,7 +469,7 @@ Non-preemptive: 멈출때까지
 Dijekstra가 동기화 문제의 예제로 설명했다.
 >철학자가 5명 존재한다.
 철학자가 식사를 하려면, 포크를 2개 집어야 한다.
-![](/assets/posts/image.png)
+![](/assets/posts/4d98a620e96852b764dc1109fd325b01ae29c3c675e0bcec30e2f094edb5924c.png)
 
 ```java
 // 각 스레드가 무한루프를 돌음

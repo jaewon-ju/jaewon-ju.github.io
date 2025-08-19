@@ -7,7 +7,7 @@ slug: "OS-Processes-and-Threads"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:30.342Z
+  lastSyncedAt: 2025-08-19T12:12:27.235Z
   hash: "bd56a8d03f7e3f544060ca0865a7656b6ab9d35af86ce3210173bab74fbcd986"
 ---
 
@@ -29,7 +29,7 @@ CPU가 매우 빠른 속도로 돌아가면서 프로그램을 실행하는 것�
 >MultiProgramming이 어떻게 가능한가?
 ➜ Dipatcher 사용
 - Dispatcher는 현재 실행 중인 프로세스의 컨텍스트를 저장하고, 다음 프로세스의 컨텍스트를 로드하여 실행한다.<br>
-![](/assets/posts/image.png)
+![](/assets/posts/e3978ed2ba67e097bda2488921d66065cd4e9dde149393441e5393712328b834.png)
 프로세스 A,B,C는 각각 자원을 따로따로 받는다.<br>
 1. Process A 실행
 PC: 5000번대
@@ -78,7 +78,7 @@ ex) Divide by 0, Null pointer Exception
 <br>
 
 ### ■ Process State 
-![](/assets/posts/image.png)
+![](/assets/posts/26725901c2999b3ac918318839ea66e941ea0a8d2fd00c51f1e8f9622e8e529e.png)
 - Running:
 프로세스 실행 상태
 종료하면 Exit 상태가 된다. (Running과 Exit 사이를 Zombie 상태라 부른다)
@@ -96,7 +96,7 @@ Blocked 상태에서 입출력이 종료되거나, Running 상태에서 스케�
 - Suspend: 
 프로그램 실행을 잠깐 멈춘 상태
 
-![](/assets/posts/image.png)
+![](/assets/posts/2f9322a8b7446c46eec518669119ce8c75324f8920ac5eb3ec61065d6a60fd8b.png)
 
 - Ready, Block 상태의 프로그램을 Suspend로 만들 수 있다.<br>
 Blocked 상태에서 중지하면 Blocked/Suspend

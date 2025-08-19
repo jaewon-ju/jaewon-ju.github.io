@@ -7,7 +7,7 @@ slug: "Nodejs-Prisma"
 categories: Nodejs
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:05:57.726Z
+  lastSyncedAt: 2025-08-19T12:11:51.632Z
   hash: "c1ea20e34dccf60fd9b0d76b7f33e702c030b77025839136d5e95b0c2c140ec6"
 ---
 

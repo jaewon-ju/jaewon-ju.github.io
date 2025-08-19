@@ -6,7 +6,7 @@ tags: ["git"]
 slug: "git-Actions"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:25.297Z
+  lastSyncedAt: 2025-08-19T12:12:04.643Z
   hash: "2ec6462e3e3e8263a9baca5045deaf4364aa252e6d459a23477f830ced5769bc"
 ---
 

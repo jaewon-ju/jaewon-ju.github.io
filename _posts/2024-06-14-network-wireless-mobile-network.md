@@ -7,14 +7,14 @@ slug: "Network-Wireless-Mobile-Network"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:40.154Z
+  lastSyncedAt: 2025-08-19T12:12:07.898Z
   hash: "538d788553b8b3428722669c895de6389019452a2b25a12b74c5efc8db3065c3"
 ---
 
 # ✏️ Introduction
 ## ■ wireless network 의 구성요소
 
-![](/assets/posts/image.png)
+![](/assets/posts/b4140cd5fafca3431fb6767618c041de30b82acab8cc1e444fa32539c391c52d.png)
 
 | 요소 | 설명 |
 | - | - |

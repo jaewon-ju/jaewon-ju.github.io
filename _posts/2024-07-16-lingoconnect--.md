@@ -4,11 +4,11 @@ description: "새싹 해커톤 개발 내용"
 date: 2024-07-16T14:18:45.576Z
 tags: ["프로젝트"]
 slug: "LingoConnect-개발"
-thumbnail: "/assets/posts/image.png"
+thumbnail: "/assets/posts/d398ca16cd35eea0d42dfa6f719a9ec1a55d6cbd41ac79afb31887574270c468.png"
 categories: 프로젝트
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:25.345Z
+  lastSyncedAt: 2025-08-19T12:12:04.692Z
   hash: "b44b31c9e6d0e783fbfad040f8986bca94f25e45dc3ded70c18c4e3f1e6210a9"
 ---
 

@@ -7,7 +7,7 @@ slug: "Application-Layer-URI"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:32.898Z
+  lastSyncedAt: 2025-08-19T12:12:27.893Z
   hash: "ee3fd54a11e4f29ecc9d4c69f22c6f703467f584689c51796cfd90f59a3b6b86"
 ---
 

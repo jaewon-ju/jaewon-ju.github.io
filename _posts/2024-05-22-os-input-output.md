@@ -7,7 +7,7 @@ slug: "OS-Input-Output"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:48.296Z
+  lastSyncedAt: 2025-08-19T12:12:09.785Z
   hash: "277e114133d149f6caa7d1a03075689c26b6566e81549919fab1edb3bfd818c9"
 ---
 
@@ -130,7 +130,7 @@ CPU는 PipeLineing과 SuperScalar로 여러 명령어를 한꺼번에 실행중�
 ➜ 너무 어려워
 
 따라서, 일부 명령어까지만 다 실행한 다음에 ISR로 점프하는 precise interrupt를 사용한다. 
-![](/assets/posts/image.png)
+![](/assets/posts/47ef234d411e7054cebd9431424a73d5da03f02b191804daed899cc5ccbc4ff2.png)
 
 
 #### Precise interrupt의 조건 

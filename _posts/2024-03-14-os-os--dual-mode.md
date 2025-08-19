@@ -7,7 +7,7 @@ slug: "OS-OS와-Dual-Mode"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:26.624Z
+  lastSyncedAt: 2025-08-19T12:12:26.796Z
   hash: "30e06f8f5d8ec3a7f1398411eacf9d0b9d0b9c2fab8a93aeb1d74a6efb96475b"
 ---
 

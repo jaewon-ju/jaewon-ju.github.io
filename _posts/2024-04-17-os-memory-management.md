@@ -7,7 +7,7 @@ slug: "OS-Memory-Management"
 categories: OS
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:02.947Z
+  lastSyncedAt: 2025-08-19T12:12:19.383Z
   hash: "57160c9ac9f01c3bdd6331c052780d31e68ebc814f6e7c77453263425294e566"
 ---
 
@@ -16,7 +16,7 @@ velogSync:
 ➜ NO Memory Abstraction(가상 메모리를 사용하지 않음)
 
 
-![](/assets/posts/image.png)
+![](/assets/posts/1a699b4db4681caf0cbadc4e668c3877887279b0054883cb44a706b3c925a74d.png)
 
 
 Real Memory System을 구현하기 위한 3가지 모델이 존재한다.
@@ -37,7 +37,7 @@ Real Memory System을 구현하기 위한 3가지 모델이 존재한다.
 컴파일러는 코드 데이터의 주소(MIN_address - MAX_address)를 만들어서 메모리에 적재한다.
 - Real Memory System에서 코드 데이터의 주소는 반드시 메모리의 주소와 일치해야 한다.
 - program address == System address
-![](/assets/posts/image.png)
+![](/assets/posts/6c6f9fffe14c482bcee1b45e6da41423d4bbf890686282279a3bc3ae36e63074.png)
 
 
 위의 문제는 프로그램 주소에 맞게 DRAM에 적재하면 해결된다.
@@ -109,7 +109,7 @@ Relocation의 문제와 Partition의 문제를 해결했다.
 2. Base Register 값만 바꾸면 다른 partition으로도 이동 가능하다.
 
 Dynamic Relocation을 사용하면, Partition 각각에 존재했던 Ready Queue를 하나로 만들 수 있다.
-![](/assets/posts/image.png)
+![](/assets/posts/67d7204644a43bf010f270e40ca7b5ed26a8de0aa2c1a8cb9c31b35d0659f1c3.png)
 
 
 <br>
@@ -131,7 +131,7 @@ Partition을 차지하고 있던 프로세스가 DRAM에서 나가면, 빈 공�
 새로운 프로세스를 빈 공간에 넣어야 하는데, 어떤 공간이 가장 효율적일까?
 
 > #### Placement Algorithm
-![](/assets/posts/image.png)
+![](/assets/posts/c2a8211d114a8acded0e908d881a393a97770f921da0db4be20caf50f1262c3c.png)
 새로운 프로세스를 어디에 적재할 것인가? 
 - First fit: 넣을 수 있는 공간 중 첫번째 공간
 - Best fit: 넣을 수 있는 공간 중 fragmentation이 가장 적게 발생하는 공간
@@ -169,7 +169,7 @@ Dynamic Program Relocation/ Dynamic Partitioning을 사용하면 Fragmentation(�
 이것을 어떻게 해결할 수 있을까?
 
 ### ■ Coalescing (병합)
-![](/assets/posts/image.png)
+![](/assets/posts/77eee9ef2ccb7115f44df04c662f836c88dde2aa49abde5c3048a630b87deefb.png)
 
 <br>
 
@@ -181,7 +181,7 @@ Dynamic relocation이 가능해야 한다.
 : 프로그램 주소들을 이동시켜서 연속된 주소를 가지게 한다.
 ➜ 큰 빈공간이 생긴다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/72331809f45ff2866db6c30857752309ae0331c820a637fc89163717b28874b7.png)
 
 - java Virtual Machine에서 Compaction을 한다.
 (Garbage Collection)
@@ -201,7 +201,7 @@ Dynamic relocation이 가능해야 한다.
 <span style = "background-color: lightgreen; color:black">Compaction 하는 동안 시스템이 멈춘다.</span>
 - Optimal Compaction을 찾기 어렵다.
 >Optimal Compaction: 어떤 프로세스의 주소를 옮겨야 가장 효율적인가?
-![](/assets/posts/image.png)
+![](/assets/posts/2eb52687f8dba2a720f10419458a75fd182467be3cdd8d198956782d505bbdcc.png)
 
 
 

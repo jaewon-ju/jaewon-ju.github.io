@@ -7,7 +7,7 @@ slug: "Spring-MVC-기본-기능"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:19.364Z
+  lastSyncedAt: 2025-08-19T12:12:24.393Z
   hash: "b2ef720ef634a1ac7ffdf71c6f79386094da87b4834136bb87a6d37639fdc8b9"
 ---
 
@@ -677,7 +677,7 @@ InputStream과 똑같은 로직이다.
 핸들러의 메소드를 호출하는 것은 핸들러 어댑터이다.
 핸들러 어댑터는 <span style = "background-color: lightgreen; color:black">Argument Resolver</span> 로부터 메소드의 매개변수로 전달할 변수/객체를 받는다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/1bf44f55ad842d5e7236ad4d1bdd98bd6b18d2742afcdcf1b715990d49254f4a.png)
 
 - Argument Resolver는 핸들러의 파라미터, 어노테이션 정보를 보고 전달할 데이터를 생성한다.
 - Argument Resolver는 생성한 데이터를 어댑터에 전달한다.

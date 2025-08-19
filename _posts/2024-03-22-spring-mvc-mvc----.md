@@ -7,7 +7,7 @@ slug: "Spring-MVC-MVC-프레임워크-만들기"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:22.826Z
+  lastSyncedAt: 2025-08-19T12:12:24.881Z
   hash: "e7735959e4643a785cc27af2e2df06d26dcfe82cfbbcf943e5f712e5cc2085ca"
 ---
 
@@ -59,7 +59,7 @@ velogSync:
 <br>
 
 ### ■ 구조
-![](/assets/posts/image.png)
+![](/assets/posts/20233d7ab353592aa1e7dbd0697df2576799e13fad1b5c716133706b734f7cc0.png)
 
 
 요청 받음
@@ -223,7 +223,7 @@ Version1에서 발생한 "뷰로 이동하는 코드 중복" 문제를 해결해
 <br>
 
 ### ■ 구조
-![](/assets/posts/image.png)
+![](/assets/posts/efaa9051b655606d0c79df43c77572f7093112d8939c55ad5990052f0346e65c.png)
 
 요청 받음
 
@@ -341,7 +341,7 @@ FrontController는 이름에 prefix와 postfix를 추가한다.
 <br>
 
 ### ■ 구조
-![](/assets/posts/image.png)
+![](/assets/posts/ff8efb001fb241a377d0b7acaab45c7a1dba97202fadeb3e89d87b0a7b375af9.png)
 
 요청 받음
 
@@ -573,7 +573,7 @@ version4의 구조에서 "핸들러 어댑터"를 추가한다.
 <br>
 
 ### ■ 구조
-![](/assets/posts/image.png)
+![](/assets/posts/100859bf7fba82ca8097822aa2fd2511761ddf79530111c7607db4833d59fceb.png)
 
 요청 받음
 

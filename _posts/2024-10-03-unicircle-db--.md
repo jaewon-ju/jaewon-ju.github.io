@@ -7,7 +7,7 @@ slug: "UniCircle-DB-구성"
 categories: 프로젝트
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:13.346Z
+  lastSyncedAt: 2025-08-19T12:11:56.866Z
   hash: "e866acb58d49ff0c60de7457c99f2f65f2e41e7dd162038c645ee7a818e6e99d"
 ---
 

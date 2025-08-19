@@ -6,7 +6,7 @@ tags: ["CS지식"]
 slug: "CS-지식-Spring-HTTP-응답-직렬화"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:04.968Z
+  lastSyncedAt: 2025-08-19T12:11:53.854Z
   hash: "bfbdcb4b473c501bb61ff56672be710b92fd00d2098879e82e6b49f6707d44d1"
 ---
 

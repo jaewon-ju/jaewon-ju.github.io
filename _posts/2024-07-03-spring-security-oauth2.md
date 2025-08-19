@@ -7,7 +7,7 @@ slug: "Spring-Security-OAuth2"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:31.933Z
+  lastSyncedAt: 2025-08-19T12:12:05.961Z
   hash: "26b789f7ebe6011cf46ddd1eeec8a146b837f5c5027f6c804f1716ddc2401109"
 ---
 
@@ -344,7 +344,7 @@ loadUser 메서드에서 ```OAuth2User``` 타입의 객체를 반환해야 한�
 일반 로그인은 <a href="https://velog.io/@jaewon-ju/Spring-Security-%EA%B8%B0%EB%B3%B8">이전 포스트</a>에서 구현했다.
 일반 로그인을 완료한 후에는 ```UserDetails``` 타입의 객체인 ```PrincipalDetails``` 가 ```Authentication``` 에 저장된다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/2e58d6998797876e6aa2cb1dddf0ae142519dc5bf63dbdf3ccbd4b36af078265.png)
 
 <br>
 

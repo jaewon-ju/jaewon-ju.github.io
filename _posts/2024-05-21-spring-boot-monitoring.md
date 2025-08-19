@@ -7,7 +7,7 @@ slug: "Spring-Boot-Monitoring"
 categories: Spring Boot
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:49.619Z
+  lastSyncedAt: 2025-08-19T12:12:10.022Z
   hash: "0fb4396acf782a71633e90ed7aa6298093166b9e9faa0e3c0b73b50e32641118"
 ---
 
@@ -65,7 +65,7 @@ Micrometer와 Actuator가 기본으로 제공하는 지표는 다음과 같은 �
 <br>
 
 개발자가 서비스를 모니터링하는 구조는 다음과 같이 이루어진다.
-![](/assets/posts/image.png)
+![](/assets/posts/55b71dbd83a615656ef985ca2b1f8ad43a67b14e08a6a7f3d88f12fa2d7e333d.png)
 
 개발자는 그라파나의 그래프를 보고 서비스를 모니터링할 수 있다.
 

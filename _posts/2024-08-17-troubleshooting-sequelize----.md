@@ -7,7 +7,7 @@ slug: "TroubleShooting-Sequelize-상속-오류"
 categories: TroubleShooting
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:21.266Z
+  lastSyncedAt: 2025-08-19T12:12:01.059Z
   hash: "fb31f363a93ab56967c977512f38cdd4796dec8822a683ecea9efe5886b6102d"
 ---
 

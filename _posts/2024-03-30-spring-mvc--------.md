@@ -7,7 +7,7 @@ slug: "Spring-MVC-응답-관련-기본-기능"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:15.416Z
+  lastSyncedAt: 2025-08-19T12:12:23.846Z
   hash: "844d24bf7e22365f8b8bc99a8388a691dbfde7884df9475bf5c80903d268d7e4"
 ---
 
@@ -171,7 +171,7 @@ Argument Resolver는 HTTP 메시지와 관련된 객체는 HTTP Message Converte
 - 문자열, ```ResponseEntity<>```, ```ModelAndView``` 등, 핸들러는 다양한 타입의 변수/객체를 반환한다.
 - Return Value Handler는 반환 타입에 맞게 추가적인 처리를 해서 어댑터에 전달한다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/ae58796a6856e5d93c8c898da02ad31e46047df029d87c5ed0f3e40b7612a747.png)
 
 <br>
 

@@ -6,7 +6,7 @@ tags: ["Software Engineering"]
 slug: "Software-Engineering-설계"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:11.544Z
+  lastSyncedAt: 2025-08-19T12:11:55.383Z
   hash: "4bc46a70c614e0fa5e08a2755b4e4bb99c785d5de6bfdacf67f850152b11b2e7"
 ---
 

@@ -7,7 +7,7 @@ slug: "Application-Layer"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:37.471Z
+  lastSyncedAt: 2025-08-19T12:12:28.871Z
   hash: "22d16eff16cea4b2e1d47d39602fd77539ee8dee08113bfd1933035bb3b32cf5"
 ---
 
@@ -32,7 +32,7 @@ Application Architecture는 2가지가 존재한다.
 
 클라이언트 - 서버간의 통신
 
-![](/assets/posts/image.png)
+![](/assets/posts/d39e24b3a76c08b028425e35f81edba57072be9eab0a1cdd0839ab8d7ff9f355.png)
 
 
 - 클라이언트간 통신은 불가능하다.

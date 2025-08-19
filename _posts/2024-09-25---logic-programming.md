@@ -6,7 +6,7 @@ tags: ["프로그래밍언어론"]
 slug: "프로그래밍언어론-Logic-Programming"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:14.787Z
+  lastSyncedAt: 2025-08-19T12:11:57.157Z
   hash: "a8bb823a3d10a7e4f5b1bc5f29b65ed43202f357fb88927d29c0197bafdea87b"
 ---
 

@@ -4,11 +4,11 @@ description: "Spring Boot 시작!"
 date: 2024-04-01T06:58:05.031Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Introduction"
-thumbnail: "/assets/posts/image.jpg"
+thumbnail: "/assets/posts/ea4a282a6a7c9dec2bf13988030ed6cdc838a185d60d366f17070bb5b03f915b.jpg"
 categories: Spring Boot
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:13.717Z
+  lastSyncedAt: 2025-08-19T12:12:23.466Z
   hash: "fc7a4cd929a21a4d8e25d0c4871e46cfd0a7366d1070f8d2e2ac3f1f63d7a498"
 ---
 

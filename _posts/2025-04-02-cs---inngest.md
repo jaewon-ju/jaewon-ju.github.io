@@ -6,7 +6,7 @@ tags: ["CS지식"]
 slug: "CS-지식-Inngest"
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:05:55.113Z
+  lastSyncedAt: 2025-08-19T12:11:50.710Z
   hash: "4b88cb8b52fa712d371f3d1e839b777ac16176050f46e765c9ada67693ef7ae6"
 ---
 

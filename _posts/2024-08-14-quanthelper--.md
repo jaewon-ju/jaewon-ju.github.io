@@ -7,7 +7,7 @@ slug: "quantHelper-구현"
 categories: 프로젝트
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:23.101Z
+  lastSyncedAt: 2025-08-19T12:12:02.377Z
   hash: "47c9f079a217624a012dbe78c161fba4a1ec4b0e9d45f8dcf2bef05c40b7a518"
 ---
 
@@ -113,7 +113,7 @@ def main():
 <br>
 
 news agent와 대화를 실행하면, 함수를 잘 호출하는 것을 볼 수 있다.
-![](/assets/posts/image.png)
+![](/assets/posts/c4529f4d2656b37316f2333be7d0504fc5b35db8368764a5d9d876dd011f7ab5.png)
 
 <br>
 
@@ -124,7 +124,7 @@ news agent와 대화를 실행하면, 함수를 잘 호출하는 것을 볼 수 
 어떤 경우는 news만 호출해도 되고, 어떤 경우는 news, stock까지 다 봐야함. 
 
 #### Version 1
-![](/assets/posts/image.png)
+![](/assets/posts/f4fd1f80387acfea4e2efd68f448cf8a73ef9c6d9f5703f1a043bc0409cf6570.png)
 
 [ user_proxy_agent ->  prompt agent]
 : 사용자의 질문을 토대로 프롬프트를 생성
@@ -141,7 +141,7 @@ news agent와 대화를 실행하면, 함수를 잘 호출하는 것을 볼 수 
 <br>
 
 #### Version 2
-![](/assets/posts/image.png)
+![](/assets/posts/6b3991ed7b750d2cadd9cf106cea282452689c90928935f795fb422783517399.png)
 prompt agent를 Group Chat 내부에 두고, prompt agent가 프롬프트를 1개씩 생성하도록 변경했다.
 
 <span style = "color:red">⚠️</span> 문제 - 다시 prompt agent로 돌아온다는 보장이 없음.
@@ -149,7 +149,7 @@ prompt agent를 Group Chat 내부에 두고, prompt agent가 프롬프트를 1�
 <br>
 
 #### Version 3
-![](/assets/posts/image.png)
+![](/assets/posts/4d2e62dcd526c43f5170994adcc8951e44155b4abbc762a3e31d90bf2b8412c5.png)
 
 Version 1의 문제는 "chat manager의 프롬프트 분배"였다.
 사용자가 질문을 하면 그 질문에 답하기 위한 프롬프트를 여러개 생성한다.

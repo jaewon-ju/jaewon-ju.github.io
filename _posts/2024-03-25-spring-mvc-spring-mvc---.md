@@ -7,7 +7,7 @@ slug: "Spring-MVC-Spring-MVC의-이해"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:20.797Z
+  lastSyncedAt: 2025-08-19T12:12:24.614Z
   hash: "5725d8900e2804e2ff741619e01293db91eb31ddc9b1c7717d8179d921c5967e"
 ---
 
@@ -28,7 +28,7 @@ velogSync:
 
 
 ## ✏️ Spring MVC 구조
-![](/assets/posts/image.png)
+![](/assets/posts/6c6ce0a6850328912bd5dd67212955f5b775ee4a7189e701c39a10a8678f5d57.png)
 
 >#### Version5에서 바뀐 점<br>
 1. FrontController의 이름이 <span style="color:skyblue">DispatcherServlet</span>으로 변경되었다.

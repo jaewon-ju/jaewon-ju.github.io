@@ -7,7 +7,7 @@ slug: "Transport-Layer-TCP"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:06.121Z
+  lastSyncedAt: 2025-08-19T12:12:21.186Z
   hash: "1da3b1826a9005d483a98454444d03a0d6fa5a5271fdb0e0771f5a18ba69f954"
 ---
 
@@ -48,9 +48,9 @@ ACK를 보내야하는데, 세그먼트로 만들어서 보내면 오버헤드�
 TCP에서 sequence Number는 세그먼트의 <span style = "color:red">첫 바이트</span>를 기준으로 할당된다.
 예를 들어, 1000 Bytes의 데이터를 보내는데 MSS가 100 Bytes인 경우, 세그먼트는 100개로 분할된다.
 그럼 첫 세그먼트의 sequence Number는 0, 두 번째는 100, 세 번째는 200... 이런식으로 증가한다.
-![](/assets/posts/image.png)
+![](/assets/posts/fff668aa2e393507414129764be781e8ce43b22fd6da96ce2573a6f682f935e0.png)
 
-![](/assets/posts/image.png)
+![](/assets/posts/8bb45da24a23fae42473279d3dfcd9532b4d5f7fa66a6335635650b2b6a8eabe.png)
 - sequence Number: 2^32-1 사용가능
    - 송신하는 데이터의 가장 첫 Byte Number를 sequence Number로 넣어 보낸다.
 - ACK Number: 2^32-1 사용가능
@@ -126,7 +126,7 @@ Sender에서는 한개의 Retransmission Timer를 사용한다.
 | 상위 계층에서 데이터 전송 요청 | 타이머 시작(sequence Number는 세그먼트의 첫 Byte Number)<br>|
 | Time Out | 1. ACK 받지 못한 세그먼트 중 가장 작은 sequence Number를 가진 세그먼트 재전송<br>2. 타이머 시작 |
 | ACK(n) 받음 | 1. ACK(n) 이전에 ACK 받지 못한 세그먼트들을 모두 ACK 받았다고 처리(Cumulative ACK)<br>2. sequence n 이후에 보낸 세그먼트가 있으면 Timer start|
->![](/assets/posts/image.png)
+>![](/assets/posts/d4f4a904875154480b4be2f6c3a1c87585888e52a77f2000d01fef897002a757.png)
 #### Event ③
 A가 보낸 sequence 100을 잘 수신한 B는 ACK 200을 보낸다. 하지만, Loss가 발생한다.
 A가 보낸 sequence 200을 잘 수신한 B는 ACK 300을 보낸다.
@@ -144,7 +144,7 @@ Receiver 에서는 한개의 piggyback 타이머를 사용한다.
 | 순서에 맞는 세그먼트 도착.<br>이전 세그먼트 중 아직 ACK 전송을 기다리는 세그먼트가 존재 | 즉시 Cumulative ACK를 전송한다. |
 | 순서에 맞지 않는 세그먼트 도착.<br>예상 했던 sequence Number보다 큼<br>즉, 이전에 송신측에서 보낸 세그먼트가 Loss 되었음 | 즉시 Duplicate ACK를 전송한다.<br>즉, 순서대로 잘 받은 Byte + 1 전송<br>송신측에서는 이미 해당 ACK를 받은 것이므로 Duplicate ACK이다.|
 | 순서를 끼워 맞춰줄 세그먼트 도착.<br> Event ③, ④가 순차적으로 발생하면, 중간에 못받은 세그먼트가 존재할 것이다.<br>그 세그먼트가 도착한 경우| 즉시 ACK 전송 |
->![](/assets/posts/image.png)
+>![](/assets/posts/314dab6dd80d51d915bb25ee8b077d2a86d55cdf455c07fd26ac45535a489196.png)
 A가 보낸 sequence 100을 잘 수신한 B는 ACK 200을 보낸다.
 A가 보낸 sequence 200은 Loss
 A가 보낸 sequence 300을 잘 수신했지만, 순서대로 오지 않았기 때문에 순서대로 온 데이터 중 가장 큰 Byte + 1을 보낸다.(ACK200)
@@ -153,10 +153,10 @@ A가 보낸 sequence 300을 잘 수신했지만, 순서대로 오지 않았기 �
 
 > #### 여러 시나리오들
 1. Premature Timeout 발생
-![](/assets/posts/image.png)
+![](/assets/posts/a6df8a1cfa73cbb87ce5829ebc2005328610de0040b1114ed6865a31ef51ea0a.png)
 <br>
 2. 3번의 duplicate ACK (fast Retransmit)
-![](/assets/posts/image.png)
+![](/assets/posts/abef27d45cfc9b24d5ee5bb57a90e6520d2a0033627ca4c1523ea5e727186f7e.png)
 Original ACK + 3번의 duplicate ACK가 발생하면 Time out이 발생하지 않아도 즉시 재전송한다.
 ```c
 // 송신측 fast Retransmit 알고리즘
@@ -193,7 +193,7 @@ if(y > sendBase){
 ```LastByteSent - LastByteAcked <= rwnd```
 
 
-![](/assets/posts/image.png)
+![](/assets/posts/c07e1a0110f89e5ffa414ef93f45720f6e9a13e21860f6cf0f4def1437644508.png)
 
 
 
@@ -229,7 +229,7 @@ Session 설정할 때 주고 받는 정보는 다음과 같다.
 
 3 Way Handshake는 다음과 같이 이루어진다.
 
->![](/assets/posts/image.png)
+>![](/assets/posts/cedeac3fa18c154a6e97c69091bec156b5f320afd33ceb625a5821883adde753.png)
 - 송신: SYNbit=1, 자신의 초기 sequnce number(x)
 - 수신: SYNbit=1, 자신의 초기 sequnce number(y) 
 ACKbit=1, ACKnum=x+1
@@ -241,7 +241,7 @@ ACKbit=1, ACKnum=x+1
 F(Fin) flag(bit)를 1로 설정해서 보낸다.
 
 
->![](/assets/posts/image.png)
+>![](/assets/posts/4a8fa034f01e1be999822c102363922591f1d3f3591dae62fb16e4fbdb17daa5.png)
 - 송신: FIN
 - 수신: ACK
 - 수신: FIN (closed)
@@ -369,7 +369,7 @@ TCP 송신 윈도우 크기가 Addictive(linear)하게 올라가다가, Multipli
 - loss가 detect되면 윈도우 크기(cwnd)를 반으로 줄인다.
 ➜ Multiplicative Decrease
 
-![](/assets/posts/image.png)
+![](/assets/posts/45502244769029845b941a50df40984565c08d7171d09173da1011acec5b8cb5.png)
 
 <br>
 
@@ -386,7 +386,7 @@ TCP 송신 윈도우 크기가 Addictive(linear)하게 올라가다가, Multipli
 ### ■ Congestion Avoidance
 >패킷의 개수가 일정수준(slow start threshold) 에 다다르면 더이상 Slow Start로 동작하지 않고, Congestion Avoidance로 동작한다.
 
-![](/assets/posts/image.png)
+![](/assets/posts/c155641e5a989e3d6f5eadf664fe0dbe5dfeb751aa689c43cecece97917ffbca.png)
 
 - slow start로 더이상 동작하지 않고, RTT마다 1씩 window 크기가 증가한다.
 - loss가 발생하는 경우, loss가 발생된 시점의 cwnd의 절반으로 ssthresh가 설정된다.
@@ -399,7 +399,7 @@ TCP 송신 윈도우 크기가 Addictive(linear)하게 올라가다가, Multipli
 <br>
 
 ### ■ Finite State machine 
-![](/assets/posts/image.png)
+![](/assets/posts/b5629970c4494cf4c0535e492914b1ed42c1308630228c3a1f104c24593092dd.png)
 
 >#### Slow Start
 | State | Event | Action |
@@ -450,7 +450,7 @@ W_max: Loss가 발생한 지점의 cwnd 값
 
 - K는 cwnd가 WMAX에 도달할거라고 예측되는 시점
 - cwnd는 time과 K 사이의 거리의 3제곱으로 속도를 증가시킨다.
-![](/assets/posts/image.png)
+![](/assets/posts/77c7f1b9d8d7bf1bcc234764b37c7c00c20f5cb48805c5344ed7956fe77e2333.png)
 
 
 
@@ -499,7 +499,7 @@ TCP Session은 공평하게 link를 공유한다.
 처음에는 공평하지 못하지만, 통신을 지속하다보면 공평해진다.
 
 >
-![](/assets/posts/image.png)
+![](/assets/posts/5edb1bc5391a0b25ed56ca286bc69de2d2cec427218bcb2445564097fb14325b.png)
 ex) TCP Session이 2개 존재한다.
 1. 처음에는 Throughput이 불공평하게 분배될 수 있다.
 2. Addictive하게 증가하다보면 Loss가 발생한다.
@@ -567,7 +567,7 @@ QUIC는 <span style = "background-color: lightgreen; color:black">application la
 - Congestion Control
 - error control
 - 보안있음 (TLS를 대체함)
-![](/assets/posts/image.png)
+![](/assets/posts/f25be2fc170eadd6f322b37dd460db45a7a3065107c8fe1b0c83e670d1fcc7c0.png)
 - multiplex: stream 여러개가 하나의 QUIC connection을 사용한다.
    - Per Stream based Reliability
    
@@ -576,7 +576,7 @@ QUIC는 <span style = "background-color: lightgreen; color:black">application la
 
 <span style = "color:red">⚠️</span> TCP는 3 way handshake를 해야했지만, QUIC은 1RTT 안에 끝난다.
 <span style = "color:red">⚠️</span> Reliability는 stream 단위, Congestion Control은 connection 단위
-![](/assets/posts/image.png)
+![](/assets/posts/0f6d4e4645d915b53467101a7b760287926cf8d33de78ead5c863c2ac3eb274a.png)
 
 <br>
 

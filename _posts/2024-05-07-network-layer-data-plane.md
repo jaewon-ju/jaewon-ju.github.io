@@ -7,7 +7,7 @@ slug: "Network-Layer-Data-Plane"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:06:58.945Z
+  lastSyncedAt: 2025-08-19T12:12:16.455Z
   hash: "b82b05a81bb2bc3fa23b7a1cc27648f55bf31d3224772c4de0d633bee0b1e8fa"
 ---
 
@@ -83,7 +83,7 @@ Routing Table을 작성하는 것은 Control Plane 영역에서 담당한다.
 
 # ✏️ Router
 라우터는 다음과 같이 구성되어 있다.
-![](/assets/posts/image.png)
+![](/assets/posts/33e050ae71457c691db79eb1a154e055487a1ebc802cc50339106f3a548a1b64.png)
 
 - Control plane 보다 Data plane이 빠르다.
 - Control plane은 소프트웨어 영역이고, Data plane은 하드웨어 영역이다.
@@ -112,7 +112,7 @@ destination-based forwarding에서 사용하는 lookup 방식이다.
 - entry 가 들어왔을 때, prefix가 Destination address와 가장 길게 매칭되는 Output Port로 fowarding.
 
 - 예시) 다음과 같이, 라우터에 Destination Address가 존재할 때
-![](/assets/posts/image.png)
+![](/assets/posts/a3d7c47626eefd02f3e5fc667bc6bd1c5c115d7ec76b88ca6a89a4971b09d0a5.png)
 Entry: 11001000 00010111 00011000 10101010
 Link 1,2와 둘 다 매칭되지만, 1이 더 길게 매칭된다.
 ➜ 1번 Output Port로 fowarding
@@ -214,7 +214,7 @@ Switching Fabric이 input port 속도보다 느리면 Input Port에 큐를 설�
 # ✏️ IP
 ## ■ IP Datagram format
 
-![](/assets/posts/image.png)
+![](/assets/posts/b26dc67d8c4eed89d75dd540eaeae8939bf1fa9c8b1fcccb9dbb38c3274f0fd1.png)
 
 | format | Detail |
 | - | - |
@@ -246,7 +246,7 @@ Datagram의 사이즈가 큰 경우, 여러개로 나눠서 Fragment로 만든�
 - 데이터그램이 살아있을 수 있는 시간이며, hops 수로 카운팅한다.
 - Forwarding할 때 TTL 값을 감소시킨다.
 - 0이 되었을 때도 목적지가 아니면 ICMP(Error를 source에 전송)
-![](/assets/posts/image.png)
+![](/assets/posts/1bdff54421ffbf8751afadd76317c10e447f627f0f30b5da16c873d785474701.png)
 - 나한테 제일 가까운 서버를 찾을 때도 사용한다. 
 
 > #### Upper Layer
@@ -333,8 +333,8 @@ host가 주소를 부여받는 방법
 2. DHCP(Dynamic Host Configuration Protocol)로 동적으로 할당
     - DHCP 서버로부터 동적으로 IP 주소를 받아온다.
     - 최대 사용 기한이 존재한다.
-    - ![](/assets/posts/image.png)
-    - ![](/assets/posts/image.png)
+    - ![](/assets/posts/6a6155aa2252991bff5eb194c27b657b20b316b0862a0e574ea5aa18b74f6835.png)
+    - ![](/assets/posts/89e6c7c4c9426f9a2222731ce52b9d7c72c97a6b0cbe4a902d0503fde9867bc1.png)
     - First-hop router, DNS 서버의 이름/IP 주소, subnet 마스크 등도 같이 제공한다.
     
 <br>
@@ -351,12 +351,12 @@ host <- DHCP <- ISP <- ICANN
 ### ► Hierarchical addressing
 Route aggregation
 - aggregation 한 IP 주소를 상위 라우터에 전달한다.
-![](/assets/posts/image.png)
+![](/assets/posts/c84c7b80dd0e3f5f82d6aa38f80bba239a1df3a7ae3ccc2e5c20eeda6b669866.png)
 - 상위 계층의 router에서는 목적지와 <span style = "color:red">가장 길게 매치되는</span> IP 주소로 보낸다. 
 <br>
 
 - 만약 ISP를 이동한다면 상위 Router에 정보를 보내줘야한다.
-![](/assets/posts/image.png)new Entry가 Routing Table에 생성된다.
+![](/assets/posts/a54257b09fc125531e9e257466a43ba01d696d474c6f0a22aa62ff5e1bbbfbf3.png)new Entry가 Routing Table에 생성된다.
 
 
 <br>
@@ -379,7 +379,7 @@ Route aggregation
 <br>
 
 ### ► Port
-![](/assets/posts/image.png)
+![](/assets/posts/ee48d6540650685d25f717576e2cffef0445fa70e9476386295e386062a4bf3b.png)
 내부 ➜ 외부로 패킷을 보내는 경우
 
 【 source IP address, source port number】 를
@@ -420,7 +420,7 @@ Route aggregation
 
 <br>
 
-![](/assets/posts/image.png)
+![](/assets/posts/d990b222c2e0da8aa58914f0374b66ba57bde17e4bd39ac838bb6a87d1690f79.png)
 
 | format | Dtail |
 | - | - |
@@ -461,7 +461,7 @@ payLoad에 extenstion header가 있으면 next header도 같이 들어있다.
 : IPv6로 들어온 Datagram을 IPv4 로 인식되도록 만드는 기술
 
 - IPv6를 IPv4 header로 encapsulate.
-![](/assets/posts/image.png)
+![](/assets/posts/7c9ccd6a513407df16e01452a1804803124f2d511e89b9cd2fc36f91bef84b63.png)
 
 
 

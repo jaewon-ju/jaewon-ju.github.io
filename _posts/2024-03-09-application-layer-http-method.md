@@ -7,7 +7,7 @@ slug: "Application-Layer-HTTP-Method"
 categories: Network
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:30.433Z
+  lastSyncedAt: 2025-08-19T12:12:27.309Z
   hash: "814a0f818994c058d2a2e756fb485337edba0eac0e8fccd672b25cdca268b342"
 ---
 

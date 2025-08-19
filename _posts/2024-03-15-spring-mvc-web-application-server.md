@@ -7,7 +7,7 @@ slug: "Spring-MVC-Web-Application-Server"
 categories: Spring
 toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T12:07:26.600Z
+  lastSyncedAt: 2025-08-19T12:12:26.760Z
   hash: "077759332bc07b393331f38f11333a48a81769a999586eb4e267aacb7391d3b1"
 ---
 
@@ -55,7 +55,7 @@ Server와 DB를 사용하면 웹 시스템을 구성할 수 있다.
 
 ### ■ WAS + DB
 WAS는 Web Server의 기능을 포함하고 있으므로, WAS + DB 만으로 웹 시스템을 구성할 수 있다.
-![](/assets/posts/image.png)
+![](/assets/posts/296674b7d8b07d42357dfdccc1ec1fbf34f452b1ad67c4f9460b75cfa3e8fcb8.png)
 
 하지만 이렇게 구성한다면 WAS가 정적 리소스, 애플리케이션 로직을 모두 담당하게 된다.
 ➜ 서버 과부하의 우려가 있다.
@@ -65,7 +65,7 @@ WAS는 Web Server의 기능을 포함하고 있으므로, WAS + DB 만으로 웹
 
 ### ■ Web Server + WAS + DB
 위의 문제점을 해결하기 위해, Web Server를 구성에 추가한다.
-![](/assets/posts/image.png)
+![](/assets/posts/6a8b1ea5d2563da533eb0619045535366968895c17006b1420502a50d4225bd9.png)
 
 정적 리소스 -  Web Server가 관리
 동적 리소스(애플리케이션 로직 등) -  WAS가 관리
@@ -139,7 +139,7 @@ public class BasicServlet extends HttpServlet {
 사실 WAS는 Web Server + Servlet Container로 구성된다.
 
 >위의 코드의 작동 과정을 알아보자. 
-![](/assets/posts/image.png)
+![](/assets/posts/822a517a6599b68a99089ef2bbca3a7be0e5109267c097f0e5f584bc232eeb45.png)
 1. ```/basic``` 리소스 요청이 발생한다.
 2. WAS가 ```basicServlet``` 객체를 생성한다.
 3. WAS가 ```request```, ```response``` 객체를 생성한다.
