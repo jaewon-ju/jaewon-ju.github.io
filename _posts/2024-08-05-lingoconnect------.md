@@ -5,8 +5,9 @@ date: 2024-08-05T07:30:27.843Z
 tags: ["프로젝트"]
 slug: "LingoConnect-새싹-해커톤-후기"
 categories: 프로젝트
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:50.990Z
+  lastSyncedAt: 2025-08-19T11:39:00.888Z
   hash: "5fd6e10918b72e06d258e88f295ce9087333c8302e6020fd1a3ceb692f7a8a9f"
 ---
 

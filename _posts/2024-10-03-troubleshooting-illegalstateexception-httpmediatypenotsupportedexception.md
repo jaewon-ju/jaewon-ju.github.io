@@ -5,8 +5,9 @@ date: 2024-10-03T12:56:03.982Z
 tags: ["TROUBLESHOOTING"]
 slug: "TroubleShooting-IllegalStateException-HttpMediaTypeNotSupportedException"
 categories: TroubleShooting
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:50.497Z
+  lastSyncedAt: 2025-08-19T11:39:00.398Z
   hash: "e825716962bebaad053f04fbbbe997a43626c39a7a3b9e2267bf09325b40b702"
 ---
 

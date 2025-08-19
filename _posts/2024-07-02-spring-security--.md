@@ -5,8 +5,9 @@ date: 2024-07-02T13:27:33.997Z
 tags: ["Spring","spring security"]
 slug: "Spring-Security-기본"
 categories: Spring
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.358Z
+  lastSyncedAt: 2025-08-19T11:39:01.194Z
   hash: "8f7d0dd4850318a1ad7cd3094882f168dc8e34d1a8c6216315144d24143b3eca"
 ---
 

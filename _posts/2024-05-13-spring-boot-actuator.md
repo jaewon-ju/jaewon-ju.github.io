@@ -5,8 +5,9 @@ date: 2024-05-13T12:43:23.636Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Actuator"
 categories: Spring Boot
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.852Z
+  lastSyncedAt: 2025-08-19T11:39:01.666Z
   hash: "92d54237c8ba6c9a497e0778f0eef699bf613840f8702ee6e2e696b7e0e43ea4"
 ---
 

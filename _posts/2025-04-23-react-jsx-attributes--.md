@@ -4,8 +4,9 @@ description: "React에서 자주 쓰이는 주요 속성들인 ref, key, classNa
 date: 2025-04-23T06:21:55.881Z
 tags: ["React","프론트엔드"]
 slug: "React-JSX-Attributes-정리"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.596Z
+  lastSyncedAt: 2025-08-19T11:38:59.462Z
   hash: "b11e17b71be347ca4f2253613b0849e3ad45807c281eaca9120c0f9a2fe96f67"
 ---
 

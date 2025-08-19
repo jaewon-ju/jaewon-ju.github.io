@@ -5,8 +5,9 @@ date: 2024-03-22T05:59:11.586Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-MVC-프레임워크-만들기"
 categories: Spring
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:52.776Z
+  lastSyncedAt: 2025-08-19T11:39:02.505Z
   hash: "e7735959e4643a785cc27af2e2df06d26dcfe82cfbbcf943e5f712e5cc2085ca"
 ---
 

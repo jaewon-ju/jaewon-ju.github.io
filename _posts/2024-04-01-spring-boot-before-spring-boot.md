@@ -5,8 +5,9 @@ date: 2024-04-01T11:43:40.706Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-Before-Spring-Boot"
 categories: Spring Boot
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:52.454Z
+  lastSyncedAt: 2025-08-19T11:39:02.293Z
   hash: "eed4782bfba589c2f347fa268ca6de45dd44448dadf3a8a38ece69957a034abc"
 ---
 

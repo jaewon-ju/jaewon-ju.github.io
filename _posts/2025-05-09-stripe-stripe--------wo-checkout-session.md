@@ -5,8 +5,9 @@ description: "checkout session을 사용하지 않고 카드 정보만 저장하
 date: 2025-05-09T08:53:51.617Z
 tags: ["Stripe"]
 slug: "Stripe-Stripe로-카드-정보-저장하기-WO-checkout-Session"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.530Z
+  lastSyncedAt: 2025-08-19T11:38:59.400Z
   hash: "2b55197f73517c6474b4b69d2bce148e6439bdddd6a586de20b39c1d615d778a"
 ---
 

@@ -5,8 +5,9 @@ date: 2024-05-08T06:50:03.993Z
 tags: ["OS"]
 slug: "OS-File-System"
 categories: OS
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.989Z
+  lastSyncedAt: 2025-08-19T11:39:01.790Z
   hash: "67dbe7a2dcdb83ab9f722c7ec49a2347879ec75128bfba048051bde40ee94e12"
 ---
 

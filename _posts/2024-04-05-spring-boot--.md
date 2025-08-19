@@ -5,8 +5,9 @@ date: 2024-04-05T01:34:40.587Z
 tags: ["Spring","Springboot"]
 slug: "Spring-Boot-자동구성"
 categories: Spring Boot
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:52.382Z
+  lastSyncedAt: 2025-08-19T11:39:02.175Z
   hash: "222225757f260d12c51452a8de53db85cc57381631997933f61884c90d640ba4"
 ---
 

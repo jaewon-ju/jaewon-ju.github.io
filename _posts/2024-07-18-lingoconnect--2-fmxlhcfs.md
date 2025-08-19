@@ -5,8 +5,9 @@ date: 2024-07-18T09:45:26.745Z
 tags: ["프로젝트"]
 slug: "LingoConnect-개발2-fmxlhcfs"
 categories: 프로젝트
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.122Z
+  lastSyncedAt: 2025-08-19T11:39:00.997Z
   hash: "2491780ee0dd70127be2debb11ab40d4d940ebcf0689d9f13c6df8b17cd4a78e"
 ---
 

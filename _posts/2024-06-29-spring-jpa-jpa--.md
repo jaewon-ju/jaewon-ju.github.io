@@ -5,8 +5,9 @@ date: 2024-06-29T07:31:34.375Z
 tags: ["JPA"]
 slug: "Spring-JPA-JPA-소개"
 categories: Spring Boot
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.488Z
+  lastSyncedAt: 2025-08-19T11:39:01.328Z
   hash: "b37ae88c4a1067919b525142062d2d12a4116f9e174770caa919fae0f0633c2b"
 ---
 

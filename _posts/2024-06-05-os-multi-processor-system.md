@@ -5,8 +5,9 @@ date: 2024-06-05T06:44:17.657Z
 tags: ["OS"]
 slug: "OS-Multi-Processor-System"
 categories: OS
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.594Z
+  lastSyncedAt: 2025-08-19T11:39:01.424Z
   hash: "7672269884e86ccd091a95daff88add52e98ec3c4e1f8d4147b286366b121df7"
 ---
 

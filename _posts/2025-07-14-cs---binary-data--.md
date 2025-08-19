@@ -4,8 +4,9 @@ description: "ArrayBuffer, Buffer, Uint8Array 등 Binary Data에 대한 정리�
 date: 2025-07-14T08:56:15.439Z
 tags: ["CS 지식"]
 slug: "CS-지식-Binary-Data-총정리"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.375Z
+  lastSyncedAt: 2025-08-19T11:38:59.251Z
   hash: "891fc959d6a15ed82c3fc07ca9b8a5b0d711a70764daa690e41716fb526a929b"
 ---
 

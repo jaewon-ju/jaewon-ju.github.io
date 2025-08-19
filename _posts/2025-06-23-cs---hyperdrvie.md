@@ -4,8 +4,9 @@ description: "Cloudflare의 기능중 하나인 HyperDrive에 대해서"
 date: 2025-06-23T08:12:42.138Z
 tags: ["CS 지식"]
 slug: "CS-지식-HyperDrvie"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.422Z
+  lastSyncedAt: 2025-08-19T11:38:59.288Z
   hash: "ae5ead9f5b05945b4ed545f8ac0d2c6d5449b964588548cfef90a1f0f1d81e2c"
 ---
 

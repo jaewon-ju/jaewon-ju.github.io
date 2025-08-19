@@ -4,8 +4,9 @@ description: "운영체제를 공부하던 중, System Call과 Interrupt의 차�
 date: 2024-04-18T13:56:44.549Z
 tags: ["CS지식"]
 slug: "CS-지식-System-Call-Interrupt"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:52.153Z
+  lastSyncedAt: 2025-08-19T11:39:01.937Z
   hash: "ae1403602c4fce8867066277500e94200702189b1ca582f67f3002480542a053"
 ---
 

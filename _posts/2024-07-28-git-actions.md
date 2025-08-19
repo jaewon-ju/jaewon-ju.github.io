@@ -4,8 +4,9 @@ description: "github Actions를 활용한 CI/CD"
 date: 2024-07-28T10:10:56.644Z
 tags: ["git"]
 slug: "git-Actions"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.092Z
+  lastSyncedAt: 2025-08-19T11:39:00.974Z
   hash: "2ec6462e3e3e8263a9baca5045deaf4364aa252e6d459a23477f830ced5769bc"
 ---
 

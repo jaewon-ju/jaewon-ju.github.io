@@ -5,8 +5,9 @@ date: 2025-06-16T07:12:24.418Z
 tags: []
 slug: "TroubleShooting-NextAuth-Authentik-Docker-Issue-1"
 categories: TroubleShooting
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.466Z
+  lastSyncedAt: 2025-08-19T11:38:59.335Z
   hash: "53ef44f7a3d94ae9a69cdca1bd5cfb37250179ba36f3898e98ba6095c6bb608b"
 ---
 

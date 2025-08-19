@@ -6,8 +6,9 @@ tags: ["network"]
 slug: "Application-Layer-DNS와-URI"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/c096bc81-3aa4-4d5a-9d74-c31e28ff9c72/image.png"
 categories: Network
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:53.166Z
+  lastSyncedAt: 2025-08-19T11:39:02.846Z
   hash: "1444ae00976794352e09885f23e874f6490e6507832bd29d9ebf26de0ac2c8a0"
 ---
 

@@ -4,8 +4,9 @@ description: "논리 프로그래밍에 대해서"
 date: 2024-09-25T03:27:09.958Z
 tags: ["프로그래밍언어론"]
 slug: "프로그래밍언어론-Logic-Programming"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:50.627Z
+  lastSyncedAt: 2025-08-19T11:39:00.559Z
   hash: "a8bb823a3d10a7e4f5b1bc5f29b65ed43202f357fb88927d29c0197bafdea87b"
 ---
 

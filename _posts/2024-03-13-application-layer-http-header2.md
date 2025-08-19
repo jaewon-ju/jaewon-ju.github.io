@@ -5,8 +5,9 @@ date: 2024-03-13T09:58:36.715Z
 tags: ["network"]
 slug: "Application-Layer-HTTP-header2"
 categories: Network
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:52.944Z
+  lastSyncedAt: 2025-08-19T11:39:02.659Z
   hash: "78204f71095bf0d9b1d451b26f41651d70e3d01ac709438bc1703f607fbc523c"
 ---
 

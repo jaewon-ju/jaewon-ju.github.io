@@ -5,8 +5,9 @@ date: 2024-03-05T09:56:16.115Z
 tags: ["network"]
 slug: "Application-Layer-URI"
 categories: Network
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:53.144Z
+  lastSyncedAt: 2025-08-19T11:39:02.818Z
   hash: "ee3fd54a11e4f29ecc9d4c69f22c6f703467f584689c51796cfd90f59a3b6b86"
 ---
 

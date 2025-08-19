@@ -5,8 +5,9 @@ date: 2024-06-11T05:07:36.177Z
 tags: ["network"]
 slug: "Link-Layer-MPLS-DCN"
 categories: Network
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.567Z
+  lastSyncedAt: 2025-08-19T11:39:01.400Z
   hash: "8e3665c5053f1477061fbd0189eaadeef6fdea637f2bb3fad122348e421a36ca"
 ---
 

@@ -5,8 +5,9 @@ date: 2025-04-15T05:48:19.148Z
 tags: ["Auth","Authentik"]
 slug: "Auth-Authentik-비밀번호-복구-기능-email-환경-설정"
 categories: Auth
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.644Z
+  lastSyncedAt: 2025-08-19T11:38:59.504Z
   hash: "256dd9f9a6cd0b23d5ec131a770d8ed33b5e5fca50d188ac3ada76dccff815f8"
 ---
 

@@ -5,8 +5,9 @@ date: 2025-02-11T01:17:13.096Z
 tags: ["Firebase"]
 slug: "Firebase-Firestore"
 categories: Firebase
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:50.001Z
+  lastSyncedAt: 2025-08-19T11:38:59.813Z
   hash: "8dc3dfd5405dba17b8b50d34fd4fcd40feafc1efcf0a5c10f5dd7a73d201a45d"
 ---
 

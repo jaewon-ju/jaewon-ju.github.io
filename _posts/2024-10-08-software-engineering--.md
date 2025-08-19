@@ -4,8 +4,9 @@ description: "소프트웨어 설계 과정에 대해서"
 date: 2024-10-08T01:50:43.123Z
 tags: ["Software Engineering"]
 slug: "Software-Engineering-설계"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:50.383Z
+  lastSyncedAt: 2025-08-19T11:39:00.244Z
   hash: "4bc46a70c614e0fa5e08a2755b4e4bb99c785d5de6bfdacf67f850152b11b2e7"
 ---
 

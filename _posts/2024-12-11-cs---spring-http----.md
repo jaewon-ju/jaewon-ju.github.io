@@ -4,8 +4,9 @@ description: "HTTP Response에 객체를 넣었을 때 JSON으로 직렬화 하�
 date: 2024-12-11T14:44:12.430Z
 tags: ["CS지식"]
 slug: "CS-지식-Spring-HTTP-응답-직렬화"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:50.076Z
+  lastSyncedAt: 2025-08-19T11:38:59.880Z
   hash: "bfbdcb4b473c501bb61ff56672be710b92fd00d2098879e82e6b49f6707d44d1"
 ---
 

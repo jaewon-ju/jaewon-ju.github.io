@@ -5,8 +5,9 @@ date: 2024-06-05T04:51:11.936Z
 tags: ["OS"]
 slug: "OS-Multimedia-OS"
 categories: OS
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.618Z
+  lastSyncedAt: 2025-08-19T11:39:01.448Z
   hash: "b2e3c6d05c31dcb08496541933e8a87f0bcdcb31a4daee341c9b0c19d225372e"
 ---
 

@@ -6,8 +6,9 @@ tags: ["Spring"]
 slug: "Spring-What-is-Spring"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/608e1c39-0880-41a3-b1ed-5dba5422e071/image.png"
 categories: Spring
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:53.482Z
+  lastSyncedAt: 2025-08-19T11:39:03.164Z
   hash: "30cdeec333d942ece4451d90a43749b8b82c5c123342920bb43309f2946a4599"
 ---
 

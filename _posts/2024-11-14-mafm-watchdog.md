@@ -6,8 +6,9 @@ tags: ["프로젝트"]
 slug: "MAFM-watchdog"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/74bc8317-827f-4791-9f9a-52ff488167fa/image.png"
 categories: 프로젝트
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:50.193Z
+  lastSyncedAt: 2025-08-19T11:38:59.988Z
   hash: "466a73633d280a75091e10597fce0afbaa6c20934e809ad5f17d66b0870a15d7"
 ---
 

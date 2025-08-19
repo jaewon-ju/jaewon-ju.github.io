@@ -5,8 +5,9 @@ date: 2024-03-30T07:58:58.331Z
 tags: ["MVC","Spring"]
 slug: "Spring-MVC-응답-관련-기본-기능"
 categories: Spring
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:52.525Z
+  lastSyncedAt: 2025-08-19T11:39:02.363Z
   hash: "844d24bf7e22365f8b8bc99a8388a691dbfde7884df9475bf5c80903d268d7e4"
 ---
 

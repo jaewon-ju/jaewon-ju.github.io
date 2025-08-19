@@ -4,8 +4,9 @@ description: "웹 프레임워크인 Hono에 대한 소개. #Hono, #Hono_Framewo
 date: 2025-03-10T02:20:17.222Z
 tags: ["Hono"]
 slug: "Hono-Hono-Framework"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.855Z
+  lastSyncedAt: 2025-08-19T11:38:59.686Z
   hash: "6127d9517c24f1cacd2240a222ba189dbfa02cbe5f5e53dbf688af2c6b30f0b1"
 ---
 

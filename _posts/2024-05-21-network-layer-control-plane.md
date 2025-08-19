@@ -5,8 +5,9 @@ date: 2024-05-21T03:48:53.207Z
 tags: ["network"]
 slug: "Network-Layer-Control-Plane"
 categories: Network
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.778Z
+  lastSyncedAt: 2025-08-19T11:39:01.592Z
   hash: "d2a12230b21470183b8c55125b4f4a42099581664f6092906b25e47a85f111f4"
 ---
 

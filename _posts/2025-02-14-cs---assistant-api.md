@@ -5,8 +5,9 @@ date: 2025-02-14T06:40:13.632Z
 tags: ["CS지식"]
 slug: "CS-지식-Assistant-API"
 thumbnail: "https://velog.velcdn.com/images/jaewon-ju/post/e84e75c7-fc85-46a9-bfbc-2eff246bf02f/image.png"
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:49.953Z
+  lastSyncedAt: 2025-08-19T11:38:59.766Z
   hash: "1da3daf9e7cbb7db9da8262f130f15c801fcc2dfc07bbe5c4dc7cc2978149ca8"
 ---
 

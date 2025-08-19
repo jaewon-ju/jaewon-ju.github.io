@@ -5,8 +5,9 @@ date: 2024-05-22T05:49:30.697Z
 tags: ["OS"]
 slug: "OS-Input-Output"
 categories: OS
+toc: true
 velogSync:
-  lastSyncedAt: 2025-08-19T08:36:51.727Z
+  lastSyncedAt: 2025-08-19T11:39:01.545Z
   hash: "277e114133d149f6caa7d1a03075689c26b6566e81549919fab1edb3bfd818c9"
 ---
 
