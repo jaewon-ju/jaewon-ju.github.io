@@ -5,8 +5,28 @@
     <description>A minimal, responsive and feature-rich Jekyll theme for technical writing.</description>
     <link>https://jaewon-ju.github.io</link>
     <atom:link href="https://jaewon-ju.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Sun, 17 Aug 2025 22:42:44 +0900</lastBuildDate>
+	<lastBuildDate>Thu, 21 Aug 2025 17:10:02 +0900</lastBuildDate>
 	
+	<item>
+		<title>[프로젝트] Velog-&gt;GitHub.io 동기화 툴</title>
+        
+        
+            <description>&lt;blockquote&gt;
+  &lt;h4 id=&quot;4줄-요약&quot;&gt;4줄 요약&lt;/h4&gt;
+  &lt;p&gt;velog와 github.io 포스팅을 자동으로 백업/동기화하는 툴을 만들었습니다.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Velog → GitHub.io 자동 동기화&lt;/strong&gt;: Velog에 올린 글을 그대로 github.io 블로그에도 반영&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;기존 글 백업&lt;/strong&gt;: Velog에 이미 작성된 글들을 한 번에 가져오기&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;수정 사항 반영&lt;/strong&gt;: Velog 글을 수정하면 GitHub Pages에도 자동 업데이트&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+        
+        <pubDate>Thu, 21 Aug 2025 17:10:02 +0900</pubDate>
+        <link>https://jaewon-ju.github.io/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Velog-GitHub.io-%EB%8F%99%EA%B8%B0%ED%99%94-%ED%88%B4/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Velog-GitHub.io-%EB%8F%99%EA%B8%B0%ED%99%94-%ED%88%B4/</guid>
+      </item>
+    
 	<item>
 		<title>[코딩테스트] Backtracking</title>
         
@@ -122,18 +142,6 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, do
         <pubDate>Mon, 09 Jun 2025 14:38:40 +0900</pubDate>
         <link>https://jaewon-ju.github.io/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</link>
         <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</guid>
-      </item>
-    
-	<item>
-		<title>[TroubleShooting] Cloudflare Workers-JOSEError</title>
-        
-        
-            <description>&lt;p&gt;Cloudflare Workers에서 jose를 사용해 JWT를 검증하는 도중, JWKS 키셋을 불러오는 요청에서 200 OK가 오지 않아 JOSEError가 발생했다.&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 19 May 2025 15:38:31 +0900</pubDate>
-        <link>https://jaewon-ju.github.io/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</link>
-        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</guid>
       </item>
     
   </channel>
