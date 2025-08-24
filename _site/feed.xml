@@ -3,8 +3,8 @@
   <channel>
     <title></title>
     <description>A minimal, responsive and feature-rich Jekyll theme for technical writing.</description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://jaewon-ju.github.io</link>
+    <atom:link href="https://jaewon-ju.github.io/feed.xml" rel="self" type="application/rss+xml" />
 	<lastBuildDate>Sun, 17 Aug 2025 22:42:44 +0900</lastBuildDate>
 	
 	<item>
@@ -15,8 +15,8 @@
 </description>
         
         <pubDate>Sun, 17 Aug 2025 22:42:44 +0900</pubDate>
-        <link>http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</guid>
+        <link>https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Backtracking/</guid>
       </item>
     
 	<item>
@@ -29,8 +29,8 @@
 </description>
         
         <pubDate>Mon, 11 Aug 2025 14:23:43 +0900</pubDate>
-        <link>http://localhost:4000/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/</guid>
+        <link>https://jaewon-ju.github.io/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/7%EA%B0%9C%EC%9B%94%EA%B0%84%EC%9D%98-%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0/</guid>
       </item>
     
 	<item>
@@ -41,8 +41,8 @@
 </description>
         
         <pubDate>Wed, 06 Aug 2025 11:08:11 +0900</pubDate>
-        <link>http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</guid>
+        <link>https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-DFS-%EA%B5%AC%ED%98%84/</guid>
       </item>
     
 	<item>
@@ -55,8 +55,8 @@
 </description>
         
         <pubDate>Mon, 14 Jul 2025 17:56:15 +0900</pubDate>
-        <link>http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</guid>
+        <link>https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-Binary-Data-%EC%B4%9D%EC%A0%95%EB%A6%AC/</guid>
       </item>
     
 	<item>
@@ -67,8 +67,8 @@
 </description>
         
         <pubDate>Mon, 07 Jul 2025 15:36:08 +0900</pubDate>
-        <link>http://localhost:4000/posts/TroubleShooting-Authentik-API-403-Forbidden/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-Authentik-API-403-Forbidden/</guid>
+        <link>https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-Authentik-API-403-Forbidden/</guid>
       </item>
     
 	<item>
@@ -80,8 +80,8 @@
 </description>
         
         <pubDate>Mon, 23 Jun 2025 17:12:42 +0900</pubDate>
-        <link>http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</guid>
+        <link>https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/CS-%EC%A7%80%EC%8B%9D-HyperDrvie/</guid>
       </item>
     
 	<item>
@@ -94,8 +94,8 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하고자 하였�
 </description>
         
         <pubDate>Mon, 16 Jun 2025 16:23:38 +0900</pubDate>
-        <link>http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/</guid>
+        <link>https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-2/</guid>
       </item>
     
 	<item>
@@ -108,8 +108,8 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, do
 </description>
         
         <pubDate>Mon, 16 Jun 2025 16:12:24 +0900</pubDate>
-        <link>http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</guid>
+        <link>https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</guid>
       </item>
     
 	<item>
@@ -120,8 +120,8 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, do
 </description>
         
         <pubDate>Mon, 09 Jun 2025 14:38:40 +0900</pubDate>
-        <link>http://localhost:4000/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</guid>
+        <link>https://jaewon-ju.github.io/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</guid>
       </item>
     
 	<item>
@@ -132,8 +132,8 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, do
 </description>
         
         <pubDate>Mon, 19 May 2025 15:38:31 +0900</pubDate>
-        <link>http://localhost:4000/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</guid>
+        <link>https://jaewon-ju.github.io/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-Cloudflare-Workers-JOSEError/</guid>
       </item>
     
   </channel>
