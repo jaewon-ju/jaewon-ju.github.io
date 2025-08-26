@@ -28,7 +28,27 @@
       </item>
     
 	<item>
-		<title>[코딩테스트] Backtracking</title>
+		<title>[프로젝트] Velog-&gt;GitHub.io 동기화 툴</title>
+        
+        
+            <description>&lt;blockquote&gt;
+  &lt;h4 id=&quot;4줄-요약&quot;&gt;4줄 요약&lt;/h4&gt;
+  &lt;p&gt;velog와 github.io 포스팅을 자동으로 백업/동기화하는 툴을 만들었습니다.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Velog → GitHub.io 자동 동기화&lt;/strong&gt;: Velog에 올린 글을 그대로 github.io 블로그에도 반영&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;기존 글 백업&lt;/strong&gt;: Velog에 이미 작성된 글들을 한 번에 가져오기&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;수정 사항 반영&lt;/strong&gt;: Velog 글을 수정하면 GitHub Pages에도 자동 업데이트&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+        
+        <pubDate>Thu, 21 Aug 2025 17:10:02 +0900</pubDate>
+        <link>https://jaewon-ju.github.io/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B2%A8%EB%A1%9C%EA%B7%B8-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5-%EA%B3%A0%EC%B3%90%EC%A3%BC%EC%84%B8%EC%9A%94%E3%85%A0%E3%85%A0/</link>
+        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B2%A8%EB%A1%9C%EA%B7%B8-%EA%B2%80%EC%83%89-%EA%B8%B0%EB%8A%A5-%EA%B3%A0%EC%B3%90%EC%A3%BC%EC%84%B8%EC%9A%94%E3%85%A0%E3%85%A0/</guid>
+      </item>
+    
+	<item>
+		<title>[코딩테스트] Backtracking, Two Pointers, 최단거리</title>
         
         
             <description>&lt;p&gt;이 시리즈의 목표는, 코딩테스트에서 자주 사용되는 핵심 문법들을 템플릿 형태로 정리하고, 이를 빠르게 외워서 실전 문제에 바로 적용할 수 있도록 만드는 것이다.&lt;/p&gt;
@@ -130,18 +150,6 @@ Next.js 프로젝트에서 Authentik을 OIDC Provider로 사용하기 위해, do
         <pubDate>Mon, 16 Jun 2025 16:12:24 +0900</pubDate>
         <link>https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</link>
         <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-NextAuth-Authentik-Docker-Issue-1/</guid>
-      </item>
-    
-	<item>
-		<title>[TroubleShooting] Canvas Docker install 오류</title>
-        
-        
-            <description>&lt;p&gt;Docker로 Next.js 프로젝트를 빌드하는 과정에서, npm ci 명령어 실행 시 canvas 모듈의 네이티브 바이너리 설치 실패로 인해 빌드가 중단되었다.&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 09 Jun 2025 14:38:40 +0900</pubDate>
-        <link>https://jaewon-ju.github.io/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</link>
-        <guid isPermaLink="true">https://jaewon-ju.github.io/posts/TroubleShooting-Canvas-Docker-install-%EC%98%A4%EB%A5%98/</guid>
       </item>
     
   </channel>
